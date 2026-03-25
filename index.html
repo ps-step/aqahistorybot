@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HistoryBot</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">HistoryBot</div>
+        <nav class="tabs">
+            <button class="tab-btn active" data-target="spain-notes">Spain Notes</button>
+            <button class="tab-btn" data-target="spain-essays">Spain Essays & Extracts</button>
+            <button class="tab-btn" data-target="wotr-timelines">WOTR Timelines</button>
+            <button class="tab-btn" data-target="wotr-essays">WOTR Essays & Sources</button>
+            <button class="tab-btn" data-target="grade-boundaries">Grade Boundaries</button>
+        </nav>
+        <div class="auth-section">
+            <button id="login-btn">Sign in with Google</button>
+            <span id="user-info" style="display:none;"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="spain-notes" class="tab-content active">
+            <div class="split-view">
+                <div class="sidebar" id="spain-categories"></div>
+                <div class="content-area">
+                    <h2 id="spain-notes-title" class="notes-title">Select a Topic</h2>
+                    <ul id="spain-bullet-list"><li>Select a topic on the left to view bullets.</li></ul>
+                </div>
+                <div class="notes-panel" id="spain-notes-panel" style="display:none;">
+                    <h3>Further Notes</h3>
+                    <textarea id="spain-personal-notes" placeholder="Select a bullet point to write notes..."></textarea>
+                    <button id="save-spain-notes">Save Note</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="spain-essays" class="tab-content">
+            <div class="split-view">
+                <div class="sidebar">
+                    <div id="spain-essay-list"></div>
+                    <div id="spain-notes-picker" style="display:none;">
+                        <h4 style="margin-bottom: 10px; color: #555;">Drag notes into your plan</h4>
+                        <div id="spain-picker-content"></div>
+                    </div>
+                </div>
+                
+                <div class="content-area editor-area">
+                    <h2 id="spain-question-title" class="notes-title">Select a Question</h2>
+                    
+                    <div class="question-viewer">
+                        <img id="spain-question-img" src="" alt="Extract" style="display:none;">
+                        <div id="spain-question-text" style="display:none;"></div>
+                    </div>
+                    
+                    <div class="controls">
+                        <label><input type="checkbox" id="spain-mark-complete"> Mark as Complete</label>
+                        <button id="spain-btn-free">Write</button>
+                        <button id="spain-btn-struct">Plan</button>
+                    </div>
+
+                    <div id="spain-free-editor" class="editor-section" style="display:none;">
+                        <div class="toolbar">
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'yellow')">Highlight</button>
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'transparent')">Remove Highlight</button>
+                        </div>
+                        <div id="spain-rich-text" contenteditable="true" class="rich-editor"></div>
+                        <button id="save-spain-free">Save Writing</button>
+                    </div>
+
+                    <div id="spain-struct-editor" class="editor-section" style="display:none;">
+                        <h4>Introduction</h4><textarea id="spain-struct-intro" rows="3"></textarea>
+                        
+                        <h4>Main Body (Drag & Drop Notes Here)</h4>
+                        <div id="spain-struct-boxes" class="struct-boxes-dynamic"></div>
+                        <div class="add-box-controls">
+                            <button id="spain-add-agree" class="add-btn agree-btn">+ Add Agree Box</button>
+                            <button id="spain-add-disagree" class="add-btn disagree-btn">+ Add Disagree Box</button>
+                        </div>
+
+                        <h4>Conclusion</h4><textarea id="spain-struct-conc" rows="3"></textarea>
+                        <button id="save-spain-struct">Save Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="wotr-timelines" class="tab-content">
+            <div class="split-view">
+                <div class="sidebar" id="wotr-categories"></div>
+                <div class="content-area">
+                    <h2 id="wotr-notes-title" class="notes-title">Select a Timeline</h2>
+                    <ul id="wotr-bullet-list"><li>Select a timeline on the left to view bullets.</li></ul>
+                </div>
+                <div class="notes-panel" id="wotr-notes-panel" style="display:none;">
+                    <h3>Further Notes</h3>
+                    <textarea id="wotr-personal-notes" placeholder="Select a bullet point to write notes..."></textarea>
+                    <button id="save-wotr-notes">Save Note</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="wotr-essays" class="tab-content">
+            <div class="split-view">
+                <div class="sidebar">
+                    <div id="wotr-essay-list"></div>
+                    <div id="wotr-notes-picker" style="display:none;">
+                        <h4 style="margin-bottom: 10px; color: #555;">Drag notes into your plan</h4>
+                        <div id="wotr-picker-content"></div>
+                    </div>
+                </div>
+                
+                <div class="content-area editor-area">
+                    <h2 id="wotr-question-title" class="notes-title">Select a Question</h2>
+                    
+                    <div class="question-viewer">
+                        <img id="wotr-question-img" src="" alt="Source" style="display:none;">
+                        <div id="wotr-question-text" style="display:none;"></div>
+                    </div>
+                    
+                    <div class="controls">
+                        <label><input type="checkbox" id="wotr-mark-complete"> Mark as Complete</label>
+                        <button id="wotr-btn-free">Write</button>
+                        <button id="wotr-btn-struct">Plan</button>
+                    </div>
+
+                    <div id="wotr-free-editor" class="editor-section" style="display:none;">
+                        <div class="toolbar">
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'yellow')">Highlight</button>
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'transparent')">Remove Highlight</button>
+                        </div>
+                        <div id="wotr-rich-text" contenteditable="true" class="rich-editor"></div>
+                        <button id="save-wotr-free">Save Writing</button>
+                    </div>
+
+                    <div id="wotr-struct-editor" class="editor-section" style="display:none;">
+                        <h4>Introduction</h4><textarea id="wotr-struct-intro" rows="3"></textarea>
+                        
+                        <h4>Main Body (Drag & Drop Notes Here)</h4>
+                        <div id="wotr-struct-boxes" class="struct-boxes-dynamic"></div>
+                        <div class="add-box-controls">
+                            <button id="wotr-add-agree" class="add-btn agree-btn">+ Add Agree Box</button>
+                            <button id="wotr-add-disagree" class="add-btn disagree-btn">+ Add Disagree Box</button>
+                        </div>
+
+                        <h4>Conclusion</h4><textarea id="wotr-struct-conc" rows="3"></textarea>
+                        <button id="save-wotr-struct">Save Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grade-boundaries" class="tab-content">
+            <h2>Historical Grade Boundaries & Papers</h2>
+            <table class="data-table">
+                <thead>
+                    <tr><th>Year</th><th>Overall (A*-E)</th><th>Spain (A*-E)</th><th>WOTR (A*-E)</th><th>Links</th></tr>
+                </thead>
+                <tbody id="boundaries-tbody"></tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
