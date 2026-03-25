@@ -85,6 +85,13 @@ button { padding: 8px 12px; background: var(--header-bg); color: white; border: 
 button:hover { background: var(--accent); }
 .controls { margin: 15px 0; display: flex; gap: 15px; align-items: center; padding: 10px; background: #f8f9fa; border: 1px solid #ddd; border-radius: 4px;}
 
+/* NEW: Pushes the "Mark as Complete" to the right and puts it at the end of the line */
+.controls label {
+    margin-left: auto;
+    order: 3;
+}
+
+#spain-bullet-list li, #wotr-bullet-list li { padding-right: 20px; line-height: 1.4; }
 #spain-bullet-list li, #wotr-bullet-list li { padding-right: 20px; line-height: 1.4; }
 
 /* FIX 6: Dynamic Plan Editor & Drag/Drop Styles */

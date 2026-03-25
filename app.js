@@ -35,7 +35,7 @@ onAuthStateChanged(auth, (user) => {
     currentUser = user;
     if (user) {
         loginBtn.textContent = "Sign Out";
-        userInfo.textContent = `Hello, ${user.displayName}`;
+        userInfo.textContent = `${user.displayName}`;
         userInfo.style.display = "inline-block";
     } else {
         loginBtn.textContent = "Sign in with Google";
@@ -744,29 +744,27 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
     const imgViewer = document.getElementById(`${prefix}-question-img`);
     const textViewer = document.getElementById(`${prefix}-question-text`);
 
-    if (type === 'Extract' || type === 'Source') {
-        imgViewer.src = `past_questions/${year}.${paper}.${qNum}.png`;
-        imgViewer.className = 'img-portrait'; 
-        imgViewer.style.display = 'block'; 
-        textViewer.style.display = 'none';
-    } else {
-        imgViewer.style.display = 'none'; 
-        textViewer.style.display = 'block'; 
-        textViewer.textContent = "Loading...";
-        try { 
-            textViewer.innerText = await (await fetch(`past_questions/${year}.${paper}.${qNum}.txt`)).text(); 
-        } catch (e) { 
-            textViewer.innerText = `Error: Missing file past_questions/${year}.${paper}.${qNum}.txt`; 
-        }
+    // 1. Hide the image viewer entirely and show the text viewer for ALL questions
+    imgViewer.style.display = 'none'; 
+    textViewer.style.display = 'block'; 
+    textViewer.textContent = "Loading...";
+    
+    // Fetch the .txt file regardless of question type
+    try { 
+        textViewer.innerText = await (await fetch(`past_questions/${year}.${paper}.${qNum}.txt`)).text(); 
+    } catch (e) { 
+        textViewer.innerText = `Error: Missing file past_questions/${year}.${paper}.${qNum}.txt`; 
     }
 
+    // 2. Reset the UI for the newly selected question
     const checkbox = document.getElementById(`${prefix}-mark-complete`);
     checkbox.checked = false; 
     document.getElementById(`${prefix}-rich-text`).innerHTML = "";
     document.getElementById(`${prefix}-struct-intro`).value = "";
     document.getElementById(`${prefix}-struct-conc`).value = "";
-    document.getElementById(`${prefix}-struct-boxes`).innerHTML = "";
+    document.getElementById(`${prefix}-struct-boxes`).innerHTML = ""; // Wipe dynamic boxes clean
 
+    // 3. Hide the "Plan" button for Extracts and Sources, and force "Write" view
     const planBtn = document.getElementById(`${prefix}-btn-struct`);
     if (type === 'Extract' || type === 'Source') {
         planBtn.style.display = 'none';
@@ -778,21 +776,26 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
         planBtn.style.display = 'inline-block'; 
     }
 
+    // 4. Fetch User Data from Firebase
     if (currentUser) {
+        // Load Checkbox
         const compSnap = await getDoc(doc(db, "users", currentUser.uid, "completed", currentQ[prefix]));
         if (compSnap.exists()) checkbox.checked = compSnap.data().done;
 
+        // Load Free Text
         const freeSnap = await getDoc(doc(db, "users", currentUser.uid, "free_text", currentQ[prefix]));
         if (freeSnap.exists()) {
             document.getElementById(`${prefix}-rich-text`).innerHTML = freeSnap.data().html;
         }
 
+        // Load Structured Plan
         const planSnap = await getDoc(doc(db, "users", currentUser.uid, "plans", currentQ[prefix]));
         if (planSnap.exists()) {
             const data = planSnap.data();
             document.getElementById(`${prefix}-struct-intro`).value = data.intro || "";
             document.getElementById(`${prefix}-struct-conc`).value = data.conclusion || "";
             
+            // Rebuild the dynamic boxes from the saved array
             if (data.boxes && data.boxes.length > 0) {
                 data.boxes.forEach(box => {
                     addPlanBox(prefix, box.type, box.text);
