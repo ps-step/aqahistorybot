@@ -753,36 +753,7 @@ function createBtn(year, paper, qNum, type, prefix) {
 
 generateQuestionButtons();
 
-// NEW: Silent Auto-Save function
-async function autoSaveCurrentProgress(prefix) {
-    if (!currentUser || !currentQ[prefix]) return;
-    
-    try {
-        // 1. Save Free Text (Checking both value and innerHTML for compatibility)
-        const editor = document.getElementById(`${prefix}-rich-text`);
-        const content = editor.value !== undefined ? editor.value : editor.innerHTML;
-        await setDoc(doc(db, "users", currentUser.uid, "free_text", currentQ[prefix]), { html: content });
-
-        // 2. Save Plan
-        const intro = document.getElementById(`${prefix}-struct-intro`).value;
-        const conc = document.getElementById(`${prefix}-struct-conc`).value;
-        const boxes = [];
-        document.querySelectorAll(`#${prefix}-struct-boxes .plan-box-container`).forEach(box => {
-            const type = box.classList.contains('agree') ? 'agree' : 'disagree';
-            const text = box.querySelector('textarea').value;
-            boxes.push({ type, text });
-        });
-        await setDoc(doc(db, "users", currentUser.uid, "plans", currentQ[prefix]), { 
-            intro: intro, boxes: boxes, conclusion: conc
-        });
-    } catch (error) {
-        console.error("Auto-save failed:", error);
-    }
-}
-
 async function loadQuestionViewer(year, paper, qNum, type, prefix) {
-    await autoSaveCurrentProgress(prefix);
-
     currentQ[prefix] = `${year}.${paper}.${qNum}`;
     document.getElementById(`${prefix}-question-title`).textContent = `${year} Question ${qNum} (${type})`;
     
@@ -804,8 +775,6 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
     // 2. Reset the UI for the newly selected question
     const checkbox = document.getElementById(`${prefix}-mark-complete`);
     checkbox.checked = false; 
-    const editor = document.getElementById(`${prefix}-rich-text`);
-    if (editor.value !== undefined) editor.value = ""; else editor.innerHTML = ""; // More robust clear
     document.getElementById(`${prefix}-rich-text`).innerHTML = "";
     document.getElementById(`${prefix}-struct-intro`).value = "";
     document.getElementById(`${prefix}-struct-conc`).value = "";
@@ -832,8 +801,7 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
         // Load Free Text
         const freeSnap = await getDoc(doc(db, "users", currentUser.uid, "free_text", currentQ[prefix]));
         if (freeSnap.exists()) {
-            const loadedText = freeSnap.data().html || "";
-            if (editor.value !== undefined) editor.value = loadedText; else editor.innerHTML = loadedText; // More robust load
+            document.getElementById(`${prefix}-rich-text`).innerHTML = freeSnap.data().html;
         }
 
         // Load Structured Plan
