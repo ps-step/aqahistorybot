@@ -290,7 +290,7 @@ const spainNotesData = {
         { type: "bullet", text: "Export of Moriscan silk banned." },
         { type: "bullet", text: "1567 Royal Edict forbade Arabic language, Moorish dress, and traditional dances like the zambra. Marquis of Mondejar advised Philip not to do this but he ignored." },
         { type: "bullet", text: "A rebel army of 30,000 was led by Aben Humeya (Fernando de Válor); it was suppressed with extreme brutality by Don John of Austria who brought 12k (later up to 25k) men. Tercio veterans." },
-        { type: "bullet", text: "December 1568: Ugíjar Massacre - Moriscos killed 240 Old Christians." },
+        { type: "bullet", text: "Seron: Rebels killed 150 and enslaved 80." },
         { type: "bullet", text: "Siege of Galera (1570): Royal forces razed the village and slaughtered 2,500 inhabitants. Many atrocities comitted." },
         { type: "bullet", text: "Between 80,000 and 100,000 Granadan Moriscos were forcibly deported across Castile." },
         { type: "bullet", text: "20,000+ died during the winter journey." },
