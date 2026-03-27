@@ -754,6 +754,12 @@ function createBtn(year, paper, qNum, type, prefix) {
 generateQuestionButtons();
 
 async function loadQuestionViewer(year, paper, qNum, type, prefix) {
+    // NEW: Save the previous question's data silently BEFORE we wipe the screen
+    if (currentQ[prefix] && currentUser) {
+        await saveFreeText(prefix, true);
+        await savePlan(prefix, true);
+    }
+
     currentQ[prefix] = `${year}.${paper}.${qNum}`;
     document.getElementById(`${prefix}-question-title`).textContent = `${year} Question ${qNum} (${type})`;
     
@@ -904,11 +910,17 @@ function addPlanBox(prefix, type, initialText = "") {
     const header = document.createElement('div');
     header.className = `box-header ${type}`;
     header.innerHTML = `<span>${type} Point</span> <span class="remove-box">✖ Remove</span>`;
-    header.querySelector('.remove-box').onclick = () => boxWrapper.remove();
+    header.querySelector('.remove-box').onclick = () => {
+        boxWrapper.remove();
+        triggerAutoSave(prefix, 'plan'); // NEW: Save after removing a box
+    };
     
     const textarea = document.createElement('textarea');
     textarea.placeholder = `Write your ${type} point here, or drop notes...`;
     textarea.value = initialText;
+
+    // NEW: Real-time saving when typing in the dynamic boxes
+    textarea.addEventListener('input', () => triggerAutoSave(prefix, 'plan'));
 
     textarea.addEventListener('dragover', e => { e.preventDefault(); textarea.classList.add('drag-over'); });
     textarea.addEventListener('dragleave', () => textarea.classList.remove('drag-over'));
@@ -921,6 +933,7 @@ function addPlanBox(prefix, type, initialText = "") {
         const val = textarea.value;
         const insertText = val ? `\n- ${text}` : `- ${text}`;
         textarea.value = val.substring(0, start) + insertText + val.substring(end);
+        triggerAutoSave(prefix, 'plan'); // NEW: Save after dropping a note
     });
 
     boxWrapper.appendChild(header);
@@ -947,15 +960,33 @@ function addPlanBox(prefix, type, initialText = "") {
 });
 
 // --- SAVING ESSAYS AND PLANS ---
-async function saveFreeText(prefix) {
-    if (!currentUser || !currentQ[prefix]) return alert("Sign in and select a question first.");
-    const content = document.getElementById(`${prefix}-rich-text`).innerHTML;
-    await setDoc(doc(db, "users", currentUser.uid, "free_text", currentQ[prefix]), { html: content });
-    alert("Writing saved!");
+
+// Auto-save timer tracking
+let timeoutIds = {};
+function triggerAutoSave(prefix, type) {
+    const key = `${prefix}-${type}`;
+    clearTimeout(timeoutIds[key]);
+    timeoutIds[key] = setTimeout(() => {
+        if (type === 'free') saveFreeText(prefix, true);
+        if (type === 'plan') savePlan(prefix, true);
+    }, 1500); // Waits 1.5 seconds after you stop typing to save
 }
 
-async function savePlan(prefix) {
-    if (!currentUser || !currentQ[prefix]) return alert("Sign in and select a question first.");
+async function saveFreeText(prefix, isSilent = false) {
+    if (!currentUser || !currentQ[prefix]) {
+        if (!isSilent) alert("Sign in and select a question first.");
+        return;
+    }
+    const content = document.getElementById(`${prefix}-rich-text`).innerHTML;
+    await setDoc(doc(db, "users", currentUser.uid, "free_text", currentQ[prefix]), { html: content });
+    if (!isSilent) alert("Writing saved!");
+}
+
+async function savePlan(prefix, isSilent = false) {
+    if (!currentUser || !currentQ[prefix]) {
+        if (!isSilent) alert("Sign in and select a question first.");
+        return;
+    }
     const intro = document.getElementById(`${prefix}-struct-intro`).value;
     const conc = document.getElementById(`${prefix}-struct-conc`).value;
     const boxes = [];
@@ -968,12 +999,18 @@ async function savePlan(prefix) {
     await setDoc(doc(db, "users", currentUser.uid, "plans", currentQ[prefix]), { 
         intro: intro, boxes: boxes, conclusion: conc
     });
-    alert("Plan saved!");
+    if (!isSilent) alert("Plan saved!");
 }
 
 ['spain', 'wotr'].forEach(prefix => {
+    // Manual Save Buttons
     document.getElementById(`save-${prefix}-free`).onclick = () => saveFreeText(prefix);
     document.getElementById(`save-${prefix}-struct`).onclick = () => savePlan(prefix);
+
+    // Real-Time Auto-Save Listeners for the static editors
+    document.getElementById(`${prefix}-rich-text`).addEventListener('input', () => triggerAutoSave(prefix, 'free'));
+    document.getElementById(`${prefix}-struct-intro`).addEventListener('input', () => triggerAutoSave(prefix, 'plan'));
+    document.getElementById(`${prefix}-struct-conc`).addEventListener('input', () => triggerAutoSave(prefix, 'plan'));
 });
 
 // --- GRADE BOUNDARIES TABLE ---
