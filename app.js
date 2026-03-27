@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { getFirestore, doc, setDoc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
 
 const firebaseConfig = {
 
@@ -31,15 +31,29 @@ let currentUser = null;
 const loginBtn = document.getElementById('login-btn');
 const userInfo = document.getElementById('user-info');
 loginBtn.addEventListener('click', () => { currentUser ? signOut(auth) : signInWithPopup(auth, new GoogleAuthProvider()); });
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, async (user) => {
     currentUser = user;
     if (user) {
         loginBtn.textContent = "Sign Out";
-        userInfo.textContent = `${user.displayName}`;
+        userInfo.textContent = `Hello, ${user.displayName}`;
         userInfo.style.display = "inline-block";
+        
+        // NEW: Fetch all completed questions and paint the sidebar buttons green
+        const completedSnap = await getDocs(collection(db, "users", user.uid, "completed"));
+        completedSnap.forEach(doc => {
+            if (doc.data().done) {
+                const [year, paper, qNum] = doc.id.split('.');
+                const spainBtn = document.getElementById(`btn-spain-${year}-${paper}-${qNum}`);
+                const wotrBtn = document.getElementById(`btn-wotr-${year}-${paper}-${qNum}`);
+                if (spainBtn) spainBtn.classList.add('completed-btn');
+                if (wotrBtn) wotrBtn.classList.add('completed-btn');
+            }
+        });
     } else {
         loginBtn.textContent = "Sign in with Google";
         userInfo.style.display = "none";
+        // Remove green from all buttons on sign out
+        document.querySelectorAll('.completed-btn').forEach(btn => btn.classList.remove('completed-btn'));
     }
 });
 
@@ -730,11 +744,13 @@ function generateQuestionButtons() {
 function createBtn(year, paper, qNum, type, prefix) {
     const btn = document.createElement('button');
     btn.className = 'category-btn'; 
+    btn.id = `btn-${prefix}-${year}-${paper}-${qNum}`; // NEW: Give the button a unique ID
     const typeLabel = type === 'Essay' ? '' : ` (${type})`;
     btn.textContent = `${year} - Q${qNum}${typeLabel}`;
     btn.onclick = () => loadQuestionViewer(year, paper, qNum, type, prefix);
     return btn;
 }
+
 generateQuestionButtons();
 
 async function loadQuestionViewer(year, paper, qNum, type, prefix) {
@@ -814,6 +830,7 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
 }
 
 // Mark Complete Listeners
+// Mark Complete Listeners
 ['spain', 'wotr'].forEach(prefix => {
     document.getElementById(`${prefix}-mark-complete`).addEventListener('change', async (e) => {
         if (!currentUser || !currentQ[prefix]) {
@@ -821,6 +838,15 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
             return alert("Please sign in and select a question first.");
         }
         await setDoc(doc(db, "users", currentUser.uid, "completed", currentQ[prefix]), { done: e.target.checked });
+        
+        // NEW: Toggle the green class on the sidebar button in real-time
+        const [year, paper, qNum] = currentQ[prefix].split('.');
+        const sidebarBtn = document.getElementById(`btn-${prefix}-${year}-${paper}-${qNum}`);
+        if (e.target.checked) {
+            sidebarBtn.classList.add('completed-btn');
+        } else {
+            sidebarBtn.classList.remove('completed-btn');
+        }
     });
 });
 

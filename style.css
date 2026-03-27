@@ -97,8 +97,11 @@ button:hover { background: var(--accent); }
 /* FIX 6: Dynamic Plan Editor & Drag/Drop Styles */
 .struct-boxes-dynamic { display: flex; flex-direction: column; gap: 15px; margin: 15px 0; }
 .plan-box-container { display: flex; flex-direction: column; position: relative; }
-.plan-box-container textarea { margin-bottom: 0; min-height: 120px; transition: border 0.3s, background 0.3s; }
+.plan-box-container textarea { margin-bottom: 0; min-height: 250px; transition: border 0.3s, background 0.3s; } /* Increased height to 250px */
 .plan-box-container textarea.drag-over { background: #f0f8ff; border: 2px dashed #3498db !important; }
+
+/* NEW: Green background for completed questions */
+.category-btn.completed-btn { background-color: #d4edda !important; border-color: #c3e6cb !important; color: #155724 !important; }
 .plan-box-container.agree textarea { border-left: 5px solid var(--agree); }
 .plan-box-container.disagree textarea { border-left: 5px solid var(--disagree); }
 .box-header { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: bold; margin-bottom: 5px; text-transform: uppercase; }
