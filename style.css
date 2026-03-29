@@ -120,3 +120,8 @@ button:hover { background: var(--accent); }
 .picker-bullets { display: none; padding-left: 10px; margin-top: 5px; }
 .draggable-bullet { padding: 8px; background: white; border: 1px solid #ccc; margin-bottom: 5px; cursor: grab; font-size: 0.8rem; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
 .draggable-bullet:active { cursor: grabbing; }
+
+/* Essay Plan Usage List */
+.used-in-list { list-style-type: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #555; overflow-y: auto; max-height: 150px; }
+.used-in-list li { padding: 8px; background: #f8f9fa; border: 1px solid #eee; margin-bottom: 5px; border-radius: 4px; font-weight: 500;}
+.used-in-list li.empty-msg { background: transparent; border: none; font-style: italic; color: #999; font-weight: normal; }

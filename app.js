@@ -703,7 +703,7 @@ function loadBullets(category, prefix) {
     });
 }
 
-// Save/Load Personal Notes Logic
+// Save/Load Personal Notes & Usage Logic
 let activeNote = { prefix: null, category: null, index: null };
 async function loadNoteData(category, index, prefix) {
     activeNote = { prefix, category, index };
@@ -712,9 +712,59 @@ async function loadNoteData(category, index, prefix) {
     document.getElementById(`${prefix}-notes-panel`).style.display = 'flex';
     
     const textarea = document.getElementById(`${prefix}-personal-notes`);
-    if (!currentUser) return textarea.value = "Sign in to view/save notes.";
+    const usedInList = document.getElementById(`${prefix}-used-in-list`);
+    usedInList.innerHTML = '<li class="empty-msg">Loading...</li>';
+
+    if (!currentUser) {
+        textarea.value = "Sign in to view/save notes.";
+        usedInList.innerHTML = '<li class="empty-msg">Sign in to see where this note is used.</li>';
+        return;
+    }
+
+    // 1. Load Personal Note
     const snap = await getDoc(doc(db, "users", currentUser.uid, "notes", `${prefix}_${category}_${index}`));
     textarea.value = snap.exists() ? snap.data().text : "";
+
+    // 2. Cross-reference with saved Essay Plans
+    const rawText = getBulletsForCategory(category)[index].text;
+    const plainText = rawText.replace(/<[^>]+>/g, ''); // Strip HTML to match the drag/drop format
+    
+    try {
+        // Fetch all of the user's saved plans
+        const plansSnap = await getDocs(collection(db, "users", currentUser.uid, "plans"));
+        const usedIn = [];
+        
+        plansSnap.forEach(doc => {
+            const data = doc.data();
+            // Filter by subject (Spain = Paper 1, WOTR = Paper 2)
+            const [year, paper, qNum] = doc.id.split('.');
+            const expectedPaper = prefix === 'spain' ? '1' : '2';
+            
+            if (paper === expectedPaper && data.boxes) {
+                // Check if the plain text of the note exists in any of the boxes
+                const isUsed = data.boxes.some(box => box.text.includes(plainText));
+                if (isUsed) {
+                    usedIn.push(`${year} - Question ${qNum}`);
+                }
+            }
+        });
+
+        // Update the UI list
+        usedInList.innerHTML = '';
+        if (usedIn.length > 0) {
+            // Sort chronologically (newest years first)
+            usedIn.sort().reverse().forEach(q => {
+                const li = document.createElement('li');
+                li.textContent = q;
+                usedInList.appendChild(li);
+            });
+        } else {
+            usedInList.innerHTML = '<li class="empty-msg">Not used in any plans yet.</li>';
+        }
+    } catch (error) {
+        console.error("Error fetching plans:", error);
+        usedInList.innerHTML = '<li class="empty-msg">Error loading usage data.</li>';
+    }
 }
 
 document.getElementById('save-spain-notes').onclick = () => saveNoteData('spain');
