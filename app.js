@@ -816,9 +816,12 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
     
     const imgViewer = document.getElementById(`${prefix}-question-img`);
     const textViewer = document.getElementById(`${prefix}-question-text`);
+    const pdfViewer = document.getElementById(`${prefix}-pdf-viewer`);
 
-    // 1. Hide the image viewer entirely and show the text viewer for ALL questions
+    // 1. Hide image and PDF viewers, show text viewer by default
     imgViewer.style.display = 'none'; 
+    pdfViewer.style.display = 'none';
+    pdfViewer.src = ""; // Clear old PDF to prevent ghost loading
     textViewer.style.display = 'block'; 
     textViewer.textContent = "Loading...";
     
@@ -1054,6 +1057,30 @@ async function savePlan(prefix, isSilent = false) {
 }
 
 ['spain', 'wotr'].forEach(prefix => {
+    // NEW: PDF and Text Viewer Toggles
+    document.getElementById(`${prefix}-btn-text`).onclick = () => {
+        document.getElementById(`${prefix}-pdf-viewer`).style.display = 'none';
+        document.getElementById(`${prefix}-question-text`).style.display = 'block';
+    };
+    
+    document.getElementById(`${prefix}-btn-paper`).onclick = () => {
+        if (!currentQ[prefix]) return alert("Select a question first.");
+        const [year, paper] = currentQ[prefix].split('.');
+        const iframe = document.getElementById(`${prefix}-pdf-viewer`);
+        iframe.src = `past_papers/${year}.${paper}.pdf`;
+        document.getElementById(`${prefix}-question-text`).style.display = 'none';
+        iframe.style.display = 'block';
+    };
+    
+    document.getElementById(`${prefix}-btn-ms`).onclick = () => {
+        if (!currentQ[prefix]) return alert("Select a question first.");
+        const [year, paper] = currentQ[prefix].split('.');
+        const iframe = document.getElementById(`${prefix}-pdf-viewer`);
+        iframe.src = `mark_schemes/${year}.${paper}.pdf`;
+        document.getElementById(`${prefix}-question-text`).style.display = 'none';
+        iframe.style.display = 'block';
+    };
+
     // Manual Save Buttons
     document.getElementById(`save-${prefix}-free`).onclick = () => saveFreeText(prefix);
     document.getElementById(`save-${prefix}-struct`).onclick = () => savePlan(prefix);
