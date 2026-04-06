@@ -641,7 +641,7 @@ const wotrNotesData = {
         { type: "bullet", text: "<b>12 February 1499</b> - Ralph Wulford was executed after a friar began preaching that he was the Earl of Warwick in Kent." },
         { type: "bullet", text: "<b>3 August 1499</b> - A plot to flee Warbeck and Warwick was discovered." },
         { type: "bullet", text: "<b>23 November 1499</b> - Warbeck was executed." },
-        { type: "bullet", text: "<b>26 November 1499</b> - Warwick was executed." }
+        { type: "bullet", text: "<b>28 November 1499</b> - Warwick was executed." }
     ]
 };
 
