@@ -81,7 +81,13 @@
                     </div>
 
                     <div id="spain-struct-editor" class="editor-section" style="display:none;">
-                        <h4>Introduction</h4><textarea id="spain-struct-intro" rows="3"></textarea>
+                        <div class="toolbar" style="margin-bottom: 15px;">
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'yellow')">Highlight</button>
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'transparent')">Remove Highlight</button>
+                        </div>
+
+                        <h4>Introduction</h4>
+                        <div id="spain-struct-intro" class="rich-textarea" contenteditable="true" placeholder="Write your introduction here..."></div>
                         
                         <h4>Main Body (Drag & Drop Notes Here)</h4>
                         <div id="spain-struct-boxes" class="struct-boxes-dynamic"></div>
@@ -90,7 +96,8 @@
                             <button id="spain-add-disagree" class="add-btn disagree-btn">+ Add Disagree Box</button>
                         </div>
 
-                        <h4>Conclusion</h4><textarea id="spain-struct-conc" rows="3"></textarea>
+                        <h4>Conclusion</h4>
+                        <div id="spain-struct-conc" class="rich-textarea" contenteditable="true" placeholder="Write your conclusion here..."></div>
                         <button id="save-spain-struct">Save Plan</button>
                     </div>
                 </div>
@@ -154,7 +161,13 @@
                     </div>
 
                     <div id="wotr-struct-editor" class="editor-section" style="display:none;">
-                        <h4>Introduction</h4><textarea id="wotr-struct-intro" rows="3"></textarea>
+                        <div class="toolbar" style="margin-bottom: 15px;">
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'yellow')">Highlight</button>
+                            <button class="subtle-btn" onclick="document.execCommand('hiliteColor', false, 'transparent')">Remove Highlight</button>
+                        </div>
+
+                        <h4>Introduction</h4>
+                        <div id="wotr-struct-intro" class="rich-textarea" contenteditable="true" placeholder="Write your introduction here..."></div>
                         
                         <h4>Main Body (Drag & Drop Notes Here)</h4>
                         <div id="wotr-struct-boxes" class="struct-boxes-dynamic"></div>
@@ -163,7 +176,8 @@
                             <button id="wotr-add-disagree" class="add-btn disagree-btn">+ Add Disagree Box</button>
                         </div>
 
-                        <h4>Conclusion</h4><textarea id="wotr-struct-conc" rows="3"></textarea>
+                        <h4>Conclusion</h4>
+                        <div id="wotr-struct-conc" class="rich-textarea" contenteditable="true" placeholder="Write your conclusion here..."></div>
                         <button id="save-wotr-struct">Save Plan</button>
                     </div>
                 </div>

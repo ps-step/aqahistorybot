@@ -836,9 +836,9 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
     const checkbox = document.getElementById(`${prefix}-mark-complete`);
     checkbox.checked = false; 
     document.getElementById(`${prefix}-rich-text`).innerHTML = "";
-    document.getElementById(`${prefix}-struct-intro`).value = "";
-    document.getElementById(`${prefix}-struct-conc`).value = "";
-    document.getElementById(`${prefix}-struct-boxes`).innerHTML = ""; // Wipe dynamic boxes clean
+    document.getElementById(`${prefix}-struct-intro`).innerHTML = ""; // Changed to innerHTML
+    document.getElementById(`${prefix}-struct-conc`).innerHTML = ""; // Changed to innerHTML
+    document.getElementById(`${prefix}-struct-boxes`).innerHTML = "";
 
     // 3. Hide the "Plan" button for Extracts and Sources, and force "Write" view
     const planBtn = document.getElementById(`${prefix}-btn-struct`);
@@ -868,8 +868,8 @@ async function loadQuestionViewer(year, paper, qNum, type, prefix) {
         const planSnap = await getDoc(doc(db, "users", currentUser.uid, "plans", currentQ[prefix]));
         if (planSnap.exists()) {
             const data = planSnap.data();
-            document.getElementById(`${prefix}-struct-intro`).value = data.intro || "";
-            document.getElementById(`${prefix}-struct-conc`).value = data.conclusion || "";
+            document.getElementById(`${prefix}-struct-intro`).innerHTML = data.intro || ""; // Changed to innerHTML
+            document.getElementById(`${prefix}-struct-conc`).innerHTML = data.conclusion || ""; // Changed to innerHTML
             
             // Rebuild the dynamic boxes from the saved array
             if (data.boxes && data.boxes.length > 0) {
@@ -966,32 +966,39 @@ function addPlanBox(prefix, type, initialText = "") {
     header.innerHTML = `<span>${type} Point</span> <span class="remove-box">✖ Remove</span>`;
     header.querySelector('.remove-box').onclick = () => {
         boxWrapper.remove();
-        triggerAutoSave(prefix, 'plan'); // NEW: Save after removing a box
+        triggerAutoSave(prefix, 'plan'); 
     };
     
-    const textarea = document.createElement('textarea');
-    textarea.placeholder = `Write your ${type} point here, or drop notes...`;
-    textarea.value = initialText;
+    const editor = document.createElement('div');
+    editor.className = 'rich-textarea';
+    editor.contentEditable = "true";
+    editor.setAttribute('placeholder', `Write your ${type} point here, or drop notes...`);
+    editor.innerHTML = initialText;
 
-    // NEW: Real-time saving when typing in the dynamic boxes
-    textarea.addEventListener('input', () => triggerAutoSave(prefix, 'plan'));
+    editor.addEventListener('input', () => triggerAutoSave(prefix, 'plan'));
 
-    textarea.addEventListener('dragover', e => { e.preventDefault(); textarea.classList.add('drag-over'); });
-    textarea.addEventListener('dragleave', () => textarea.classList.remove('drag-over'));
-    textarea.addEventListener('drop', e => {
+    editor.addEventListener('dragover', e => { e.preventDefault(); editor.classList.add('drag-over'); });
+    editor.addEventListener('dragleave', () => editor.classList.remove('drag-over'));
+    editor.addEventListener('drop', e => {
         e.preventDefault();
-        textarea.classList.remove('drag-over');
+        editor.classList.remove('drag-over');
         const text = e.dataTransfer.getData('text/plain');
-        const start = textarea.selectionStart;
-        const end = textarea.selectionEnd;
-        const val = textarea.value;
-        const insertText = val ? `\n- ${text}` : `- ${text}`;
-        textarea.value = val.substring(0, start) + insertText + val.substring(end);
-        triggerAutoSave(prefix, 'plan'); // NEW: Save after dropping a note
+        
+        // Attempt to set the text cursor exactly where the user dropped the note
+        if (document.caretRangeFromPoint) {
+            const range = document.caretRangeFromPoint(e.clientX, e.clientY);
+            const sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        }
+        
+        // Insert the text as a bullet point safely into the HTML
+        document.execCommand('insertText', false, `- ${text}\n`);
+        triggerAutoSave(prefix, 'plan'); 
     });
 
     boxWrapper.appendChild(header);
-    boxWrapper.appendChild(textarea);
+    boxWrapper.appendChild(editor);
     container.appendChild(boxWrapper);
 }
 
@@ -1041,12 +1048,12 @@ async function savePlan(prefix, isSilent = false) {
         if (!isSilent) alert("Sign in and select a question first.");
         return;
     }
-    const intro = document.getElementById(`${prefix}-struct-intro`).value;
-    const conc = document.getElementById(`${prefix}-struct-conc`).value;
+    const intro = document.getElementById(`${prefix}-struct-intro`).innerHTML; // Changed to innerHTML
+    const conc = document.getElementById(`${prefix}-struct-conc`).innerHTML; // Changed to innerHTML
     const boxes = [];
     document.querySelectorAll(`#${prefix}-struct-boxes .plan-box-container`).forEach(box => {
         const type = box.classList.contains('agree') ? 'agree' : 'disagree';
-        const text = box.querySelector('textarea').value;
+        const text = box.querySelector('.rich-textarea').innerHTML; // Changed selector and innerHTML
         boxes.push({ type, text });
     });
 
