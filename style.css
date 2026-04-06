@@ -109,6 +109,8 @@ button:hover { background: var(--accent); }
     background: #fff;
     line-height: 1.5 !important;
     overflow-y: auto;
+    white-space: pre-wrap; /* NEW: Forces the div to respect \n line breaks */
+    word-wrap: break-word; /* NEW: Prevents long words from overflowing the box */
 }
 .rich-textarea:empty:before {
     content: attr(placeholder);
