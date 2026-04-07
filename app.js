@@ -96,7 +96,7 @@ const spainNotesData = {
         { type: "bullet", text: "Marquis of Villena forced to forfeit Escalona." },
         { type: "bullet", text: "Military orders (Santiago, Calatrava, Alcantara) absorbed into crown by 1501. Santiago alone had 80 encomiendas. Vast revenues." },
         { type: "bullet", text: "Mayorazgos were promoted by the 1505 Cortes of Toro. Prevented the sale and division of estates." },
-        { type: "bullet", text: "3% of the population owned 97% of the land." }
+        { type: "bullet", text: "3% of the population owned 97% of the land." },
         { type: "bullet", text: "Grandees: 15 families owned 50% of the land. Socially dominant, but excluded from the Royal Council." }
     ],
     "Ferdinand and Isabella: Santa Hermandad": [
