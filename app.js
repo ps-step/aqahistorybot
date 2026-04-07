@@ -133,7 +133,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[Isabella]] x Manuel I in [[1497]]." },
         { type: "bullet", text: "[[Maria]] x Manuel I in [[1500]]." },
         { type: "bullet", text: "[[Catherine]] x Arthur in [[1501]]." },
-        { type: "bullet", text: "[[Catherina]] x Henry VIII in [[1509]]." },
+        { type: "bullet", text: "[[Catherine]] x Henry VIII in [[1509]]." },
         { type: "bullet", text: "Columbus voyage in [[1492]] - cost only [[2m maravedis]]." },
         { type: "bullet", text: "[[1512 Laws of Burgos]] - declared natives free, mandated conversion to Catholicism, and regulated labor, though they were poorly enforced and legalised the [[encomienda]] system." }
     ],
