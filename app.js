@@ -206,7 +206,7 @@ const spainNotesData = {
     ],
     "Charles V: New World": [
         { type: "bullet", text: "[[1519-21]]: [[Cortes]] with 600 men conquered the [[Aztecs]]." },
-        { type: "bullet", text: "[[1532]]: [[Pizzaro]] (pig farmer) with 160 men conquered [[Incas]] in Peru." },
+        { type: "bullet", text: "[[1532]]: [[Pizarro]] (pig farmer) with 160 men conquered [[Incas]] in Peru." },
         { type: "bullet", text: "[[1535]]: Viceroyalty of [[New Spain]] (Mexico) established." },
         { type: "bullet", text: "[[1542]]: Viceroyalty of [[Peru]] established." },
         { type: "bullet", text: "[[1542: New Laws]] tried to protect Indians, but with limited influence." },
