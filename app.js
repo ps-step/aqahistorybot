@@ -96,12 +96,13 @@ const spainNotesData = {
         { type: "bullet", text: "Marquis of Villena forced to forfeit Escalona." },
         { type: "bullet", text: "Military orders (Santiago, Calatrava, Alcantara) absorbed into crown by 1501. Santiago alone had 80 encomiendas. Vast revenues." },
         { type: "bullet", text: "Mayorazgos were promoted by the 1505 Cortes of Toro. Prevented the sale and division of estates." },
-        { type: "bullet", text: "Grandees: 300 families owned 15% of land. Socially dominant, but excluded from the Royal Council." }
+        { type: "bullet", text: "3% of the population owned 97% of the land." }
+        { type: "bullet", text: "Grandees: 15 families owned 50% of the land. Socially dominant, but excluded from the Royal Council." }
     ],
     "Ferdinand and Isabella: Santa Hermandad": [
         { type: "bullet", text: "Established at 1476 Cortes of Madrigal." },
         { type: "bullet", text: "Peacekeeping force for rural towns with 50+ inhabitants." },
-        { type: "bullet", text: "Coordinated by Junta General. Treasurer was Abraham Sener, a Jewish tax farmer: allegations of corruption." },
+        { type: "bullet", text: "Coordinated by Junta General. Treasurer was Abraham Seneor, a Jewish tax farmer: allegations of corruption." },
         { type: "bullet", text: "Summary powers to enforce justice, such as death by arrow for highway robbery." },
         { type: "bullet", text: "Militia of 3000 men in 1476. This rose to 10,000 by 1490." },
         { type: "bullet", text: "Provided 300 million maravedis and 16,000 men to the Granada war." },
@@ -116,7 +117,7 @@ const spainNotesData = {
         { type: "bullet", text: "Muslims: Archbishop of Granada, Talavera, promoted teaching and religious education. But 1499 intervention by Cisneros used forced baptisms. This led to the 1499-1501 Alpujarras revolt. 1502 decree said Castilian Muslims can choose conversion or exile." },
         { type: "bullet", text: "Cisneros (archbishop of Toledo) was highly infliuential. Made cardinal in 1507, financed Uni of Alcala in 1508, and capture of Oran in 1509." },
         { type: "bullet", text: "Assassination of an inquisitor in Zaragoza in 1485 increased power of Inquisition, led to 15 mass auto de fes, wealth confiscations of prominent figures eg. Francisco de Santa Fe." },
-        { type: "bullet", text: "Church control: 1486 Patronato Real gave monarchs the right to appoint bishops." },
+        { type: "bullet", text: "Church control: 1486 Patronato Real gave monarchs the right to appoint bishops in Granada." },
         { type: "bullet", text: "In 1492 Antonio de Nebrija published the first Castilian grammar, and said \"language is the instrument of empire\". Tool for conversion of subjugated peoples." }
     ],
     "Ferdinand and Isabella: Foreign and Dynastic Policy": [
@@ -128,10 +129,11 @@ const spainNotesData = {
         { type: "bullet", text: "Navarre: Succession crisis exploited to annexation in 1512. Ferdinand as king. Respected fueros." },
         { type: "bullet", text: "1505 Treaty of Blois: Ferdinand married Germaine de Foix, niece of French king, for securing of Naples and Aragon from France." },
         { type: "bullet", text: "Joanna x Philip the Handsome in 1496." },
-        { type: "bullet", text: "Isabella x Manuel I in 1490." },
+        { type: "bullet", text: "Isabella x Afonso in 1490." },
+        { type: "bullet", text: "Isabella x Manuel I in 1497." },
         { type: "bullet", text: "Maria x Manuel I in 1500." },
         { type: "bullet", text: "Catherine x Arthur in 1501." },
-        { type: "bullet", text: "Catherina x Henry VIIII in 1509." },
+        { type: "bullet", text: "Catherina x Henry VIII in 1509." },
         { type: "bullet", text: "Columbus voyage in 1492 - cost only 2m maravedis." },
         { type: "bullet", text: "1512 Laws of Burgos - declared natives free, mandated conversion to Catholicism, and regulated labor, though they were poorly enforced and legalised the encomienda system," }
     ],
@@ -139,7 +141,7 @@ const spainNotesData = {
         { type: "bullet", text: "Revenue: 800k reales in 1470 to 22m reales in 1504." },
         { type: "bullet", text: "The 10% sales tax - alcabala - was the biggest contributor to revenue." },
         { type: "bullet", text: "Currency: 1497 pragmatica standardised 375 maravedis as 1 ducat, excelente, principat." },
-        { type: "bullet", text: "Mesta: 2.8 million sheep in 1450. Protected by the crown. Special interest represented on the royal council. Lack of agriculture led to reliance on imports and wheat shortage by 1506. Tasa (price fix) on grain in 1502 tried to fight this." },
+        { type: "bullet", text: "Mesta: 2.8 million sheep in 1450. Protected by the crown. Special interest represented on the royal council. Lack of agriculture led to reliance on imports and wheat shortage by 1506. 1501 Law of Leases allowed Mesta to rent land in perpetuity at the original price. Tasa (price fix) on grain in 1502 tried to fight this." },
         { type: "bullet", text: "Debt: Juros (10% interest bonds) given out. Repayment reached 131 million maravedis by 1516." },
         { type: "bullet", text: "1494 Consulado of Burgos gave the city a monopoly on the wool trade." },
         { type: "bullet", text: "1503 Casa de Contratacion in Seville controlled trade, shipping schedules, etc... Seville given sole right to New World. Trade volume increased from 300 toneladas in 1504 to 5000 toneladas in 1516." },
