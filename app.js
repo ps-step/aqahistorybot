@@ -212,7 +212,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[1542: New Laws]] tried to protect Indians, but with limited influence." },
         { type: "bullet", text: "[[1544-48]]: [[Gonzalo Pizarro]] rebellion in Peru against New Laws." },
         { type: "bullet", text: "[[1545]]: [[Potosi]]." },
-        { type: "bullet", text: "[[1546]]: [[Zacatecas]]." },
+        { type: "bullet", text: "[[1548]]: [[Zacatecas]] (formal mining operations began)." },
         { type: "bullet", text: "[[1554]]: [[Mercury amalgamation]]. New process to extract silver ore." },
         { type: "bullet", text: "1550s: [[Royal fifth]] made up [[15%]] of crown income." }
     ],
