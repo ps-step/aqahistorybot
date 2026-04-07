@@ -224,7 +224,7 @@ const spainNotesData = {
         { type: "bullet", text: "Uni of [[Alcala]] became centre of religious innovation eg. [[1522 Polyglot Bible]]." },
         { type: "bullet", text: "[[1523]] Papal Bull expanded [[1486 Patronato Real]] to all of Spain." },
         { type: "bullet", text: "Poor Papal relations. [[1527 Sack of Rome]] by unpaid mercenaries captured the Pope." },
-        { type: "bullet", text: "[[1534 Ignatius Loyala]] established [[Jesuits]]. Observant." },
+        { type: "bullet", text: "[[1534 Ignatius Loyola]] established [[Jesuits]]. Observant." },
         { type: "bullet", text: "[[1545-63 Council of Trent]] affirmed Latin Vulgate, Catholic doctrine, etc." },
         { type: "bullet", text: "In retirement, Charles became religious fanatic and advocated extreme violence against protestants, eg. [[Agustin de Cazalla]] (court preacher) arrested and burned in [[1558]], alleged to lead secret Protestant cell." },
         { type: "bullet", text: "[[1521 Diet of Worms]] against Luther presided over by Charles." },
