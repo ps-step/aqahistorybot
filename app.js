@@ -80,315 +80,315 @@ const wotrCats = ["1450-1458", "1458-1461", "1461-1469", "1469-1471", "1471-1483
 // --- SPAIN NOTES DATA (MUST BE DEFINED BEFORE UI SETUP) ---
 const spainNotesData = {
     "Ferdinand and Isabella: Royal Authority and Administration": [
-        { type: "bullet", text: "Personal monarchy: Isabella travelled over 2000km per year to personally oversee justice and suppress dissent." },
-        { type: "bullet", text: "The 1480 Cortes of Toledo used Acts of Resumption to reclaim royal lands and revenues lost since 1464. Older gains were protected." },
-        { type: "bullet", text: "Corregidores were royal governors in towns. In 1494, there were 54. By 1516, there were 86." },
-        { type: "bullet", text: "The Royal Council was professionalised in a 1493 pragmatica. Ten years' legal training was required to sit on the council." },
-        { type: "bullet", text: "Secretaries gained status. Hernando de Zafra rose from humble origins to 100k maravedis salary and he negotiated the surrender of Granada." },
-        { type: "bullet", text: "The fueros and separate cortes of Aragon were retained. The 1494 Cortes of Aragon appointed viceorys." },
-        { type: "bullet", text: "The Castilian cortes was made up of nobles and representatives from 17 towns (plus Granada in 1492)." },
-        { type: "bullet", text: "The Castilian cortes did not meet from 1482 to 1498." }
+        { type: "bullet", text: "[[Personal monarchy]]: Isabella travelled over [[2000km]] per year to personally oversee justice and suppress dissent." },
+        { type: "bullet", text: "The [[1480]] Cortes of [[Toledo]] used [[Acts of Resumption]] to reclaim royal lands and revenues lost since [[1464]]. Older gains were protected." },
+        { type: "bullet", text: "[[Corregidores]] were royal governors in towns. In [[1494]], there were [[54]]. By [[1516]], there were [[86]]." },
+        { type: "bullet", text: "The [[Royal Council]] was professionalised in a [[1493]] pragmatica. [[Ten years']] legal training was required to sit on the council." },
+        { type: "bullet", text: "Secretaries gained status. [[Hernando de Zafra]] rose from humble origins to [[100k maravedis]] salary and he negotiated the surrender of [[Granada]]." },
+        { type: "bullet", text: "The [[fueros]] and separate cortes of Aragon were retained. The [[1494]] Cortes of Aragon appointed [[viceroys]]." },
+        { type: "bullet", text: "The Castilian cortes was made up of nobles and representatives from [[17]] towns (plus [[Granada]] in [[1492]])." },
+        { type: "bullet", text: "The Castilian cortes did not meet from [[1482]] to [[1498]]." }
     ],
     "Ferdinand and Isabella: Securing the Throne and Managing the Nobility": [
-        { type: "bullet", text: "War of Succession: Isabella was kept captive by her guardian, the Marquis of Villena. Joanna Beltraneja threatened the crown. The Archbishop of Toledo supported Joanna with 19,000 men and 20 castles. Isabella won at 1476 Battle of Toro. Ended by 1479 Treaty of Alcacovas. Castile granted everything north of and including Canaries. Beltraneja was sent to a convent." },
-        { type: "bullet", text: "Rewards: Alliances with grandees such as Mendozas, Velascos. New titles established like 1475 Duchy of Infantado, 1492 Duchy of Frias." },
-        { type: "bullet", text: "Adulterine castles were turned into Isabelline palaces." },
-        { type: "bullet", text: "Marquis of Villena forced to forfeit Escalona." },
-        { type: "bullet", text: "Military orders (Santiago, Calatrava, Alcantara) absorbed into crown by 1501. Santiago alone had 80 encomiendas. Vast revenues." },
-        { type: "bullet", text: "Mayorazgos were promoted by the 1505 Cortes of Toro. Prevented the sale and division of estates." },
-        { type: "bullet", text: "3% of the population owned 97% of the land." },
-        { type: "bullet", text: "Grandees: 15 families owned 50% of the land. Socially dominant, but excluded from the Royal Council." }
+        { type: "bullet", text: "War of Succession: Isabella was kept captive by her guardian, the [[Marquis of Villena]]. [[Joanna Beltraneja]] threatened the crown. The Archbishop of [[Toledo]] supported Joanna with [[19,000]] men and [[20]] castles. Isabella won at [[1476]] Battle of [[Toro]]. Ended by [[1479]] Treaty of [[Alcacovas]]. Castile granted everything north of and including [[Canaries]]. Beltraneja was sent to a [[convent]]." },
+        { type: "bullet", text: "Rewards: Alliances with grandees such as [[Mendozas]], [[Velascos]]. New titles established like [[1475]] Duchy of [[Infantado]], [[1492]] Duchy of [[Frias]]." },
+        { type: "bullet", text: "[[Adulterine]] castles were turned into Isabelline palaces." },
+        { type: "bullet", text: "Marquis of Villena forced to forfeit [[Escalona]]." },
+        { type: "bullet", text: "Military orders ([[Santiago]], [[Calatrava]], [[Alcantara]]) absorbed into crown by [[1501]]. Santiago alone had [[80]] encomiendas. Vast revenues." },
+        { type: "bullet", text: "[[Mayorazgos]] were promoted by the [[1505]] Cortes of [[Toro]]. Prevented the sale and division of estates." },
+        { type: "bullet", text: "[[3%]] of the population owned [[97%]] of the land." },
+        { type: "bullet", text: "Grandees: [[15]] families owned [[50%]] of the land. Socially dominant, but excluded from the [[Royal Council]]." }
     ],
     "Ferdinand and Isabella: Santa Hermandad": [
-        { type: "bullet", text: "Established at 1476 Cortes of Madrigal." },
-        { type: "bullet", text: "Peacekeeping force for rural towns with 50+ inhabitants." },
-        { type: "bullet", text: "Coordinated by Junta General. Treasurer was Abraham Seneor, a Jewish tax farmer: allegations of corruption." },
-        { type: "bullet", text: "Summary powers to enforce justice, such as death by arrow for highway robbery." },
-        { type: "bullet", text: "Militia of 3000 men in 1476. This rose to 10,000 by 1490." },
-        { type: "bullet", text: "Provided 300 million maravedis and 16,000 men to the Granada war." },
-        { type: "bullet", text: "Central organisation disbanded in 1498 to appease towns (too expensive)." }
+        { type: "bullet", text: "Established at [[1476]] Cortes of [[Madrigal]]." },
+        { type: "bullet", text: "Peacekeeping force for rural towns with [[50+]] inhabitants." },
+        { type: "bullet", text: "Coordinated by [[Junta General]]. Treasurer was [[Abraham Seneor]], a Jewish tax farmer: allegations of corruption." },
+        { type: "bullet", text: "Summary powers to enforce justice, such as [[death by arrow]] for highway robbery." },
+        { type: "bullet", text: "Militia of [[3000]] men in [[1476]]. This rose to [[10,000]] by [[1490]]." },
+        { type: "bullet", text: "Provided [[300 million maravedis]] and [[16,000]] men to the Granada war." },
+        { type: "bullet", text: "Central organisation disbanded in [[1498]] to appease towns (too expensive)." }
     ],
     "Ferdinand and Isabella: Religious Policy": [
-        { type: "bullet", text: "Inquisition established by Papal Bull in 1478 to target converso heresy. 700 executed in Seville from 1481-88. 99.3% of trials in Barcelona in 1505 of Jewish origin." },
-        { type: "bullet", text: "Jews never really liked. Already long-standing Jewish districts (aljamas) in cities. 1476 pragmatica forbade all Jews from Bilbao." },
-        { type: "bullet", text: "Changed curriculum of Salamanca University in 1482 to include limpieze de sangre." },
-        { type: "bullet", text: "March 1492 Alhambra decree told all Jews to convert or leave by July. Estimates of exodus range from 40,000 to 300,000. Loss of professionals (eg. silk) but short term gain in confiscated property eg. gold and silver which Jews weren't allowed to take." },
-        { type: "bullet", text: "Granada War was framed as crusade and thus funded by the cruzada tax which brought in 800m maravedis from 1484-92." },
-        { type: "bullet", text: "Muslims: Archbishop of Granada, Talavera, promoted teaching and religious education. But 1499 intervention by Cisneros used forced baptisms. This led to the 1499-1501 Alpujarras revolt. 1502 decree said Castilian Muslims can choose conversion or exile." },
-        { type: "bullet", text: "Cisneros (archbishop of Toledo) was highly infliuential. Made cardinal in 1507, financed Uni of Alcala in 1508, and capture of Oran in 1509." },
-        { type: "bullet", text: "Assassination of an inquisitor in Zaragoza in 1485 increased power of Inquisition, led to 15 mass auto de fes, wealth confiscations of prominent figures eg. Francisco de Santa Fe." },
-        { type: "bullet", text: "Church control: 1486 Patronato Real gave monarchs the right to appoint bishops in Granada." },
-        { type: "bullet", text: "In 1492 Antonio de Nebrija published the first Castilian grammar, and said \"language is the instrument of empire\". Tool for conversion of subjugated peoples." }
+        { type: "bullet", text: "Inquisition established by Papal Bull in [[1478]] to target converso heresy. [[700]] executed in [[Seville]] from 1481-88. [[99.3%]] of trials in Barcelona in 1505 of Jewish origin." },
+        { type: "bullet", text: "Jews never really liked. Already long-standing Jewish districts ([[aljamas]]) in cities. [[1476]] pragmatica forbade all Jews from Bilbao." },
+        { type: "bullet", text: "Changed curriculum of [[Salamanca]] University in [[1482]] to include [[limpieza de sangre]]." },
+        { type: "bullet", text: "[[March 1492]] Alhambra decree told all Jews to convert or leave by July. Estimates of exodus range from [[40,000]] to [[300,000]]. Loss of professionals (eg. silk) but short term gain in confiscated property eg. gold and silver which Jews weren't allowed to take." },
+        { type: "bullet", text: "Granada War was framed as crusade and thus funded by the [[cruzada]] tax which brought in [[800m maravedis]] from 1484-92." },
+        { type: "bullet", text: "Muslims: Archbishop of Granada, [[Talavera]], promoted teaching and religious education. But [[1499]] intervention by [[Cisneros]] used forced baptisms. This led to the [[1499-1501]] Alpujarras revolt. [[1502]] decree said Castilian Muslims can choose conversion or exile." },
+        { type: "bullet", text: "[[Cisneros]] (archbishop of Toledo) was highly infliuential. Made cardinal in [[1507]], financed Uni of [[Alcala]] in [[1508]], and capture of [[Oran]] in [[1509]]." },
+        { type: "bullet", text: "Assassination of an inquisitor in [[Zaragoza]] in [[1485]] increased power of Inquisition, led to [[15]] mass auto de fes, wealth confiscations of prominent figures eg. [[Francisco de Santa Fe]]." },
+        { type: "bullet", text: "Church control: [[1486 Patronato Real]] gave monarchs the right to appoint bishops in Granada." },
+        { type: "bullet", text: "In [[1492 Antonio de Nebrija]] published the first Castilian grammar, and said \"language is the instrument of [[empire]]\". Tool for conversion of subjugated peoples." }
     ],
     "Ferdinand and Isabella: Foreign and Dynastic Policy": [
-        { type: "bullet", text: "France: 1493 Treaty of Barcelona recovered Cerdagne, Rousillion." },
-        { type: "bullet", text: "Italy: Gonzalo de Cordoba 'the Grand Captain' won victors at Cerignola and Garigliano 1503. Ferdinand as king of Naples by 1504." },
-        { type: "bullet", text: "Diplomacy: First resident ambassadors in London in 1487. 1489 Treaty of Medina del Campo secured English alliance w/ marriages." },
-        { type: "bullet", text: "Atlantic: 1479 Treaty of Alcacovas secured Canaries, conquered by 1496. 1494 Treaty of Tordesillas divided the globe." },
-        { type: "bullet", text: "North Africa: Presidios were established. 1497 Melilla, 1505 Mers-el-Kebir, 1509 Oran." },
-        { type: "bullet", text: "Navarre: Succession crisis exploited to annexation in 1512. Ferdinand as king. Respected fueros." },
-        { type: "bullet", text: "1505 Treaty of Blois: Ferdinand married Germaine de Foix, niece of French king, for securing of Naples and Aragon from France." },
-        { type: "bullet", text: "Joanna x Philip the Handsome in 1496." },
-        { type: "bullet", text: "Isabella x Afonso in 1490." },
-        { type: "bullet", text: "Isabella x Manuel I in 1497." },
-        { type: "bullet", text: "Maria x Manuel I in 1500." },
-        { type: "bullet", text: "Catherine x Arthur in 1501." },
-        { type: "bullet", text: "Catherina x Henry VIII in 1509." },
-        { type: "bullet", text: "Columbus voyage in 1492 - cost only 2m maravedis." },
-        { type: "bullet", text: "1512 Laws of Burgos - declared natives free, mandated conversion to Catholicism, and regulated labor, though they were poorly enforced and legalised the encomienda system," }
+        { type: "bullet", text: "France: [[1493 Treaty of Barcelona]] recovered Cerdagne, Rousillion." },
+        { type: "bullet", text: "Italy: [[Gonzalo de Cordoba]] 'the Grand Captain' won victors at Cerignola and Garigliano [[1503]]. Ferdinand as king of Naples by [[1504]]." },
+        { type: "bullet", text: "Diplomacy: First resident ambassadors in London in [[1487]]. [[1489 Treaty of Medina del Campo]] secured English alliance w/ marriages." },
+        { type: "bullet", text: "Atlantic: [[1479 Treaty of Alcacovas]] secured Canaries, conquered by [[1496]]. [[1494 Treaty of Tordesillas]] divided the globe." },
+        { type: "bullet", text: "North Africa: [[Presidios]] were established. [[1497]] Melilla, [[1505]] Mers-el-Kebir, [[1509]] Oran." },
+        { type: "bullet", text: "Navarre: Succession crisis exploited to annexation in [[1512]]. Ferdinand as king. Respected fueros." },
+        { type: "bullet", text: "[[1505 Treaty of Blois]]: Ferdinand married [[Germaine de Foix]], niece of French king, for securing of Naples and Aragon from France." },
+        { type: "bullet", text: "[[Joanna]] x Philip the Handsome in [[1496]]." },
+        { type: "bullet", text: "[[Isabella]] x Afonso in [[1490]]." },
+        { type: "bullet", text: "[[Isabella]] x Manuel I in [[1497]]." },
+        { type: "bullet", text: "[[Maria]] x Manuel I in [[1500]]." },
+        { type: "bullet", text: "[[Catherine]] x Arthur in [[1501]]." },
+        { type: "bullet", text: "[[Catherina]] x Henry VIII in [[1509]]." },
+        { type: "bullet", text: "Columbus voyage in [[1492]] - cost only [[2m maravedis]]." },
+        { type: "bullet", text: "[[1512 Laws of Burgos]] - declared natives free, mandated conversion to Catholicism, and regulated labor, though they were poorly enforced and legalised the [[encomienda]] system." }
     ],
     "Ferdinand and Isabella: Economics": [
-        { type: "bullet", text: "Revenue: 800k reales in 1470 to 22m reales in 1504." },
-        { type: "bullet", text: "The 10% sales tax - alcabala - was the biggest contributor to revenue." },
-        { type: "bullet", text: "Currency: 1497 pragmatica standardised 375 maravedis as 1 ducat, excelente, principat." },
-        { type: "bullet", text: "Mesta: 2.8 million sheep in 1450. Protected by the crown. Special interest represented on the royal council. Lack of agriculture led to reliance on imports and wheat shortage by 1506. 1501 Law of Leases allowed Mesta to rent land in perpetuity at the original price. Tasa (price fix) on grain in 1502 tried to fight this." },
-        { type: "bullet", text: "Debt: Juros (10% interest bonds) given out. Repayment reached 131 million maravedis by 1516." },
-        { type: "bullet", text: "1494 Consulado of Burgos gave the city a monopoly on the wool trade." },
-        { type: "bullet", text: "1503 Casa de Contratacion in Seville controlled trade, shipping schedules, etc... Seville given sole right to New World. Trade volume increased from 300 toneladas in 1504 to 5000 toneladas in 1516." },
-        { type: "bullet", text: "Tolls: 1480 exemption for merchants. 1497 exemption for Carter's guild. Corruption. Nobles took tolls but didn't fix bridges." },
-        { type: "bullet", text: "1511 enquiry found roads in poor quality, 12 bridges swept away and not rebuilt." },
-        { type: "bullet", text: "Expulsion of Jews harmed silk and cloth industries despite short term gain." },
-        { type: "bullet", text: "Aragon contributed less than 20% of what Castile contributes." }
+        { type: "bullet", text: "Revenue: [[800k reales]] in 1470 to [[22m reales]] in 1504." },
+        { type: "bullet", text: "The 10% sales tax - [[alcabala]] - was the biggest contributor to revenue." },
+        { type: "bullet", text: "Currency: [[1497]] pragmatica standardised [[375 maravedis]] as 1 ducat, excelente, principat." },
+        { type: "bullet", text: "Mesta: [[2.8 million]] sheep in 1450. Protected by the crown. Special interest represented on the royal council. Lack of agriculture led to reliance on imports and wheat shortage by [[1506]]. [[1501 Law of Leases]] allowed Mesta to rent land in perpetuity at the original price. [[Tasa]] (price fix) on grain in [[1502]] tried to fight this." },
+        { type: "bullet", text: "Debt: [[Juros]] (10% interest bonds) given out. Repayment reached [[131 million maravedis]] by 1516." },
+        { type: "bullet", text: "[[1494 Consulado of Burgos]] gave the city a monopoly on the wool trade." },
+        { type: "bullet", text: "[[1503 Casa de Contratacion]] in Seville controlled trade, shipping schedules, etc... Seville given sole right to New World. Trade volume increased from [[300 toneladas]] in 1504 to [[5000 toneladas]] in 1516." },
+        { type: "bullet", text: "Tolls: [[1480]] exemption for merchants. [[1497]] exemption for Carter's guild. Corruption. Nobles took tolls but didn't fix bridges." },
+        { type: "bullet", text: "[[1511]] enquiry found roads in poor quality, [[12]] bridges swept away and not rebuilt." },
+        { type: "bullet", text: "Expulsion of Jews harmed [[silk]] and cloth industries despite short term gain." },
+        { type: "bullet", text: "Aragon contributed less than [[20%]] of what Castile contributes." }
     ],
     "Charles V: Consolidation of Royal Authority and Revolts": [
-        { type: "bullet", text: "Accession: \"foreign king\". Resentment at early Burgundian appointments eg. Chievres placed his 20 y.o. nephew as Archbishop of Toledo." },
-        { type: "bullet", text: "1518-19 Cortes: promised to learn Castilian, respect fueros, etc." },
-        { type: "bullet", text: "1519 HRE election: Cost 852k florins. Partially funded by servicios from Cortes of Santiago and Coruna in exchange for Hispanization." },
-        { type: "bullet", text: "1520-21 Comuneros: Urban uprising due to high taxes, foreigners, corregidor abuses. Toledo, Segovia. Led by Juan de Padilla. Radicalised by burning of Medina del Campo 1520 on orders of Charles. Failed to get Joanna the Mad's support." },
-        { type: "bullet", text: "April 1521 Battle of Villalar: Revolt crushed by nobles. Leaders executed. Last strongholds fell in October 1521. 22 executed." },
-        { type: "bullet", text: "1519-21 Germania: Merchants and artisan guilds who held grievances over economic hardship. Limited to Valencia. Council of 13 germanias. Turned radical by Vicente Peris. Attacks on noble estates, forced baptism of mudejars. Main revolt stopped in 1521, holdouts until 1522 by \"The Hidden\" who tuned revolt more spiritual. Majorca until 1523." },
-        { type: "bullet", text: "Resolution: Hispanization. Learned Castilian, increased Spanish appointments, married Isabella in 1526." },
-        { type: "bullet", text: "Returned in 1522 with 4000 mercenaries." },
-        { type: "bullet", text: "All cortes deputies required to have poderes (full powers)." }
+        { type: "bullet", text: "Accession: \"foreign king\". Resentment at early Burgundian appointments eg. [[Chievres]] placed his 20 y.o. nephew as Archbishop of [[Toledo]]." },
+        { type: "bullet", text: "[[1518-19]] Cortes: promised to learn Castilian, respect fueros, etc." },
+        { type: "bullet", text: "[[1519]] HRE election: Cost [[852k florins]]. Partially funded by servicios from Cortes of [[Santiago]] and [[Coruna]] in exchange for Hispanization." },
+        { type: "bullet", text: "[[1520-21 Comuneros]]: Urban uprising due to high taxes, foreigners, corregidor abuses. Toledo, Segovia. Led by [[Juan de Padilla]]. Radicalised by burning of [[Medina del Campo]] 1520 on orders of Charles. Failed to get [[Joanna the Mad's]] support." },
+        { type: "bullet", text: "April [[1521]] Battle of [[Villalar]]: Revolt crushed by nobles. Leaders executed. Last strongholds fell in October 1521. [[22]] executed." },
+        { type: "bullet", text: "[[1519-21 Germania]]: Merchants and artisan guilds who held grievances over economic hardship. Limited to [[Valencia]]. Council of 13 germanias. Turned radical by [[Vicente Peris]]. Attacks on noble estates, forced baptism of mudejars. Main revolt stopped in [[1521]], holdouts until 1522 by \"The Hidden\" who tuned revolt more spiritual. Majorca until [[1523]]." },
+        { type: "bullet", text: "Resolution: Hispanization. Learned Castilian, increased Spanish appointments, married [[Isabella]] in [[1526]]." },
+        { type: "bullet", text: "Returned in [[1522]] with [[4000]] mercenaries." },
+        { type: "bullet", text: "All cortes deputies required to have [[poderes]] (full powers)." }
     ],
     "Charles V: Government and Administration": [
-        { type: "bullet", text: "Conciliar system exanded. 1522 war, 1523 finance, 1524 indies, 1526 state. Los Cobos secretary of finance for 30yrs." },
-        { type: "bullet", text: "Consulta standardised conciliar system with council debata leading to consulta, approved or rejected by the king." },
-        { type: "bullet", text: "Mercurino Gattinara grand chancellor until 1530. No new grand chancellor appointed, split between los Cobos (finance) and Granvelle (foreign policy)." },
-        { type: "bullet", text: "Cortes met 15 times. 1538 Cortes of Toledo nobles refused sisa (food tax). Thereafter, only town deputies summoned." },
-        { type: "bullet", text: "1523: Pope granted permanent mastership of the military oders." },
-        { type: "bullet", text: "1543: State archive established at Simancas." },
-        { type: "bullet", text: "1543: Philip as regent, aged 16. Guided by junta including Cardinal Tavera, de los Cobos. Lasted for 14yrs during Charles' absence." },
-        { type: "bullet", text: "Itinerant court continued." },
-        { type: "bullet", text: "Letrados dominated." }
+        { type: "bullet", text: "Conciliar system exanded. [[1522]] war, [[1523]] finance, [[1524]] indies, [[1526]] state. [[Los Cobos]] secretary of finance for [[30yrs]]." },
+        { type: "bullet", text: "[[Consulta]] standardised conciliar system with council debata leading to consulta, approved or rejected by the king." },
+        { type: "bullet", text: "[[Mercurino Gattinara]] grand chancellor until [[1530]]. No new grand chancellor appointed, split between [[los Cobos]] (finance) and [[Granvelle]] (foreign policy)." },
+        { type: "bullet", text: "Cortes met [[15]] times. [[1538]] Cortes of Toledo nobles refused [[sisa]] (food tax). Thereafter, only town deputies summoned." },
+        { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the military oders." },
+        { type: "bullet", text: "[[1543]]: State archive established at [[Simancas]]." },
+        { type: "bullet", text: "[[1543]]: Philip as regent, aged [[16]]. Guided by junta including Cardinal [[Tavera]], de los Cobos. Lasted for [[14yrs]] during Charles' absence." },
+        { type: "bullet", text: "[[Itinerant]] court continued." },
+        { type: "bullet", text: "[[Letrados]] dominated." }
     ],
     "Charles V: Foreign Policy": [
-        { type: "bullet", text: "\"Plus Oultre\" motto." },
-        { type: "bullet", text: "France: Francis I captured at 1525 Battle of Pavia. 1529 Peace of Cambrai confirmed Spanish dominance in Italy." },
-        { type: "bullet", text: "Portugal: 1529 Treaty of Zaragoza sold Moluccas claim to Portugal for 350k ducats." },
-        { type: "bullet", text: "HRE: 1532 Peace of Nuremberg was a temporary truce with Lutherans so Charles could focus on Ottoman threat. 1547 Battle of Muhlberg defeated Schmalkaldic League but forced into embarrasing 1555 Peace of Augsburg." },
-        { type: "bullet", text: "Ottomans: 1529 Siege of Vienna was victory over 100k Ottomans. Charles led 1535 Tunis expedition with 60k men. But 1541 Algiers was a catastophic failure with 150 ships lost." },
-        { type: "bullet", text: "England: 1522 Treaty of Windsor continued English alliance, 1554 Philip x Mary Tudor." }
+        { type: "bullet", text: "\"[[Plus Oultre]]\" motto." },
+        { type: "bullet", text: "France: [[Francis I]] captured at [[1525 Battle of Pavia]]. [[1529 Peace of Cambrai]] confirmed Spanish dominance in Italy." },
+        { type: "bullet", text: "Portugal: [[1529 Treaty of Zaragoza]] sold [[Moluccas]] claim to Portugal for [[350k ducats]]." },
+        { type: "bullet", text: "HRE: [[1532 Peace of Nuremberg]] was a temporary truce with Lutherans so Charles could focus on Ottoman threat. [[1547 Battle of Muhlberg]] defeated Schmalkaldic League but forced into embarrasing [[1555 Peace of Augsburg]]." },
+        { type: "bullet", text: "Ottomans: [[1529]] Siege of Vienna was victory over [[100k]] Ottomans. Charles led [[1535 Tunis expedition]] with [[60k]] men. But [[1541 Algiers]] was a catastophic failure with [[150]] ships lost." },
+        { type: "bullet", text: "England: [[1522 Treaty of Windsor]] continued English alliance, [[1554]] Philip x [[Mary Tudor]]." }
     ],
     "Charles V: Economics": [
-        { type: "bullet", text: "Revenue: Still mostly Castile and New World." },
-        { type: "bullet", text: "Church contributed approx. 25% of revenue." },
-        { type: "bullet", text: "1534 Cortes of Madrid established encabezamiento. Annual lump sum instead of alcabala." },
-        { type: "bullet", text: "1536-54: alcabala increased by 22% but prices by 33%. Crown real income reduced." },
-        { type: "bullet", text: "Servicios tripled in yield, became more like regular tax rather than special tax." },
-        { type: "bullet", text: "Servicio y montazgo: new tax on sheep." },
-        { type: "bullet", text: "1516-60: 11.9m ducats from Americas." },
-        { type: "bullet", text: "Partially result of Potosi 1545 and Zacatecas 1548." },
-        { type: "bullet", text: "1554 mercury amalgamation was new process to extract silver ore." },
-        { type: "bullet", text: "1543 almojarifazgo mayor: 5% customs duty on bullion via Sevilla." },
-        { type: "bullet", text: "Military spending was biggest expense." },
-        { type: "bullet", text: "Burgundian-style court cost 200k ducats/yr. with 762 people." },
-        { type: "bullet", text: "502 asientos (short-term loans) negotiated, with Charles borrowing 28.8m ducats." },
-        { type: "bullet", text: "Interest rates rose from 17.6% in the 1520s to 48.8% by the 1550s." },
-        { type: "bullet", text: "1544: massive debts of 3.1m ducats. 1000 hidalgos auctioned to raise money." },
-        { type: "bullet", text: "1540s: desperate measures eg. seizing all private treasure imported to fund Muhlberg." },
+        { type: "bullet", text: "Revenue: Still mostly [[Castile]] and [[New World]]." },
+        { type: "bullet", text: "Church contributed approx. [[25%]] of revenue." },
+        { type: "bullet", text: "[[1534]] Cortes of Madrid established [[encabezamiento]]. Annual lump sum instead of alcabala." },
+        { type: "bullet", text: "1536-54: alcabala increased by [[22%]] but prices by [[33%]]. Crown real income reduced." },
+        { type: "bullet", text: "[[Servicios]] tripled in yield, became more like regular tax rather than special tax." },
+        { type: "bullet", text: "[[Servicio y montazgo]]: new tax on sheep." },
+        { type: "bullet", text: "1516-60: [[11.9m ducats]] from Americas." },
+        { type: "bullet", text: "Partially result of [[Potosi]] 1545 and [[Zacatecas]] 1548." },
+        { type: "bullet", text: "[[1554 mercury amalgamation]] was new process to extract silver ore." },
+        { type: "bullet", text: "[[1543 almojarifazgo mayor]]: 5% customs duty on bullion via Sevilla." },
+        { type: "bullet", text: "[[Military]] spending was biggest expense." },
+        { type: "bullet", text: "Burgundian-style court cost [[200k ducats/yr.]] with [[762]] people." },
+        { type: "bullet", text: "[[502 asientos]] (short-term loans) negotiated, with Charles borrowing [[28.8m ducats]]." },
+        { type: "bullet", text: "Interest rates rose from [[17.6%]] in the 1520s to [[48.8%]] by the 1550s." },
+        { type: "bullet", text: "[[1544]]: massive debts of [[3.1m ducats]]. [[1000 hidalgos]] auctioned to raise money." },
+        { type: "bullet", text: "1540s: desperate measures eg. seizing all private treasure imported to fund [[Muhlberg]]." },
         { type: "bullet", text: "Selling public offices weakened crown jurisdiction in the long term." },
-        { type: "bullet", text: "Fuggers lent 543k florins and Welsers another 143k florins for HRE. Gained shipping and permits for Americas - Welsers colonised Venezuela." },
-        { type: "bullet", text: "Andalusia: wheat +109%, oil +197%, wine +655%. 1511-56" },
-        { type: "bullet", text: "Valladolid: wheat +44%, land +86%, wages +33%. 1511-56" },
-        { type: "bullet", text: "Scholars like Azpilcueta 1556 first to devise quantity theory of inflation." },
-        { type: "bullet", text: "1556: 37m ducats of debt. Bankrupt by 1557. Total failure." }
+        { type: "bullet", text: "[[Fuggers]] lent 543k florins and [[Welsers]] another 143k florins for HRE. Gained shipping and permits for Americas - Welsers colonised [[Venezuela]]." },
+        { type: "bullet", text: "Andalusia: wheat [[+109%]], oil [[+197%]], wine [[+655%]]. 1511-56" },
+        { type: "bullet", text: "Valladolid: wheat [[+44%]], land [[+86%]], wages [[+33%]]. 1511-56" },
+        { type: "bullet", text: "Scholars like [[Azpilcueta]] 1556 first to devise [[quantity theory of inflation]]." },
+        { type: "bullet", text: "[[1556]]: 37m ducats of debt. Bankrupt by [[1557]]. Total failure." }
     ],
     "Charles V: New World": [
-        { type: "bullet", text: "1519-21: Cortes with 600 men conquered the Aztecs." },
-        { type: "bullet", text: "1532: Pizzaro (pig farmer) with 160 men conquered Incas in Peru." },
-        { type: "bullet", text: "1535: Viceroyalty of New Spain (Mexico) established." },
-        { type: "bullet", text: "1542: Viceroyalty of Peru established." },
-        { type: "bullet", text: "1542: New Laws tried to protect Indians, but with limited influence." },
-        { type: "bullet", text: "1544-48: Gonzalo Pizarro rebellion in Peru against New Laws." },
-        { type: "bullet", text: "1545: Potosi." },
-        { type: "bullet", text: "1546: Zacatecas." },
-        { type: "bullet", text: "1554: Mercury amalgamation. New process to extract silver ore." },
-        { type: "bullet", text: "1550s: Royal fifth made up 15% of crown income." }
+        { type: "bullet", text: "[[1519-21]]: [[Cortes]] with 600 men conquered the [[Aztecs]]." },
+        { type: "bullet", text: "[[1532]]: [[Pizzaro]] (pig farmer) with 160 men conquered [[Incas]] in Peru." },
+        { type: "bullet", text: "[[1535]]: Viceroyalty of [[New Spain]] (Mexico) established." },
+        { type: "bullet", text: "[[1542]]: Viceroyalty of [[Peru]] established." },
+        { type: "bullet", text: "[[1542: New Laws]] tried to protect Indians, but with limited influence." },
+        { type: "bullet", text: "[[1544-48]]: [[Gonzalo Pizarro]] rebellion in Peru against New Laws." },
+        { type: "bullet", text: "[[1545]]: [[Potosi]]." },
+        { type: "bullet", text: "[[1546]]: [[Zacatecas]]." },
+        { type: "bullet", text: "[[1554]]: [[Mercury amalgamation]]. New process to extract silver ore." },
+        { type: "bullet", text: "1550s: [[Royal fifth]] made up [[15%]] of crown income." }
     ],
     "Charles V: Religious Policy": [
-        { type: "bullet", text: "\"Plus Oultre\" motto partially symbolised 'Herculean task' of spreading Christianity." },
-        { type: "bullet", text: "Limpieza de sangre still used to bar conversos and descendants from office." },
-        { type: "bullet", text: "Inquisition began to use tortures. 1547 new Inquisitor General (Valdes) prosecuted moral crimes eg. bigamy." },
+        { type: "bullet", text: "\"[[Plus Oultre]]\" motto partially symbolised 'Herculean task' of spreading Christianity." },
+        { type: "bullet", text: "[[Limpieza de sangre]] still used to bar conversos and descendants from office." },
+        { type: "bullet", text: "Inquisition began to use tortures. [[1547]] new Inquisitor General ([[Valdes]]) prosecuted moral crimes eg. bigamy." },
         { type: "bullet", text: "Episocpal standards increased eg. with uni training." },
-        { type: "bullet", text: "Uni of Alcala became centre of religious innovation eg. 1522 Polyglot Bible." },
-        { type: "bullet", text: "1523 Papal Bull confirmed 1486 Patronato Real." },
-        { type: "bullet", text: "Poor Papal relations. 1527 Sack of Rome by unpaid mercenaries captured the Pope." },
-        { type: "bullet", text: "1534 Ignatius Loyala established Jesuits. Observant." },
-        { type: "bullet", text: "1545-63 Council of Trent affirmed Latin Vulgate, Catholic doctrine, etc." },
+        { type: "bullet", text: "Uni of [[Alcala]] became centre of religious innovation eg. [[1522 Polyglot Bible]]." },
+        { type: "bullet", text: "[[1523]] Papal Bull confirmed [[1486 Patronato Real]]." },
+        { type: "bullet", text: "Poor Papal relations. [[1527 Sack of Rome]] by unpaid mercenaries captured the Pope." },
+        { type: "bullet", text: "[[1534 Ignatius Loyala]] established [[Jesuits]]. Observant." },
+        { type: "bullet", text: "[[1545-63 Council of Trent]] affirmed Latin Vulgate, Catholic doctrine, etc." },
         { type: "bullet", text: "In retirement, Charles became religious fanatic and advocated extreme violence against protestants." },
-        { type: "bullet", text: "1521 Diet of Worms against Luther presided over by Charles. Implicated high ranking people eg. Cazalla (court preacher)." },
-        { type: "bullet", text: "Erasmus translated to Castilian in 1526. Charles liked, but by 1533 Inquisition equated Erasmianism with Lutheranism." },
-        { type: "bullet", text: "As soon as Charles left Spain, humanists like Juan de Vergara arrested." },
-        { type: "bullet", text: "Germania revolt did forced baptims of Muslims. In 1525, Charles banned Islam in Spain. In 1526, admited to Pope conversions were not sincere." },
-        { type: "bullet", text: "1526 visit to Granada: \"27 years since their conversions and there are not even 27 Christians\"." },
-        { type: "bullet", text: "1526: 80k ducats subsidy, in other areas 20k ducats annual \"farda\" tax from Moriscos to be tolerated by Charles eg. keep traditional dress." },
-        { type: "bullet", text: "In Aragon, 60k ducats to be ignored for 40yrs (concordia) in 1528. Still suspected as \"fifth column\"." }
+        { type: "bullet", text: "[[1521 Diet of Worms]] against Luther presided over by Charles. Implicated high ranking people eg. [[Cazalla]] (court preacher)." },
+        { type: "bullet", text: "[[Erasmus]] translated to Castilian in [[1526]]. Charles liked, but by [[1533]] Inquisition equated Erasmianism with Lutheranism." },
+        { type: "bullet", text: "As soon as Charles left Spain, humanists like [[Juan de Vergara]] arrested." },
+        { type: "bullet", text: "Germania revolt did forced baptims of Muslims. In [[1525]], Charles banned Islam in Spain. In [[1526]], admited to Pope conversions were not sincere." },
+        { type: "bullet", text: "[[1526]] visit to Granada: \"[[27]] years since their conversions and there are not even [[27]] Christians\"." },
+        { type: "bullet", text: "1526: [[80k ducats]] subsidy, in other areas [[20k ducats]] annual \"[[farda]]\" tax from Moriscos to be tolerated by Charles eg. keep traditional dress." },
+        { type: "bullet", text: "In Aragon, [[60k ducats]] to be ignored for 40yrs ([[concordia]]) in [[1528]]. Still suspected as \"fifth column\"." }
     ],
     "Philip II - Government and Royal Authority": [
-        { type: "bullet", text: "Paper king: micromanaged from El Escorial. Signed up to 400 documents in one morning." },
-        { type: "bullet", text: "1561 Madrid became the capital." },
-        { type: "bullet", text: "1563-84 building of El Escorial also micromanaged by Philip II." },
-        { type: "bullet", text: "1567 Nueva Recopilación codified laws of Castile." },
-        { type: "bullet", text: "14 councils by 1584 eg. Italy 1559, Portugal 1582." },
-        { type: "bullet", text: "Shift to juntas after 1585 to improve efficiency and eliminate bottlenecks eg. Junta de la Noche." },
-        { type: "bullet", text: "Secretaries: Antonio Perez was the most influential until his arrest in 1579." },
-        { type: "bullet", text: "12 cortes summoned for servicios. Milliones food tax for Armada 1588 became permanent." },
-        { type: "bullet", text: "1581 Cortes of Tomar: Philip as king of Portugal. Promised to uphold local laws and appointments." },
-        { type: "bullet", text: "1592 Cortes of Tarazona allowed foreign viceroys and majority voting rather than unanimous consent." },
-        { type: "bullet", text: "Letrados and secretaries - selected papers for king to read; Juan de Idiáquez withheld letter from Duke of Medina Sidonia where he attempted to decline command of the Armada." },
-        { type: "bullet", text: "1590s: only 35% of land in Salamanca and 73/300 towns in Valencia under direct royal jurisdiction." },
-        { type: "bullet", text: "Court was simplified eg. Senor instead of His Majesty." },
-        { type: "bullet", text: "Castilian Cortes procuradores restricted to entirely petitioning." },
-        { type: "bullet", text: "Court factions existed - Alba had the war party and Eboli the peace party. Philip failed to back either one decisively; unnecessary conflict and slow bureaucracy." },
-        { type: "bullet", text: "31 March 1578: Juan de Escobedo (secretary of Don John) ambushed and stabbed to death by assassins hired by Pérez. July 1579: Philip ordered arrest of Pérez and Princess of Éboli. Pérez possessed compromising state documents (proving the King ordered hit), Philip spent years alternating between torturing him and treating him leniently to get the papers back." },
-        { type: "bullet", text: "Mandatory end-of-term judicial reviews (residencias) improved administration." }
+        { type: "bullet", text: "[[Paper king]]: micromanaged from [[El Escorial]]. Signed up to [[400]] documents in one morning." },
+        { type: "bullet", text: "[[1561]] [[Madrid]] became the capital." },
+        { type: "bullet", text: "1563-84 building of [[El Escorial]] also micromanaged by Philip II." },
+        { type: "bullet", text: "[[1567 Nueva Recopilación]] codified laws of Castile." },
+        { type: "bullet", text: "[[14]] councils by 1584 eg. Italy 1559, Portugal 1582." },
+        { type: "bullet", text: "Shift to [[juntas]] after 1585 to improve efficiency and eliminate bottlenecks eg. [[Junta de la Noche]]." },
+        { type: "bullet", text: "Secretaries: [[Antonio Perez]] was the most influential until his arrest in [[1579]]." },
+        { type: "bullet", text: "[[12]] cortes summoned for servicios. [[Milliones]] food tax for Armada 1588 became permanent." },
+        { type: "bullet", text: "[[1581 Cortes of Tomar]]: Philip as king of Portugal. Promised to uphold local laws and appointments." },
+        { type: "bullet", text: "[[1592 Cortes of Tarazona]] allowed foreign viceroys and majority voting rather than unanimous consent." },
+        { type: "bullet", text: "Letrados and secretaries - selected papers for king to read; [[Juan de Idiáquez]] withheld letter from [[Duke of Medina Sidonia]] where he attempted to decline command of the Armada." },
+        { type: "bullet", text: "1590s: only [[35%]] of land in Salamanca and [[73/300]] towns in Valencia under direct royal jurisdiction." },
+        { type: "bullet", text: "Court was simplified eg. [[Senor]] instead of His Majesty." },
+        { type: "bullet", text: "Castilian Cortes procuradores restricted to entirely [[petitioning]]." },
+        { type: "bullet", text: "Court factions existed - [[Alba]] had the war party and [[Eboli]] the peace party. Philip failed to back either one decisively; unnecessary conflict and slow bureaucracy." },
+        { type: "bullet", text: "31 March [[1578]]: [[Juan de Escobedo]] (secretary of Don John) ambushed and stabbed to death by assassins hired by Pérez. July [[1579]]: Philip ordered arrest of Pérez and Princess of Éboli. Pérez possessed compromising state documents (proving the King ordered hit), Philip spent years alternating between torturing him and treating him leniently to get the papers back." },
+        { type: "bullet", text: "Mandatory end-of-term judicial reviews ([[residencias]]) improved administration." }
     ],
     "Philip II - Religious Policy": [
-        { type: "bullet", text: "Regalism asserted he was 'lord over the Church'; not bound by papal mandates." },
-        { type: "bullet", text: "No papal decree published in Spain without prior approval from the Council of Castile." },
-        { type: "bullet", text: "Accepted 1564 Council of Trent resolutions but insisted Crown oversee their implementation." },
-        { type: "bullet", text: "St Teresa of Ávila founded Discalced Carmelites in the 1580s." },
-        { type: "bullet", text: "Philip distrusted the Jesuits (loyal to Rome); attempted to 'nationalise' the order (Inquisiton)." },
-        { type: "bullet", text: "Protestant Cells (1557–58) in Seville (130–150 people) and Valladolid (55 people) - panic." },
-        { type: "bullet", text: "Protestantism effectively eradicated by 1562 (278 prosecutions, 77 deaths) in autos-de-fé." },
-        { type: "bullet", text: "Philip personally attended October 1559 ceremony in Valladolid." },
-        { type: "bullet", text: "1558 Censorship Laws: Pragmatica established death penalty for owning/selling unlicensed books. Index of Prohibited Books (1559) issued by Inquisitor General Valdés: banned approximately 700 works, including 14 editions of the Bible and 14 works by Erasmus." },
-        { type: "bullet", text: "1559 decree recalled all Spanish students from foreign universities." },
-        { type: "bullet", text: "Carranza (1559): Archbishop of Toledo imprisoned for 17 years by Inquisition; Philip appropriated see’s revenues. Luis de León imprisoned for four years (1572–77) for translating Song of Solomon and questioning the Latin Vulgate." },
-        { type: "bullet", text: "1560: 85% of those persecuted by the Inquisition were moriscos." },
-        { type: "bullet", text: "1563 Edict confiscated Morisco land and banned them from possessing weapons." },
-        { type: "bullet", text: "Morisco Edict (1567) forbade Arabic language, Moorish dress, and traditional names, triggering the 1568–70 Alpujarras revolt." },
-        { type: "bullet", text: "Alpujarras Outcome: Suppression of the 30,000 rebels by Don John led to the mass dispersal of 80,000–100,000 Moriscos across Castile; 20,000+ died during the winter journey." }
+        { type: "bullet", text: "[[Regalism]] asserted he was 'lord over the Church'; not bound by papal mandates." },
+        { type: "bullet", text: "No papal decree published in Spain without prior approval from the [[Council of Castile]]." },
+        { type: "bullet", text: "Accepted [[1564 Council of Trent]] resolutions but insisted Crown oversee their implementation." },
+        { type: "bullet", text: "[[St Teresa of Ávila]] founded [[Discalced Carmelites]] in the 1580s." },
+        { type: "bullet", text: "Philip distrusted the [[Jesuits]] (loyal to Rome); attempted to 'nationalise' the order (Inquisiton)." },
+        { type: "bullet", text: "Protestant Cells ([[1557–58]]) in [[Seville]] (130–150 people) and [[Valladolid]] (55 people) - panic." },
+        { type: "bullet", text: "Protestantism effectively eradicated by [[1562]] (278 prosecutions, 77 deaths) in autos-de-fé." },
+        { type: "bullet", text: "Philip personally attended October [[1559]] ceremony in Valladolid." },
+        { type: "bullet", text: "[[1558]] Censorship Laws: Pragmatica established death penalty for owning/selling unlicensed books. [[Index of Prohibited Books]] (1559) issued by Inquisitor General Valdés: banned approximately [[700]] works, including 14 editions of the Bible and 14 works by Erasmus." },
+        { type: "bullet", text: "[[1559]] decree recalled all Spanish students from foreign universities." },
+        { type: "bullet", text: "[[Carranza]] (1559): Archbishop of Toledo imprisoned for [[17]] years by Inquisition; Philip appropriated see’s revenues. [[Luis de León]] imprisoned for four years (1572–77) for translating Song of Solomon and questioning the Latin Vulgate." },
+        { type: "bullet", text: "1560: [[85%]] of those persecuted by the Inquisition were [[moriscos]]." },
+        { type: "bullet", text: "[[1563]] Edict confiscated Morisco land and banned them from possessing weapons." },
+        { type: "bullet", text: "[[Morisco Edict (1567)]] forbade Arabic language, Moorish dress, and traditional names, triggering the [[1568–70 Alpujarras revolt]]." },
+        { type: "bullet", text: "Alpujarras Outcome: Suppression of the [[30,000]] rebels by [[Don John]] led to the mass dispersal of [[80,000–100,000]] Moriscos across Castile; [[20,000+]] died during the winter journey." }
     ],
     "Philip II - Economics": [
-        { type: "bullet", text: "1557 Bankruptcy: Philip inherited a massive debt from Charles V estimated at 36 million ducats; he was forced to suspend all payments from the Castilian treasury in January and June 1557. Up to 74 million ducats of debt by 1574." },
-        { type: "bullet", text: "High-interest short-term asientos (7 million ducats) converted into long-term juros at a fixed and decreased interest rate of 5 per cent." },
-        { type: "bullet", text: "Continued financial instability led to further payment suspensions and debt renegotiations (bankruptcies) in 1560, 1576, and 1596." },
-        { type: "bullet", text: "Castilian ordinary revenue tripled during the reign." },
-        { type: "bullet", text: "The Millones (1589/90): Introduced following the failure of the Armada to tax basic essentials like meat, wine, oil, and vinegar." },
-        { type: "bullet", text: "It collected 8 million ducats in its first 10 years and became a permanent tax." },
-        { type: "bullet", text: "By the 1590s, clerical revenues accounted for 20 per cent of Crown income. The Three Graces: Key clerical taxes included: the Cruzada (yield quadrupled), the Subsidio (made permanent in 1561), the Excusado (granted in 1567 by Pope Pius V to fund the army in the Low Countries)." },
-        { type: "bullet", text: "Bullion imports from America tripled by the 1590s, with a total of 65 million ducats received between 1555 and 1600." },
-        { type: "bullet", text: "Suppressing the Netherlands revolt (1567–1600) cost approximately 80 million ducats." },
-        { type: "bullet", text: "The 1588 Armada cost 10 million ducats." },
-        { type: "bullet", text: "The Battle of Lepanto cost the Castilian exchequer 5 million ducats." },
-        { type: "bullet", text: "Total Debt accumulated to roughly 85 million ducats by 1598, with interest payments consuming half of revenue." }
+        { type: "bullet", text: "[[1557 Bankruptcy]]: Philip inherited a massive debt from Charles V estimated at [[36 million ducats]]; he was forced to suspend all payments from the Castilian treasury in January and June 1557. Up to [[74 million ducats]] of debt by 1574." },
+        { type: "bullet", text: "High-interest short-term [[asientos]] (7 million ducats) converted into long-term [[juros]] at a fixed and decreased interest rate of [[5 per cent]]." },
+        { type: "bullet", text: "Continued financial instability led to further payment suspensions and debt renegotiations (bankruptcies) in [[1560]], [[1576]], and [[1596]]." },
+        { type: "bullet", text: "Castilian ordinary revenue [[tripled]] during the reign." },
+        { type: "bullet", text: "The [[Millones]] (1589/90): Introduced following the failure of the Armada to tax basic essentials like meat, wine, oil, and vinegar." },
+        { type: "bullet", text: "It collected [[8 million ducats]] in its first 10 years and became a permanent tax." },
+        { type: "bullet", text: "By the 1590s, clerical revenues accounted for [[20 per cent]] of Crown income. The [[Three Graces]]: Key clerical taxes included: the [[Cruzada]] (yield quadrupled), the [[Subsidio]] (made permanent in 1561), the [[Excusado]] (granted in 1567 by Pope Pius V to fund the army in the Low Countries)." },
+        { type: "bullet", text: "Bullion imports from America [[tripled]] by the 1590s, with a total of [[65 million ducats]] received between 1555 and 1600." },
+        { type: "bullet", text: "Suppressing the Netherlands revolt (1567–1600) cost approximately [[80 million ducats]]." },
+        { type: "bullet", text: "The 1588 Armada cost [[10 million ducats]]." },
+        { type: "bullet", text: "The Battle of Lepanto cost the Castilian exchequer [[5 million ducats]]." },
+        { type: "bullet", text: "Total Debt accumulated to roughly [[85 million ducats]] by 1598, with interest payments consuming [[half]] of revenue." }
     ],
     "Philip II - Revolts": [
         { type: "heading", text: "Second Alpujarras Revolt" },
-        { type: "bullet", text: "1560: 85% of those persecuted by the Inquisition were moriscos." },
-        { type: "bullet", text: "1563 Edict confiscated Morisco land and banned them from possessing weapons. Confiscation of 100,000 hectares." },
-        { type: "bullet", text: "Export of Moriscan silk banned." },
-        { type: "bullet", text: "1567 Royal Edict forbade Arabic language, Moorish dress, and traditional dances like the zambra. Marquis of Mondejar advised Philip not to do this but he ignored." },
-        { type: "bullet", text: "A rebel army of 30,000 was led by Aben Humeya (Fernando de Válor); it was suppressed with extreme brutality by Don John of Austria who brought 12k (later up to 25k) men. Tercio veterans." },
-        { type: "bullet", text: "Seron: Rebels killed 150 and enslaved 80." },
-        { type: "bullet", text: "Siege of Galera (1570): Royal forces razed the village and slaughtered 2,500 inhabitants. Many atrocities comitted." },
-        { type: "bullet", text: "Between 80,000 and 100,000 Granadan Moriscos were forcibly deported across Castile." },
-        { type: "bullet", text: "20,000+ died during the winter journey." },
-        { type: "bullet", text: "84 new forts were built to protect the Granada coast; the Council of State advised general expulsion as early as 1581." },
+        { type: "bullet", text: "1560: [[85%]] of those persecuted by the Inquisition were moriscos." },
+        { type: "bullet", text: "[[1563]] Edict confiscated Morisco land and banned them from possessing weapons. Confiscation of [[100,000 hectares]]." },
+        { type: "bullet", text: "Export of Moriscan [[silk]] banned." },
+        { type: "bullet", text: "[[1567]] Royal Edict forbade Arabic language, Moorish dress, and traditional dances like the [[zambra]]. [[Marquis of Mondejar]] advised Philip not to do this but he ignored." },
+        { type: "bullet", text: "A rebel army of [[30,000]] was led by [[Aben Humeya]] (Fernando de Válor); it was suppressed with extreme brutality by [[Don John of Austria]] who brought 12k (later up to [[25k]]) men. Tercio veterans." },
+        { type: "bullet", text: "[[Seron]]: Rebels killed 150 and enslaved 80." },
+        { type: "bullet", text: "Siege of [[Galera]] (1570): Royal forces razed the village and slaughtered [[2,500]] inhabitants. Many atrocities comitted." },
+        { type: "bullet", text: "Between [[80,000 and 100,000]] Granadan Moriscos were forcibly deported across Castile." },
+        { type: "bullet", text: "[[20,000+]] died during the winter journey." },
+        { type: "bullet", text: "[[84]] new forts were built to protect the Granada coast; the Council of State advised general expulsion as early as [[1581]]." },
         { type: "bullet", text: "Agricultural output of Granada declined. Resettled by Christians who were unfamiliar how to cultivate the land." },
         { type: "heading", text: "Aragon Revolt" },
-        { type: "bullet", text: "The Ribagorza affair led to Philip II occupying the county in 1591. This involved sending troops into Valencia in 1582. Also, a non-native viceroy was appointed. Aragonese argued this was all against fueros." },
-        { type: "bullet", text: "Perez escaped to Zaragoza in April 1590, claiming the right of manifestacion (protection) from the Justiciar." },
-        { type: "bullet", text: "Zaragoza Riots (1591): Mobs attacked the Inquisition prison to stop Pérez’s transfer; the Viceroy Almenara was fatally wounded." },
-        { type: "bullet", text: "1591 Invasion: Philip sent 14,000 soldiers under Alonso de Vargas to restore order; a small rebel force of 2,000 dispersed. The rebels only ever occupied Zaragoza. Most of Aragon did not join." },
-        { type: "bullet", text: "Repression: The Justiciar Juan de Lanuza was beheaded without trial; 150 leaders were executed." },
-        { type: "bullet", text: "Tarazona Cortes (1592): Philip secured the right to dismiss the Justiciar at will, appoint non-native (Castilian) viceroys, and pass laws by majority vote." }
+        { type: "bullet", text: "The [[Ribagorza]] affair led to Philip II occupying the county in 1591. This involved sending troops into [[Valencia]] in 1582. Also, a non-native viceroy was appointed. Aragonese argued this was all against [[fueros]]." },
+        { type: "bullet", text: "[[Perez]] escaped to Zaragoza in April 1590, claiming the right of [[manifestacion]] (protection) from the [[Justiciar]]." },
+        { type: "bullet", text: "[[Zaragoza Riots]] (1591): Mobs attacked the Inquisition prison to stop Pérez’s transfer; the Viceroy [[Almenara]] was fatally wounded." },
+        { type: "bullet", text: "[[1591]] Invasion: Philip sent [[14,000]] soldiers under [[Alonso de Vargas]] to restore order; a small rebel force of 2,000 dispersed. The rebels only ever occupied Zaragoza. Most of Aragon did not join." },
+        { type: "bullet", text: "Repression: The Justiciar [[Juan de Lanuza]] was beheaded without trial; [[150]] leaders were executed." },
+        { type: "bullet", text: "[[Tarazona]] Cortes (1592): Philip secured the right to dismiss the Justiciar at will, appoint non-native (Castilian) viceroys, and pass laws by majority vote." }
     ],
     "Philip II - Foreign Policy (not Netherlands)": [
         { type: "heading", text: "General Strategy" },
-        { type: "bullet", text: "Realism: Abandoned 'universal monarchy' to focus on preserving inheritance and defending Catholicism." },
-        { type: "bullet", text: "Cost of War: By the 1570s, military campaigns cost the government 700,000 ducats per month." },
-        { type: "bullet", text: "1571 Costs: In 1571, the Dutch and Mediterranean campaigns cost 18.5 million ducats." },
-        { type: "bullet", text: "In the final decade of his reign, 30 million ducats in France and 21 million in the Low Countries." },
+        { type: "bullet", text: "[[Realism]]: Abandoned 'universal monarchy' to focus on preserving inheritance and defending Catholicism." },
+        { type: "bullet", text: "Cost of War: By the 1570s, military campaigns cost the government [[700,000 ducats]] per month." },
+        { type: "bullet", text: "1571 Costs: In 1571, the Dutch and Mediterranean campaigns cost [[18.5 million ducats]]." },
+        { type: "bullet", text: "In the final decade of his reign, [[30 million ducats]] in France and [[21 million]] in the Low Countries." },
         { type: "heading", text: "France" },
-        { type: "bullet", text: "Early Hostilities: Henry II renewed hostilities to gain Italian territories, but financial exhaustion led to a truce at Vaucelles." },
-        { type: "bullet", text: "1557/1559 Victories: 1557 victory at Battle of St Quentin; 1559 Treaty of Cateau-Cambrésis confirmed Spanish hegemony in Italy." },
-        { type: "bullet", text: "1590s Interventions: Philip intervened in Wars of Religion; diverted Duke of Parma from Netherlands to aid Catholic League against Henry of Navarre. In 1590, Henry IV defeated the Catholic League at the Battle of Ivry." },
-        { type: "bullet", text: "Financial Drain: Between 1590 and 1594, 75% of the Low Countries' military treasury was spent on French expeditions and subsidies for the Catholic League." },
-        { type: "bullet", text: "Turning the Tide: In 1593, Henry IV converted to Catholicism, and in 1594 he regained control of Paris." },
-        { type: "bullet", text: "Mixed Territorial Results: Between 1595-1597, Spain temporarily gained Calais and Amiens but lost Toulouse and Marseilles due to overstretched forces." },
-        { type: "bullet", text: "Failed Succession: Philip's attempt to install the Infanta Isabella failed due to French adherence to Salic Law and a nationalistic backlash." },
-        { type: "bullet", text: "1598 Treaty of Vervins: War ended by restating 1559 terms; Spain returned most conquests." },
+        { type: "bullet", text: "Early Hostilities: Henry II renewed hostilities to gain Italian territories, but financial exhaustion led to a truce at [[Vaucelles]]." },
+        { type: "bullet", text: "1557/1559 Victories: [[1557]] victory at Battle of [[St Quentin]]; [[1559]] Treaty of [[Cateau-Cambrésis]] confirmed Spanish hegemony in Italy." },
+        { type: "bullet", text: "1590s Interventions: Philip intervened in Wars of Religion; diverted [[Duke of Parma]] from Netherlands to aid [[Catholic League]] against Henry of Navarre. In 1590, Henry IV defeated the Catholic League at the Battle of [[Ivry]]." },
+        { type: "bullet", text: "Financial Drain: Between 1590 and 1594, [[75%]] of the Low Countries' military treasury was spent on French expeditions and subsidies for the Catholic League." },
+        { type: "bullet", text: "Turning the Tide: In [[1593]], Henry IV converted to Catholicism, and in 1594 he regained control of Paris." },
+        { type: "bullet", text: "Mixed Territorial Results: Between 1595-1597, Spain temporarily gained [[Calais]] and [[Amiens]] but lost Toulouse and Marseilles due to overstretched forces." },
+        { type: "bullet", text: "Failed Succession: Philip's attempt to install the [[Infanta Isabella]] failed due to French adherence to [[Salic Law]] and a nationalistic backlash." },
+        { type: "bullet", text: "[[1598]] Treaty of [[Vervins]]: War ended by restating 1559 terms; Spain returned most conquests." },
         { type: "heading", text: "The Ottoman Empire & Mediterranean" },
-        { type: "bullet", text: "1560 Djerba Disaster: 28 galleys sunk and 10,000–18,000 troops lost. The fleet lost 42 vessels in total, and Spanish veterans had to be withdrawn from the Netherlands to strengthen Mediterranean defenses." },
-        { type: "bullet", text: "Naval Expansion: Massive shipbuilding programme (1560–74) constructed 300 galleys at a cost of over 3.5 million ducats." },
-        { type: "bullet", text: "1565 Siege of Malta: 9,000 Knights held out against 30,000 Ottomans for four months until García de Toledo's relief force arrived." },
-        { type: "bullet", text: "7 Oct 1571 Battle of Lepanto: Holy League victory; 206 galleys liberated 12,000 Christian rowers and killed 30,000 Turks. The Christian fleet included 80 Spanish galleys." },
-        { type: "bullet", text: "Lepanto Ottoman Losses: Over 210 Turkish ships were lost, with 117 galleys and 10 galliots captured in good enough condition for future use by Christian forces." },
-        { type: "bullet", text: "Lepanto Costs: The campaign cost 1,100,000 ducats, of which 400,000 came from the Italian kingdoms." },
-        { type: "bullet", text: "1580 Truce: Philip signed a formal truce with Sultan Selim II to focus on Atlantic and northern Europe." },
+        { type: "bullet", text: "[[1560 Djerba]] Disaster: 28 galleys sunk and 10,000–18,000 troops lost. The fleet lost 42 vessels in total, and Spanish veterans had to be withdrawn from the Netherlands to strengthen Mediterranean defenses." },
+        { type: "bullet", text: "Naval Expansion: Massive shipbuilding programme (1560–74) constructed [[300]] galleys at a cost of over [[3.5 million ducats]]." },
+        { type: "bullet", text: "[[1565 Siege of Malta]]: 9,000 Knights held out against 30,000 Ottomans for four months until [[García de Toledo's]] relief force arrived." },
+        { type: "bullet", text: "[[7 Oct 1571]] Battle of [[Lepanto]]: Holy League victory; 206 galleys liberated 12,000 Christian rowers and killed 30,000 Turks. The Christian fleet included [[80]] Spanish galleys." },
+        { type: "bullet", text: "Lepanto Ottoman Losses: Over [[210]] Turkish ships were lost, with 117 galleys and 10 galliots captured in good enough condition for future use by Christian forces." },
+        { type: "bullet", text: "Lepanto Costs: The campaign cost [[1,100,000 ducats]], of which 400,000 came from the Italian kingdoms." },
+        { type: "bullet", text: "[[1580 Truce]]: Philip signed a formal truce with Sultan [[Selim II]] to focus on Atlantic and northern Europe." },
         { type: "heading", text: "Portugal" },
-        { type: "bullet", text: "1580 Invasion: Following King Sebastian’s 1578 death at Alcazarquivir, the Duke of Alba invaded to unite the Iberian Peninsula." },
-        { type: "bullet", text: "1581 Tomar Cortes: Philip proclaimed King; swore to respect fueros, use native officials, and keep separate trade monopolies." },
+        { type: "bullet", text: "[[1580]] Invasion: Following King Sebastian’s 1578 death at [[Alcazarquivir]], the [[Duke of Alba]] invaded to unite the Iberian Peninsula." },
+        { type: "bullet", text: "[[1581 Tomar]] Cortes: Philip proclaimed King; swore to respect fueros, use native officials, and keep separate trade monopolies." },
         { type: "heading", text: "England" },
-        { type: "bullet", text: "English Alliance: 1554 marriage to Mary Tudor intended to encircle France; cordiality ended with accession of Elizabeth I." },
-        { type: "bullet", text: "Early Tensions: 1568 confiscation of Genoese treasure ships. The 1567 arrival of the Duke of Alba in the Netherlands seriously affected Anglo-Spanish relations." },
-        { type: "bullet", text: "Piracy and Smuggling: English merchants smuggled and committed piracy; during his 1576-1581 circumnavigation, Francis Drake seized large quantities of Spanish treasure with Elizabeth's unofficial support." },
-        { type: "bullet", text: "Catholic Plots: The 1583 Throckmorton Plot was uncovered by Francis Walsingham, leading to Throckmorton's execution in May 1584. This was followed by the Babington Plot in 1586." },
-        { type: "bullet", text: "1587 Attack on Cadiz: On April 19, 1587, Drake arrived at Cadiz and over two days looted, burned, or sank approximately 30 Spanish ships. Drake also destroyed Portuguese ships carrying barrel materials for the Armada's food supplies and captured the treasure ship San Felipe." },
-        { type: "bullet", text: "1588 Spanish Armada: 130 ships commanded by Medina Sidonia; failure cost 15,000 men. The Armada cost about 10,000,000 ducats, with Castile contributing around 70%. Furthermore, the campaign cost about 900,000 ducats a month." }
+        { type: "bullet", text: "English Alliance: [[1554]] marriage to [[Mary Tudor]] intended to encircle France; cordiality ended with accession of Elizabeth I." },
+        { type: "bullet", text: "Early Tensions: 1568 confiscation of [[Genoese]] treasure ships. The 1567 arrival of the Duke of Alba in the Netherlands seriously affected Anglo-Spanish relations." },
+        { type: "bullet", text: "Piracy and Smuggling: English merchants smuggled and committed piracy; during his 1576-1581 circumnavigation, [[Francis Drake]] seized large quantities of Spanish treasure with Elizabeth's unofficial support." },
+        { type: "bullet", text: "Catholic Plots: The [[1583 Throckmorton]] Plot was uncovered by Francis Walsingham, leading to Throckmorton's execution in May 1584. This was followed by the [[Babington]] Plot in 1586." },
+        { type: "bullet", text: "[[1587]] Attack on [[Cadiz]]: On April 19, 1587, Drake arrived at Cadiz and over two days looted, burned, or sank approximately [[30]] Spanish ships. Drake also destroyed Portuguese ships carrying barrel materials for the Armada's food supplies and captured the treasure ship [[San Felipe]]." },
+        { type: "bullet", text: "[[1588]] Spanish Armada: [[130]] ships commanded by [[Medina Sidonia]]; failure cost 15,000 men. The Armada cost about [[10,000,000 ducats]], with Castile contributing around [[70%]]. Furthermore, the campaign cost about 900,000 ducats a month." }
     ],
     "Philip II - Dutch Revolt": [
         { type: "heading", text: "Phase 1: 1555-1567" },
         { type: "bullet", text: "1555-1559: Spent majority of time in Netherlands. Therefore, knew the difficulties." },
-        { type: "bullet", text: "1556: States-General refused Philip’s taxes eg. 1% on real-estate." },
-        { type: "bullet", text: "August 1557: Refused subsidies again." },
-        { type: "bullet", text: "January 1559: Assembly voted for ‘nine years aid’ of 3.6m ducats." },
-        { type: "bullet", text: "August 1559: Philip II permanently departs the Netherlands for Spain. Margaret of Parma as Regent but real power is wielded by inner circle led by Granvelle, alienating high Dutch nobility like Orange and Egmont." },
-        { type: "bullet", text: "1559–1561: 14 new bishoprics and Crown given power to appoint bishops. Enrages the nobility (who lose patronage) and terrifies populace (who view it as first step to Inquisition)." },
-        { type: "bullet", text: "1561-1564: Concessions made, eg. stopped church reform, dismissed Granvelle after ultimatum from Orange and Egmont." },
-        { type: "bullet", text: "17 October 1565: Letters from the Segovia Woods refused Egmont’s religious concessions which he had petitioned for in Madrid. Slow response due to ‘headaches’ according to Philip but in reality waiting for situation in Malta and stalling." },
-        { type: "bullet", text: "April 1566: Roughly 400 lesser nobles petition Margaret of Parma demanding suspension of heresy laws." },
-        { type: "bullet", text: "5 April 1566: 300 troops forced Margaret to rescind heresy laws." },
-        { type: "bullet", text: "31 July 1566: Philip agreed to abolish the Inquisition and pardon the rebels but did not arrive until October." },
-        { type: "bullet", text: "August 1566: Iconoclastic Fury. Mobs sweep across the Netherlands, smashing statues, altars, and stained glass." },
-        { type: "bullet", text: "May 1567: Revolt suppressed but Philip did not know and had already sent Alba with 72k troops. He thought it was too volatile for him to visit personally." },
+        { type: "bullet", text: "[[1556]]: States-General refused Philip’s taxes eg. [[1% on real-estate]]." },
+        { type: "bullet", text: "August [[1557]]: Refused subsidies again." },
+        { type: "bullet", text: "January [[1559]]: Assembly voted for ‘[[nine years aid]]’ of 3.6m ducats." },
+        { type: "bullet", text: "August 1559: Philip II permanently departs the Netherlands for Spain. [[Margaret of Parma]] as Regent but real power is wielded by inner circle led by [[Granvelle]], alienating high Dutch nobility like [[Orange]] and [[Egmont]]." },
+        { type: "bullet", text: "1559–1561: [[14 new bishoprics]] and Crown given power to appoint bishops. Enrages the nobility (who lose patronage) and terrifies populace (who view it as first step to Inquisition)." },
+        { type: "bullet", text: "1561-1564: Concessions made, eg. stopped church reform, dismissed [[Granvelle]] after ultimatum from Orange and Egmont." },
+        { type: "bullet", text: "17 October [[1565]]: Letters from the [[Segovia Woods]] refused Egmont’s religious concessions which he had petitioned for in Madrid. Slow response due to ‘headaches’ according to Philip but in reality waiting for situation in Malta and stalling." },
+        { type: "bullet", text: "April [[1566]]: Roughly 400 lesser nobles petition Margaret of Parma demanding suspension of heresy laws." },
+        { type: "bullet", text: "5 April 1566: [[300]] troops forced Margaret to rescind heresy laws." },
+        { type: "bullet", text: "31 July 1566: Philip agreed to abolish the [[Inquisition]] and pardon the rebels but did not arrive until October." },
+        { type: "bullet", text: "August 1566: [[Iconoclastic Fury]]. Mobs sweep across the Netherlands, smashing statues, altars, and stained glass." },
+        { type: "bullet", text: "May 1567: Revolt suppressed but Philip did not know and had already sent [[Alba]] with [[72k troops]]. He thought it was too volatile for him to visit personally." },
         { type: "heading", text: "Phase 2: 1567-1574" },
-        { type: "bullet", text: "August 1567: Arrival of the Duke of Alba. Margaret of Parma resigns in protest of his extreme methods." },
-        { type: "bullet", text: "September 1567: Alba establishes the Council of Troubles; ignores standard legal privileges, executes over 1,000 people and confiscates massive amounts of property." },
-        { type: "bullet", text: "May 1568: A rebel army led by Orange's brother defeats Spanish force, though little strategic gain." },
-        { type: "bullet", text: "June 1568: Alba beheads the Counts of Egmont and Hoorn in Brussels. Turns moderate Catholics against the Spanish regime." },
-        { type: "bullet", text: "March 1569: Alba proposed Tenth Penny sales tax. Refused by States-General, instead given 4m florins over two years." },
+        { type: "bullet", text: "August 1567: Arrival of the [[Duke of Alba]]. Margaret of Parma resigns in protest of his extreme methods." },
+        { type: "bullet", text: "September 1567: Alba establishes the [[Council of Troubles]]; ignores standard legal privileges, executes over 1,000 people and confiscates massive amounts of property." },
+        { type: "bullet", text: "May 1568: A rebel army led by [[Orange's brother]] defeats Spanish force, though little strategic gain." },
+        { type: "bullet", text: "June [[1568]]: Alba beheads the Counts of [[Egmont and Hoorn]] in Brussels. Turns moderate Catholics against the Spanish regime." },
+        { type: "bullet", text: "March 1569: Alba proposed [[Tenth Penny]] sales tax. Refused by States-General, instead given 4m florins over two years." },
         { type: "bullet", text: "31 July 1571: alba implemented the tax anyway. Brought Netherlands to brink of revolt." },
-        { type: "bullet", text: "April 1572: Capture of Brielle. Sea Beggars capture the coastal town of Brielle. Towns across Holland and Zeeland declare for the rebellion and recognize Orange as their leader." },
-        { type: "bullet", text: "1572: Medinaceli reported to Philip that Alba was the reason for revolt." },
-        { type: "bullet", text: "January 1573: Alba recalled to Spain due to his failure to crush the Holland/Zeeland rebellion (even though otherwise successful). He is replaced by Requesens." },
+        { type: "bullet", text: "April 1572: Capture of [[Brielle]]. [[Sea Beggars]] capture the coastal town of Brielle. Towns across Holland and Zeeland declare for the rebellion and recognize Orange as their leader." },
+        { type: "bullet", text: "1572: [[Medinaceli]] reported to Philip that Alba was the reason for revolt." },
+        { type: "bullet", text: "January 1573: Alba recalled to Spain due to his failure to crush the Holland/Zeeland rebellion (even though otherwise successful). He is replaced by [[Requesens]]." },
         { type: "bullet", text: "October 1574: Dutch rebels flood the countryside, allowing Sea Beggars to sail up to city walls and deliver food." },
         { type: "heading", text: "Phase 3: 1576-1581" },
-        { type: "bullet", text: "March 1576: Requesens dies unexpectedly, leaving a power vacuum." },
-        { type: "bullet", text: "September 1576: Don John appointed as governor." },
-        { type: "bullet", text: "3 November 1576: The Spanish Fury. Army mutinies and sacks Antwerp, slaughtering around 7,000 citizens." },
-        { type: "bullet", text: "8 November 1576: Pacification of Ghent. All Seventeen Provinces sign a treaty uniting them against Spanish." },
-        { type: "bullet", text: "February 1577: Perpetual Edict. Don John accepted Pacification of Ghent. Spanish troops begin to leave but Orange refuses to cooperate, so Don John brings troops back." },
-        { type: "bullet", text: "July 1577: Parma appointed as military leader. States-General fled north." },
+        { type: "bullet", text: "March [[1576]]: [[Requesens]] dies unexpectedly, leaving a power vacuum." },
+        { type: "bullet", text: "September 1576: [[Don John]] appointed as governor." },
+        { type: "bullet", text: "3 November 1576: The [[Spanish Fury]]. Army mutinies and sacks Antwerp, slaughtering around 7,000 citizens." },
+        { type: "bullet", text: "8 November 1576: [[Pacification of Ghent]]. All Seventeen Provinces sign a treaty uniting them against Spanish." },
+        { type: "bullet", text: "February 1577: [[Perpetual Edict]]. Don John accepted Pacification of Ghent. Spanish troops begin to leave but Orange refuses to cooperate, so Don John brings troops back." },
+        { type: "bullet", text: "July 1577: [[Parma]] appointed as military leader. States-General fled north." },
         { type: "bullet", text: "October 1578: Parma succeeds as governor." },
-        { type: "bullet", text: "January 1579: The Revolt Splits. Union of Arras: The southern, Catholic provinces reconcile with Spain, fearing Calvinist radicalism. Union of Utrecht: Northern provinces form a military alliance to continue fight." },
-        { type: "bullet", text: "March 1580: Philip II issues an imperial ban, placing a massive bounty on the head of William of Orange, declaring him an outlaw." },
-        { type: "bullet", text: "July 1581: Act of Abjuration. The northern provinces declare independence, stating that Philip II has violated his contract with his subjects and is no longer their sovereign." },
+        { type: "bullet", text: "January 1579: The Revolt Splits. [[Union of Arras]]: The southern, Catholic provinces reconcile with Spain, fearing Calvinist radicalism. [[Union of Utrecht]]: Northern provinces form a military alliance to continue fight." },
+        { type: "bullet", text: "March 1580: Philip II issues an [[imperial ban]], placing a massive bounty on the head of William of Orange, declaring him an outlaw." },
+        { type: "bullet", text: "July [[1581]]: [[Act of Abjuration]]. The northern provinces declare independence, stating that Philip II has violated his contract with his subjects and is no longer their sovereign." },
         { type: "heading", text: "Phase 4: 1584-1594" },
-        { type: "bullet", text: "10 July 1584: Assassination of William of Orange." },
+        { type: "bullet", text: "10 July [[1584]]: Assassination of [[William of Orange]]." },
         { type: "bullet", text: "1585: Only Holland and Zeeland remained in revolt. Parma very successful." },
-        { type: "bullet", text: "August 1585: Parma starves Antwerp into submission. Dutch blockade Scheldt River, permanently ruining Antwerp's economy and shifting trade power to Amsterdam." },
-        { type: "bullet", text: "August 1585: Treaty of Nonsuch. Elizabeth I enters the war, sending troops and funds." },
-        { type: "bullet", text: "1587: Parma withdrawn from the Dutch campaign to join Armada. Mistake." },
+        { type: "bullet", text: "August 1585: Parma starves [[Antwerp]] into submission. Dutch blockade [[Scheldt]] River, permanently ruining Antwerp's economy and shifting trade power to [[Amsterdam]]." },
+        { type: "bullet", text: "August 1585: Treaty of [[Nonsuch]]. [[Elizabeth I]] enters the war, sending troops and funds." },
+        { type: "bullet", text: "1587: Parma withdrawn from the Dutch campaign to join [[Armada]]. Mistake." },
         { type: "bullet", text: "1588: Defeat of the Spanish Armada. Philip II diverts Parma’s army to prepare for the invasion of England." },
-        { type: "bullet", text: "1588: Mutinies in Parma’s army and resistance from Maurice of Nassau." },
-        { type: "bullet", text: "1590: Parma sent to France." },
+        { type: "bullet", text: "1588: Mutinies in Parma’s army and resistance from [[Maurice of Nassau]]." },
+        { type: "bullet", text: "1590: Parma sent to [[France]]." },
         { type: "bullet", text: "1591: Parma returned against orders, but sent to France and died." },
-        { type: "bullet", text: "1592-1594: Mansfelt and Fuentes shared power but hated each other and mismanaged the situation." },
-        { type: "bullet", text: "1594: Philip set up Isabella and her husband (eventually Albert of Austria) to rule in his name but essentially independently." }
+        { type: "bullet", text: "1592-1594: [[Mansfelt]] and [[Fuentes]] shared power but hated each other and mismanaged the situation." },
+        { type: "bullet", text: "1594: Philip set up [[Isabella]] and her husband (eventually [[Albert of Austria]]) to rule in his name but essentially independently." }
     ]
 };
 
@@ -647,6 +647,86 @@ const wotrNotesData = {
     ]
 };
 
+// --- PRACTICE MODE LOGIC ---
+let isSpainPracticeMode = false;
+
+// 1. Hook up the buttons
+document.getElementById('spain-btn-study').onclick = () => {
+    isSpainPracticeMode = false;
+    document.getElementById('spain-btn-study').className = 'active-mode';
+    document.getElementById('spain-btn-study').style.fontWeight = 'bold';
+    document.getElementById('spain-btn-practice').className = 'subtle-btn';
+    document.getElementById('spain-btn-practice').style.fontWeight = 'normal';
+    document.getElementById('spain-btn-check-answers').style.display = 'none';
+    
+    // Refresh the currently selected category to re-render the text
+    const currentCategory = document.getElementById('spain-notes-title').textContent;
+    if (currentCategory && currentCategory !== "Select a Category") {
+        loadBullets(currentCategory, 'spain'); 
+    }
+};
+
+document.getElementById('spain-btn-practice').onclick = () => {
+    isSpainPracticeMode = true;
+    document.getElementById('spain-btn-practice').className = 'active-mode';
+    document.getElementById('spain-btn-practice').style.fontWeight = 'bold';
+    document.getElementById('spain-btn-study').className = 'subtle-btn';
+    document.getElementById('spain-btn-study').style.fontWeight = 'normal';
+    document.getElementById('spain-btn-check-answers').style.display = 'inline-block';
+    
+    // Refresh the currently selected category to re-render the text
+    const currentCategory = document.getElementById('spain-notes-title').textContent;
+    if (currentCategory && currentCategory !== "Select a Category") {
+        loadBullets(currentCategory, 'spain'); 
+    }
+};
+
+// 2. The Text Parser
+function formatSpainText(rawText) {
+    if (!isSpainPracticeMode) {
+        // Study Mode: Convert [[term]] to beautiful highlighted text
+        return rawText.replace(/\[\[(.*?)\]\]/g, '<span class="highlight-term">$1</span>');
+    } else {
+        // Practice Mode: Convert [[term]] to interactive text boxes
+        return rawText.replace(/\[\[(.*?)\]\]/g, (match, p1) => {
+            // Dynamically set input width based on the answer length so it looks neat
+            const width = Math.max(p1.length * 9, 40); 
+            return `<input type="text" class="practice-blank" data-answer="${p1}" style="width: ${width}px;" autocomplete="off">`;
+        });
+    }
+}
+
+// 3. The Grading Logic
+document.getElementById('spain-btn-check-answers').onclick = () => {
+    const blanks = document.querySelectorAll('.practice-blank');
+    if (blanks.length === 0) return alert("Select a notes category to practice first!");
+
+    blanks.forEach(input => {
+        const correctAnswer = input.getAttribute('data-answer');
+        const userAnswer = input.value.trim().toLowerCase();
+        const expectedAnswer = correctAnswer.trim().toLowerCase();
+
+        // Lock the input so they can't change it after marking
+        input.disabled = true;
+
+        if (userAnswer === expectedAnswer) {
+            input.classList.add('correct');
+        } else {
+            input.classList.add('incorrect');
+            
+            // Only append the correction once if they click it multiple times
+            if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('correction-text')) {
+                const correctionSpan = document.createElement('span');
+                correctionSpan.className = 'correction-text highlight-term';
+                correctionSpan.textContent = ` (${correctAnswer})`;
+                
+                // Insert the correct answer right after the wrong input box
+                input.parentNode.insertBefore(correctionSpan, input.nextSibling);
+            }
+        }
+    });
+};
+
 function getBulletsForCategory(category) {
     if (spainNotesData[category]) return spainNotesData[category];
     if (wotrNotesData[category]) return wotrNotesData[category];
@@ -689,7 +769,9 @@ function loadBullets(category, prefix) {
     
     getBulletsForCategory(category).forEach((item, index) => {
         const li = document.createElement('li');
-        li.innerHTML = item.text;
+        
+        // NEW: Check if it is Spain, and if so, run it through our text parser!
+        li.innerHTML = prefix === 'spain' ? formatSpainText(item.text) : item.text;
         
         if (item.type === 'heading') {
             li.style.fontWeight = 'bold';
@@ -697,9 +779,16 @@ function loadBullets(category, prefix) {
             li.style.listStyleType = 'none';
             li.style.marginLeft = '-20px'; 
         } else {
-            li.style.cursor = "pointer"; 
             li.style.marginBottom = "8px";
-            li.onclick = () => loadNoteData(category, index, prefix);
+            
+            // NEW: Only make the bullet clickable if we are NOT in Spain Practice Mode
+            if (!(prefix === 'spain' && isSpainPracticeMode)) {
+                li.style.cursor = "pointer"; 
+                li.onclick = () => loadNoteData(category, index, prefix);
+            } else {
+                // Change back to standard text cursor so they know it isn't a button
+                li.style.cursor = "text"; 
+            }
         }
         
         list.appendChild(li);
@@ -925,7 +1014,9 @@ function setupNotesPicker(categories, containerId) {
         
         getBulletsForCategory(cat).forEach(item => {
             const b = document.createElement('div');
-            b.innerHTML = item.text; // Changed to innerHTML to process the <b> tags
+            
+            // NEW: Render the brackets as highlighted text in the picker menu
+            b.innerHTML = item.text.replace(/\[\[(.*?)\]\]/g, '<span class="highlight-term">$1</span>'); 
             
             if (item.type === 'heading') {
                 b.style.fontWeight = 'bold';
@@ -937,8 +1028,8 @@ function setupNotesPicker(categories, containerId) {
                 b.className = 'draggable-bullet';
                 b.draggable = true;
                 b.addEventListener('dragstart', (e) => { 
-                    // This clever regex strips the <b> tags out before putting the text into your essay planner box
-                    const plainText = item.text.replace(/<[^>]+>/g, '');
+                    // NEW: Strip out the HTML <b> tags AND the [[ ]] brackets so plain text is dropped into the plan
+                    const plainText = item.text.replace(/<[^>]+>/g, '').replace(/\[\[|\]\]/g, '');
                     e.dataTransfer.setData('text/plain', plainText); 
                 });
             }

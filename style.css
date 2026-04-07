@@ -146,3 +146,48 @@ button:hover { background: var(--accent); }
 .used-in-list { list-style-type: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #555; overflow-y: auto; max-height: 150px; }
 .used-in-list li { padding: 8px; background: #f8f9fa; border: 1px solid #eee; margin-bottom: 5px; border-radius: 4px; font-weight: 500;}
 .used-in-list li.empty-msg { background: transparent; border: none; font-style: italic; color: #999; font-weight: normal; }
+
+/* Practice Mode Styles */
+.highlight-term {
+    background-color: #fff3cd;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-weight: 600;
+    color: #856404;
+}
+
+.practice-blank {
+    border: none;
+    border-bottom: 2px solid #007bff;
+    background: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    color: #0056b3;
+    padding: 0 2px;
+    margin: 0 4px;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.2s;
+    /* Auto-adjusting width based on character length is tricky in plain CSS, so we set a neat default */
+    width: 100px; 
+}
+.practice-blank:focus {
+    border-bottom-color: #ff9900;
+}
+
+.practice-blank.correct {
+    border-bottom-color: #28a745;
+    color: #28a745;
+}
+
+.practice-blank.incorrect {
+    border-bottom-color: #dc3545;
+    color: #dc3545;
+}
+
+.correction-text {
+    color: #28a745;
+    font-weight: bold;
+    margin-left: 4px;
+    font-style: italic;
+}
