@@ -324,7 +324,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[1560 Djerba]]: 28 galleys sunk and 10,000–18,000 troops lost. Spanish veterans had to be withdrawn from the Netherlands." },
         { type: "bullet", text: "Shipbuilding programme (1560–74) constructed [[300]] galleys, cost over [[3.5 million ducats]]." },
         { type: "bullet", text: "[[1565 Siege of Malta]]: 9,000 Knights held out against 30,000 Ottomans for four months until [[Garcia de Toledo]] relieved." },
-        { type: "bullet", text: "[[7 Oct 1571]] Battle of [[Lepanto]]: Holy League victory; 206 galleys liberated 12,000 Christian rowers and killed 30,000 Turks. Christian fleet included [[80]] Spanish galleys. Over [[210]] Turkish ships lost, including [[117]] galleys good enough to be used by Christians." },
+        { type: "bullet", text: "[[7 Oct 1571]] Battle of [[Lepanto]]: Holy League victory; 12,000 Christian rowers liberated and killed 30,000 Turks. Christian fleet included [[80]] Spanish galleys. Over [[210]] Turkish ships lost, including [[117]] galleys good enough to be used by Christians." },
         { type: "bullet", text: "Campaign cost [[5m ducats]] and specific battle [[1.1m ducats]], of which 400,000 came from Italian kingdoms." },
         { type: "bullet", text: "[[1580]]: Philip signed a formal truce with Sultan [[Selim II]] to shift focus." },
         { type: "heading", text: "Portugal" },
