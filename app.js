@@ -80,53 +80,53 @@ const wotrCats = ["1450-1458", "1458-1461", "1461-1469", "1469-1471", "1471-1483
 // --- SPAIN NOTES DATA (MUST BE DEFINED BEFORE UI SETUP) ---
 const spainNotesData = {
     "Ferdinand and Isabella: Royal Authority and Administration": [
-        { type: "bullet", text: "[[Personal monarchy]]: Isabella travelled over [[2000km]] per year to personally oversee justice and suppress dissent." },
-        { type: "bullet", text: "The [[1480]] Cortes of [[Toledo]] used [[Acts of Resumption]] to reclaim royal lands and revenues lost since [[1464]]. Older gains were protected." },
-        { type: "bullet", text: "[[Corregidores]] were royal governors in towns. In [[1494]], there were [[54]]. By [[1516]], there were [[86]]." },
+        { type: "bullet", text: "[[Personal monarchy]]: [[Isabella]] travelled over [[2000km]] per year to personally oversee [[justice]] and suppress [[dissent]]." },
+        { type: "bullet", text: "The [[1480]] Cortes of [[Toledo]] used [[Acts of Resumption]] to reclaim [[royal lands]] and [[revenues]] lost since [[1464]]. Older gains were protected." },
+        { type: "bullet", text: "[[Corregidores]] were [[royal governors]] in towns. In [[1494]], there were [[54]]. By [[1516]], there were [[86]]." },
         { type: "bullet", text: "The [[Royal Council]] was professionalised in a [[1493]] pragmatica. [[Ten years']] legal training was required to sit on the council." },
         { type: "bullet", text: "Secretaries gained status. [[Hernando de Zafra]] rose from humble origins to [[100k maravedis]] salary and he negotiated the surrender of [[Granada]]." },
-        { type: "bullet", text: "The [[fueros]] and separate cortes of Aragon were retained. The [[1494]] Cortes of Aragon appointed [[viceroys]]." },
+        { type: "bullet", text: "The [[fueros]] and separate cortes of [[Aragon]] were retained. The [[1494]] Cortes of Aragon appointed [[viceroys]]." },
         { type: "bullet", text: "The Castilian cortes was made up of nobles and representatives from [[17]] towns (plus [[Granada]] in [[1492]])." },
         { type: "bullet", text: "The Castilian cortes did not meet from [[1482]] to [[1498]]." }
     ],
     "Ferdinand and Isabella: Securing the Throne and Managing the Nobility": [
-        { type: "bullet", text: "War of Succession: Isabella was kept captive by her guardian, the [[Marquis of Villena]]. [[Joanna Beltraneja]] threatened the crown. The Archbishop of [[Toledo]] supported Joanna with [[19,000]] men and [[20]] castles. Isabella won at [[1476]] Battle of [[Toro]]. Ended by [[1479]] Treaty of [[Alcacovas]]. Castile granted everything north of and including [[Canaries]]. Beltraneja was sent to a [[convent]]." },
+        { type: "bullet", text: "[[War of Succession]]: Isabella was kept captive by her guardian, the [[Marquis of Villena]]. [[Joanna Beltraneja]] threatened the crown. The Archbishop of [[Toledo]] supported Joanna with [[19,000]] men and [[20]] castles. Isabella won at [[1476]] Battle of [[Toro]]. Ended by [[1479]] Treaty of [[Alcacovas]]. Castile granted everything north of and including [[Canaries]]. Beltraneja was sent to a [[convent]]." },
         { type: "bullet", text: "Rewards: Alliances with grandees such as [[Mendozas]], [[Velascos]]. New titles established like [[1475]] Duchy of [[Infantado]], [[1492]] Duchy of [[Frias]]." },
-        { type: "bullet", text: "[[Adulterine]] castles were turned into Isabelline palaces." },
+        { type: "bullet", text: "[[Adulterine]] castles were turned into [[Isabelline]] palaces." },
         { type: "bullet", text: "Marquis of Villena forced to forfeit [[Escalona]]." },
         { type: "bullet", text: "Military orders ([[Santiago]], [[Calatrava]], [[Alcantara]]) absorbed into crown by [[1501]]. Santiago alone had [[80]] encomiendas. Vast revenues." },
-        { type: "bullet", text: "[[Mayorazgos]] were promoted by the [[1505]] Cortes of [[Toro]]. Prevented the sale and division of estates." },
+        { type: "bullet", text: "[[Mayorazgos]] were promoted by the [[1505]] Cortes of [[Toro]]. Prevented the [[sale]] and [[division]] of estates." },
         { type: "bullet", text: "[[3%]] of the population owned [[97%]] of the land." },
         { type: "bullet", text: "Grandees: [[15]] families owned [[50%]] of the land. Socially dominant, but excluded from the [[Royal Council]]." }
     ],
     "Ferdinand and Isabella: Santa Hermandad": [
         { type: "bullet", text: "Established at [[1476]] Cortes of [[Madrigal]]." },
         { type: "bullet", text: "Peacekeeping force for rural towns with [[50+]] inhabitants." },
-        { type: "bullet", text: "Coordinated by [[Junta General]]. Treasurer was [[Abraham Seneor]], a Jewish tax farmer: allegations of corruption." },
+        { type: "bullet", text: "Coordinated by [[Junta General]]. Treasurer was [[Abraham Seneor]], a Jewish tax farmer: allegations of [[corruption]]." },
         { type: "bullet", text: "Summary powers to enforce justice, such as [[death by arrow]] for highway robbery." },
         { type: "bullet", text: "Militia of [[3000]] men in [[1476]]. This rose to [[10,000]] by [[1490]]." },
-        { type: "bullet", text: "Provided [[300 million maravedis]] and [[16,000]] men to the Granada war." },
-        { type: "bullet", text: "Central organisation disbanded in [[1498]] to appease towns (too expensive)." }
+        { type: "bullet", text: "Provided [[300 million maravedis]] and [[16,000]] men to the [[Granada]] war." },
+        { type: "bullet", text: "Central organisation disbanded in [[1498]] to appease towns (too [[expensive]])." }
     ],
     "Ferdinand and Isabella: Religious Policy": [
-        { type: "bullet", text: "Inquisition established by Papal Bull in [[1478]] to target converso heresy. [[700]] executed in [[Seville]] from 1481-88. [[99.3%]] of trials in Barcelona in 1505 of Jewish origin." },
-        { type: "bullet", text: "Jews never really liked. Already long-standing Jewish districts ([[aljamas]]) in cities. [[1476]] pragmatica forbade all Jews from Bilbao." },
+        { type: "bullet", text: "[[Inquisition]] established by Papal Bull in [[1478]] to target [[converso]] heresy. [[700]] executed in [[Seville]] from 1481-88. [[99.3%]] of trials in Barcelona in 1505 of Jewish origin." },
+        { type: "bullet", text: "Jews never really liked. Already long-standing Jewish districts ([[aljamas]]) in cities. [[1476]] pragmatica forbade all Jews from [[Bilbao]]." },
         { type: "bullet", text: "Changed curriculum of [[Salamanca]] University in [[1482]] to include [[limpieza de sangre]]." },
-        { type: "bullet", text: "[[March 1492]] Alhambra decree told all Jews to convert or leave by July. Estimates of exodus range from [[40,000]] to [[300,000]]. Loss of professionals (eg. silk) but short term gain in confiscated property eg. gold and silver which Jews weren't allowed to take." },
-        { type: "bullet", text: "Granada War was framed as crusade and thus funded by the [[cruzada]] tax which brought in [[800m maravedis]] from 1484-92." },
-        { type: "bullet", text: "Muslims: Archbishop of Granada, [[Talavera]], promoted teaching and religious education. But [[1499]] intervention by [[Cisneros]] used forced baptisms. This led to the [[1499-1501]] Alpujarras revolt. Royal forces blew up a mosque where women and children were sheltering, [[October 1501]] royal decree ordered a massive public bonfire of Arabic books.m No more religious or cultural rights for Arabs; [[1502]] decree said Castilian Muslims can choose conversion or exile." },
+        { type: "bullet", text: "[[March 1492]] Alhambra decree told all Jews to convert or leave by July. Estimates of exodus range from [[40,000]] to [[300,000]]. Loss of professionals (eg. [[silk]]) but short term gain in confiscated property eg. [[gold and silver]] which Jews weren't allowed to take." },
+        { type: "bullet", text: "Granada War was framed as [[crusade]] and thus funded by the [[cruzada]] tax which brought in [[800m maravedis]] from 1484-92." },
+        { type: "bullet", text: "Muslims: Archbishop of Granada, [[Talavera]], promoted teaching and religious education. But [[1499]] intervention by [[Cisneros]] used forced baptisms. This led to the [[1499-1501]] Alpujarras revolt. Royal forces blew up a mosque where women and children were sheltering, [[October 1501]] royal decree ordered a massive public bonfire of [[Arabic books]]. No more religious or cultural rights for Arabs; [[1502]] decree said Castilian Muslims can choose [[conversion]] or [[exile]]." },
         { type: "bullet", text: "[[Cisneros]] (archbishop of Toledo) was highly infliuential. Made cardinal in [[1507]], financed Uni of [[Alcala]] in [[1508]], and capture of [[Oran]] in [[1509]]." },
         { type: "bullet", text: "Assassination of an inquisitor in [[Zaragoza]] in [[1485]] increased power of Inquisition, led to [[15]] mass auto de fes, wealth confiscations of prominent figures eg. [[Francisco de Santa Fe]]." },
-        { type: "bullet", text: "Church control: [[1486 Patronato Real]] gave monarchs the right to appoint bishops in Granada." },
+        { type: "bullet", text: "Church control: [[1486 Patronato Real]] gave monarchs the right to appoint [[bishops]] in Granada." },
         { type: "bullet", text: "In [[1492 Antonio de Nebrija]] published the first Castilian grammar, and said \"language is the instrument of [[empire]]\". Tool for conversion of subjugated peoples." }
     ],
     "Ferdinand and Isabella: Foreign and Dynastic Policy": [
-        { type: "bullet", text: "France: [[1493 Treaty of Barcelona]] recovered Cerdagne, Rousillion." },
+        { type: "bullet", text: "France: [[1493 Treaty of Barcelona]] recovered [[Cerdagne]], [[Rousillion]]." },
         { type: "bullet", text: "Italy: [[Gonzalo de Cordoba]] 'the Grand Captain' won victors at Cerignola and Garigliano [[1503]]. Ferdinand as king of Naples by [[1504]]." },
-        { type: "bullet", text: "Diplomacy: First resident ambassadors in London in [[1487]]. [[1489 Treaty of Medina del Campo]] secured English alliance w/ marriages." },
+        { type: "bullet", text: "Diplomacy: First resident ambassadors in [[London]] in [[1487]]. [[1489 Treaty of Medina del Campo]] secured [[English]] alliance w/ marriages." },
         { type: "bullet", text: "Atlantic: [[1479 Treaty of Alcacovas]] secured Canaries, conquered by [[1496]]. [[1494 Treaty of Tordesillas]] divided the globe." },
         { type: "bullet", text: "North Africa: [[Presidios]] were established. [[1497]] Melilla, [[1505]] Mers-el-Kebir, [[1509]] Oran." },
-        { type: "bullet", text: "Navarre: Succession crisis exploited to annexation in [[1512]]. Ferdinand as king. Respected fueros." },
+        { type: "bullet", text: "Navarre: Succession crisis exploited to annexation in [[1512]]. Ferdinand as king. Respected [[fueros]]." },
         { type: "bullet", text: "[[1505 Treaty of Blois]]: Ferdinand married [[Germaine de Foix]], niece of French king, for securing of Naples and Aragon from France." },
         { type: "bullet", text: "[[Joanna]] x Philip the Handsome in [[1496]]." },
         { type: "bullet", text: "[[Isabella]] x Afonso in [[1490]]." },
@@ -141,24 +141,24 @@ const spainNotesData = {
         { type: "bullet", text: "Revenue: [[800k reales]] in 1470 to [[22m reales]] in 1504." },
         { type: "bullet", text: "The 10% sales tax - [[alcabala]] - was the biggest contributor to revenue." },
         { type: "bullet", text: "Currency: [[1497]] pragmatica standardised [[375 maravedis]] as 1 ducat, excelente, principat." },
-        { type: "bullet", text: "Mesta: [[2.8 million]] sheep in 1450. Protected by the crown. Special interest represented on the royal council. Lack of agriculture led to reliance on imports and wheat shortage by [[1506]]. [[1501 Law of Leases]] allowed Mesta to rent land in perpetuity at the original price. [[Tasa]] (price fix) on grain in [[1502]] tried to fight this." },
+        { type: "bullet", text: "Mesta: [[2.8 million]] sheep in 1450. Protected by the crown. Special interest represented on the [[royal council]]. Lack of agriculture led to reliance on imports and wheat shortage by [[1506]]. [[1501 Law of Leases]] allowed Mesta to rent land in perpetuity at the original price. [[Tasa]] (price fix) on grain in [[1502]] tried to fight this." },
         { type: "bullet", text: "Debt: [[Juros]] (10% interest bonds) given out. Repayment reached [[131 million maravedis]] by 1516." },
         { type: "bullet", text: "[[1494 Consulado of Burgos]] gave the city a monopoly on the wool trade." },
         { type: "bullet", text: "[[1503 Casa de Contratacion]] in Seville controlled trade, shipping schedules, etc... Seville given sole right to New World. Trade volume increased from [[300 toneladas]] in 1504 to [[5000 toneladas]] in 1516." },
-        { type: "bullet", text: "Tolls: [[1480]] exemption for merchants. [[1497]] exemption for Carter's guild. Corruption. Nobles took tolls but didn't fix bridges." },
+        { type: "bullet", text: "Tolls: [[1480]] exemption for merchants. [[1497]] exemption for Carter's guild. Corruption. Nobles took tolls but didn't fix [[bridges]]." },
         { type: "bullet", text: "[[1511]] enquiry found roads in poor quality, [[12]] bridges swept away and not rebuilt." },
         { type: "bullet", text: "Expulsion of Jews harmed [[silk]] and cloth industries despite short term gain." },
         { type: "bullet", text: "Aragon contributed less than [[20%]] of what Castile contributes." }
     ],
     "Charles V: Consolidation of Royal Authority and Revolts": [
-        { type: "bullet", text: "Accession: \"foreign king\". Resentment at early Burgundian appointments eg. [[Chievres]] placed his 20 y.o. nephew as Archbishop of [[Toledo]]." },
-        { type: "bullet", text: "[[1518-19]] Cortes: promised to learn Castilian, respect fueros, etc." },
-        { type: "bullet", text: "[[1519]] HRE election: Cost [[852k florins]]. Partially funded by servicios from Cortes of [[Santiago]] and [[Coruna]] in exchange for Hispanization." },
+        { type: "bullet", text: "Accession: \"[[foreign king]]\". Resentment at early Burgundian appointments eg. [[Chievres]] placed his 20 y.o. nephew as Archbishop of [[Toledo]]." },
+        { type: "bullet", text: "[[1518-19]] Cortes: promised to learn [[Castilian]], respect [[fueros]], etc." },
+        { type: "bullet", text: "[[1519]] HRE election: Cost [[852k florins]]. Partially funded by [[servicios]] from Cortes of [[Santiago]] and [[Coruna]] in exchange for Hispanization." },
         { type: "bullet", text: "[[1520-21 Comuneros]]: Urban uprising due to high taxes, foreigners, corregidor abuses. Toledo, Segovia. Led by [[Juan de Padilla]]. Radicalised by burning of [[Medina del Campo]] 1520 on orders of Charles. Failed to get [[Joanna the Mad's]] support." },
         { type: "bullet", text: "April [[1521]] Battle of [[Villalar]]: Revolt crushed by nobles. Leaders executed. Last strongholds fell in October 1521. [[22]] executed." },
-        { type: "bullet", text: "[[1519-21 Germania]]: Merchants and artisan guilds who held grievances over economic hardship. Limited to [[Valencia]]. Council of 13 germanias. Turned radical by [[Vicente Peris]]. Attacks on noble estates, forced baptism of mudejars. Main revolt stopped in [[1521]], holdouts until 1522 by \"The Hidden\" who tuned revolt more spiritual. Majorca until [[1523]]." },
+        { type: "bullet", text: "[[1519-21 Germania]]: Merchants and artisan guilds who held grievances over economic hardship. Limited to [[Valencia]]. Council of 13 germanias. Turned radical by [[Vicente Peris]]. Attacks on noble estates, forced baptism of mudejars. Main revolt stopped in [[1521]], holdouts until 1522 by \"[[The Hidden]]\" who tuned revolt more spiritual. Majorca until [[1523]]." },
         { type: "bullet", text: "Resolution: Hispanization. Learned Castilian, increased Spanish appointments, married [[Isabella]] in [[1526]]." },
-        { type: "bullet", text: "Returned in [[1522]] with [[4000]] mercenaries. Issued general pardon except for rebel leaders." },
+        { type: "bullet", text: "Returned in [[1522]] with [[4000]] mercenaries. Issued [[general pardon]] except for rebel leaders." },
         { type: "bullet", text: "All cortes deputies required to have [[poderes]] (full powers)." }
     ],
     "Charles V: Government and Administration": [
@@ -166,7 +166,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[Consulta]] standardised conciliar system with council debata leading to consulta, approved or rejected by the king." },
         { type: "bullet", text: "[[Mercurino Gattinara]] grand chancellor until [[1530]]. No new grand chancellor appointed, split between [[los Cobos]] (finance) and [[Granvelle]] (foreign policy)." },
         { type: "bullet", text: "Cortes met [[15]] times. [[1538]] Cortes of Toledo nobles refused [[sisa]] (food tax). Thereafter, only town deputies summoned." },
-        { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the military oders." },
+        { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the [[military oders]]." },
         { type: "bullet", text: "[[1543]]: State archive established at [[Simancas]]." },
         { type: "bullet", text: "[[1543]]: Philip as regent, aged [[16]]. Guided by junta including Cardinal [[Tavera]], de los Cobos. Lasted for [[14yrs]] during Charles' absence." },
         { type: "bullet", text: "[[Itinerant]] court continued." },
@@ -190,14 +190,14 @@ const spainNotesData = {
         { type: "bullet", text: "1516-60: [[11.9m ducats]] from Americas." },
         { type: "bullet", text: "Partially result of [[Potosi]] 1545 and [[Zacatecas]] 1548." },
         { type: "bullet", text: "[[1554 mercury amalgamation]] was new process to extract silver ore." },
-        { type: "bullet", text: "[[1543 almojarifazgo mayor]]: 5% customs duty on bullion via Sevilla." },
+        { type: "bullet", text: "[[1543 almojarifazgo mayor]]: [[5%]] customs duty on bullion via Sevilla." },
         { type: "bullet", text: "[[Military]] spending was biggest expense." },
         { type: "bullet", text: "Burgundian-style court cost [[200k ducats/yr.]] with [[762]] people." },
         { type: "bullet", text: "[[502 asientos]] (short-term loans) negotiated, with Charles borrowing [[28.8m ducats]]." },
         { type: "bullet", text: "Interest rates rose from [[17.6%]] in the 1520s to [[48.8%]] by the 1550s." },
         { type: "bullet", text: "[[1544]]: massive debts of [[3.1m ducats]]. [[1000 hidalgos]] auctioned to raise money. Backfired as they were exempt from taxation" },
-        { type: "bullet", text: "1540s: desperate measures eg. seizing all private treasure imported to fund [[Muhlberg]]." },
-        { type: "bullet", text: "Selling public offices weakened crown jurisdiction in the long term." },
+        { type: "bullet", text: "1540s: desperate measures eg. seizing all private [[treasure]] imported to fund [[Muhlberg]]." },
+        { type: "bullet", text: "Selling [[public offices]] weakened crown jurisdiction in the long term." },
         { type: "bullet", text: "[[Fuggers]] lent 543k florins and [[Welsers]] another 143k florins for HRE. Gained shipping and permits for Americas - Welsers colonised [[Venezuela]]." },
         { type: "bullet", text: "Andalusia: wheat [[+109%]], oil [[+197%]], wine [[+655%]]. 1511-56" },
         { type: "bullet", text: "Valladolid: wheat [[+44%]], land [[+86%]], wages [[+33%]]. 1511-56" },
@@ -205,8 +205,8 @@ const spainNotesData = {
         { type: "bullet", text: "[[1556]]: 37m ducats of debt. Bankrupt by [[1557]]. Total failure." }
     ],
     "Charles V: New World": [
-        { type: "bullet", text: "[[1519-21]]: [[Cortes]] with 600 men conquered the [[Aztecs]]." },
-        { type: "bullet", text: "[[1532]]: [[Pizarro]] (pig farmer) with 160 men conquered [[Incas]] in Peru." },
+        { type: "bullet", text: "[[1519-21]]: [[Cortes]] with [[600]] men conquered the [[Aztecs]]." },
+        { type: "bullet", text: "[[1532]]: [[Pizarro]] (pig farmer) with [[160]] men conquered [[Incas]] in Peru." },
         { type: "bullet", text: "[[1535]]: Viceroyalty of [[New Spain]] (Mexico) established." },
         { type: "bullet", text: "[[1542]]: Viceroyalty of [[Peru]] established." },
         { type: "bullet", text: "[[1542: New Laws]] tried to protect Indians, but with limited influence." },
@@ -219,8 +219,8 @@ const spainNotesData = {
     "Charles V: Religious Policy": [
         { type: "bullet", text: "\"[[Plus Oultre]]\" motto partially symbolised 'Herculean task' of spreading Christianity." },
         { type: "bullet", text: "[[Limpieza de sangre]] still used to bar conversos and descendants from office." },
-        { type: "bullet", text: "Inquisition began to use tortures. [[1547]] new Inquisitor General ([[Valdes]]) prosecuted moral crimes eg. bigamy." },
-        { type: "bullet", text: "Episocpal standards increased eg. with uni training." },
+        { type: "bullet", text: "Inquisition began to use tortures. [[1547]] new Inquisitor General ([[Valdes]]) prosecuted moral crimes eg. [[bigamy]]." },
+        { type: "bullet", text: "Episocpal standards increased eg. with [[uni training]]." },
         { type: "bullet", text: "Uni of [[Alcala]] became centre of religious innovation eg. [[1522 Polyglot Bible]]." },
         { type: "bullet", text: "[[1523]] Papal Bull expanded [[1486 Patronato Real]] to all of Spain." },
         { type: "bullet", text: "Poor Papal relations. [[1527 Sack of Rome]] by unpaid mercenaries captured the Pope." },
@@ -328,7 +328,7 @@ const spainNotesData = {
         { type: "bullet", text: "Campaign cost [[5m ducats]] and specific battle [[1.1m ducats]], of which 400,000 came from Italian kingdoms." },
         { type: "bullet", text: "[[1580]]: Philip signed a formal truce with Sultan [[Selim II]] to shift focus." },
         { type: "heading", text: "Portugal" },
-        { type: "bullet", text: "King Sebastian died 1578 at [[Alcazarquivir]], [[Henry]] had short reign - then, the [[Duke of Alba]] invaded in [[1580]].." },
+        { type: "bullet", text: "King Sebastian died 1578 at [[Alcazarquivir]], [[Henry]] had short reign - then, the [[Duke of Alba]] invaded in [[1580]]." },
         { type: "bullet", text: "[[1581 Cortes of Tomar]]: Philip proclaimed King; swore to respect fueros, use native officials, and keep separate trade monopolies." },
         { type: "heading", text: "England" },
         { type: "bullet", text: "English Alliance: [[1554]] marriage to [[Mary Tudor]] intended to encircle France." },
@@ -394,337 +394,369 @@ const spainNotesData = {
 // --- WOTR NOTES DATA ---
 const wotrNotesData = {
     "1450-1458": [
-        { type: "bullet", text: "<b>February 1447</b> - Humphrey, Duke of Gloucester was executed five days after being arrested for treason." },
-        { type: "bullet", text: "<b>November 1449</b> - Parliament does not approve taxation to further the war in France." },
-        { type: "bullet", text: "<b>1450</b> - The English economy is virtually bankrupt, with £372,000 in debt, £38k of this being owed to Richard of York." },
-        { type: "bullet", text: "<b>May 1450</b> - Cade's rebellion breaks out over taxation and the king's perceived favour of \"evil councillors\" like Suffolk." },
-        { type: "bullet", text: "<b>2 May 1450</b> - Suffolk is executed on the Nicholas of the Tower." },
-        { type: "bullet", text: "<b>1 June 1450</b> - Cade's forces take London, and Lord Saye and Sele (the treasurer) is executed." },
-        { type: "bullet", text: "<b>12 July 1450</b> - Cade's rebellion is defeated; 3000 rebels are issued a general pardon." },
-        { type: "bullet", text: "<b>September 1450</b> - York returns from Ireland with the intent to clear his name of involvement in Cade's rebellion. He defies orders by bringing a force of 3000-4000 retainers." },
-        { type: "bullet", text: "<b>1451</b> - Loss of Gascony." },
-        { type: "bullet", text: "<b>1 March 1452</b> - The Dartford Coup ends disastrously for York; after presenting his grievances, he fails to gain support and is forced to take an oath of loyalty at St. Paul's." },
-        { type: "bullet", text: "<b>July 1453</b> - Shrewsbury is defeated and killed at the Battle of Castilion, which ends English claims in France." },
-        { type: "bullet", text: "<b>August 1453</b> - Skirmish at Heworth Moor; the Nevilles and Percys clash while returning from a wedding, partially motivating the Nevilles to join York's faction." },
-        { type: "bullet", text: "<b>August 1453</b> - Henry VI's catatonic state begins." },
-        { type: "bullet", text: "<b>October 1453</b> - Edward of Westminster is born, with Somerset as his godfather, but cannot be acknowledged by the king." },
-        { type: "bullet", text: "<b>November 1453</b> - Somerset is placed in the Tower of London." },
-        { type: "bullet", text: "<b>January 1454</b> - Anjou makes plans to become regent." },
-        { type: "bullet", text: "<b>February 1454</b> - Parliament is called but is very poorly attended due to fear of offending Henry VI." },
-        { type: "bullet", text: "<b>22 March 1454</b> - Death of John Kemp, Archbishop of Canterbury. Royal authority is required to name a replacement." },
-        { type: "bullet", text: "<b>27 March 1454</b> - Richard of York is named protector. During his protectorate, he installs Salisbury as chancellor and Thomas Bourchier as Archbishop of Canterbury. In general, the protectorate is successful, and described as \"able, vigorous, and moderate government\". For example, he polices his own men to stop them from breaking the law. However, he is partially hindered by Lancastrian opposition." },
-        { type: "bullet", text: "<b>July 1454</b> - Exeter, a loyal Lancastrian, is imprisoned at Pontefract Castle." },
-        { type: "bullet", text: "<b>25 December 1454</b> - Henry VI recovers from his catatonic state, and acknowledges his son as \"a fair little stud\"." },
-        { type: "bullet", text: "<b>30 December 1454</b> - Richard of York's authority as protector is dissolved." },
-        { type: "bullet", text: "<b>22 May 1455</b> - First Battle of St. Albans - Yorkist victory. In a short battle which lasted probably about an hour, about 60 casualties occur, of which most are nobles and officers. These include Northumberland, Clifford, and Somerset, who were killed, and Henry VI, who is wounded by an arrow to the neck. The battle featured about 5000 troops. The Yorkists are definitively in control following the engagement." },
-        { type: "bullet", text: "<b>November 1455</b> - York's second protectorate begins - partially in response to the Bonville-Courtenay fued." },
-        { type: "bullet", text: "<b>February 1456</b> - York's second protectorate ends." },
-        { type: "bullet", text: "<b>1456</b> - Anjou moves the court to Coventry, a more pro-Lancastrian area." },
-        { type: "bullet", text: "<b>1456</b> - Walter Devereux, a Yorkist ally, seizes castles in Wales, for example at Aberystwyth, for the Yorkists." },
-        { type: "bullet", text: "<b>1457</b> - Pierre de Breze, a Frenchman with ties to Anjou, raids Sandwich." },
-        { type: "bullet", text: "<b>25 March 1458</b> - Henry VI puts on the Loveday parade, a disastrous attempt to reconcile the two factions. It sees Anjou and York, Somerset and Salisbury, and Exeter and Warwick walk hand-in-hand through London. However, it fails in its objectively and is extremely expensive." }
+        { type: "bullet", text: "<b>[[February 1447]]</b> - [[Humphrey, Duke of Gloucester]] was [[executed]] five days after being arrested for [[treason]]." },
+        { type: "bullet", text: "<b>[[November 1449]]</b> - Parliament does not approve [[taxation]] to further the war in France." },
+        { type: "bullet", text: "<b>[[1450]]</b> - The English economy is virtually [[bankrupt]], with [[£372,000]] in debt, [[£38k]] of this being owed to [[Richard of York]]." },
+        { type: "bullet", text: "<b>[[May 1450]]</b> - [[Cade's rebellion]] breaks out over taxation and the king's perceived favour of \"evil councillors\" like [[Suffolk]]." },
+        { type: "bullet", text: "<b>[[2 May 1450]]</b> - [[Suffolk]] is executed on the [[Nicholas of the Tower]]." },
+        { type: "bullet", text: "<b>[[1 June 1450]]</b> - Cade's forces take [[London]], and [[Lord Saye and Sele]] (the treasurer) is executed." },
+        { type: "bullet", text: "<b>[[12 July 1450]]</b> - Cade's rebellion is defeated; [[3000]] rebels are issued a [[general pardon]]." },
+        { type: "bullet", text: "<b>[[September 1450]]</b> - [[York]] returns from Ireland with the intent to clear his name of involvement in Cade's rebellion. He defies orders by bringing a force of [[3000-4000]] retainers." },
+        { type: "bullet", text: "<b>[[1451]]</b> - Loss of [[Gascony]]." },
+        { type: "bullet", text: "<b>[[1 March 1452]]</b> - The [[Dartford Coup]] ends disastrously for York; after presenting his grievances, he fails to gain support and is forced to take an oath of loyalty at [[St. Paul's]]." },
+        { type: "bullet", text: "<b>[[July 1453]]</b> - [[Shrewsbury]] is defeated and killed at the Battle of [[Castilion]], which ends English claims in France." },
+        { type: "bullet", text: "<b>[[August 1453]]</b> - Skirmish at [[Heworth Moor]]; the [[Nevilles]] and [[Percys]] clash while returning from a wedding, partially motivating the Nevilles to join York's faction." },
+        { type: "bullet", text: "<b>[[August 1453]]</b> - [[Henry VI's]] catatonic state begins." },
+        { type: "bullet", text: "<b>[[October 1453]]</b> - [[Edward of Westminster]] is born, with [[Somerset]] as his godfather, but cannot be acknowledged by the king." },
+        { type: "bullet", text: "<b>[[November 1453]]</b> - [[Somerset]] is placed in the [[Tower of London]]." },
+        { type: "bullet", text: "<b>[[January 1454]]</b> - [[Anjou]] makes plans to become [[regent]]." },
+        { type: "bullet", text: "<b>[[February 1454]]</b> - Parliament is called but is very poorly attended due to fear of offending Henry VI." },
+        { type: "bullet", text: "<b>[[22 March 1454]]</b> - Death of [[John Kemp]], Archbishop of Canterbury. Royal authority is required to name a replacement." },
+        { type: "bullet", text: "<b>[[27 March 1454]]</b> - [[Richard of York]] is named [[protector]]. During his protectorate, he installs [[Salisbury]] as chancellor and [[Thomas Bourchier]] as Archbishop of Canterbury. In general, the protectorate is successful, and described as \"able, vigorous, and moderate government\". For example, he polices his own men to stop them from breaking the law. However, he is partially hindered by Lancastrian opposition." },
+        { type: "bullet", text: "<b>[[July 1454]]</b> - [[Exeter]], a loyal Lancastrian, is imprisoned at [[Pontefract]] Castle." },
+        { type: "bullet", text: "<b>[[25 December 1454]]</b> - Henry VI recovers from his catatonic state, and acknowledges his son as \"a fair little stud\"." },
+        { type: "bullet", text: "<b>[[30 December 1454]]</b> - Richard of York's authority as protector is dissolved." },
+        { type: "bullet", text: "<b>[[22 May 1455]]</b> - First Battle of [[St. Albans]] - [[Yorkist]] victory. In a short battle which lasted probably about an hour, about [[60]] casualties occur, of which most are nobles and officers. These include [[Northumberland]], [[Clifford]], and [[Somerset]], who were killed, and Henry VI, who is wounded by an arrow to the neck. The battle featured about [[5000]] troops. The Yorkists are definitively in control following the engagement." },
+        { type: "bullet", text: "<b>[[November 1455]]</b> - York's [[second protectorate]] begins - partially in response to the [[Bonville-Courtenay]] fued." },
+        { type: "bullet", text: "<b>[[February 1456]]</b> - York's second protectorate ends." },
+        { type: "bullet", text: "<b>[[1456]]</b> - Anjou moves the court to [[Coventry]], a more pro-Lancastrian area." },
+        { type: "bullet", text: "<b>[[1456]]</b> - [[Walter Devereux]], a Yorkist ally, seizes castles in Wales, for example at [[Aberystwyth]], for the Yorkists." },
+        { type: "bullet", text: "<b>[[1457]]</b> - [[Pierre de Breze]], a Frenchman with ties to Anjou, raids [[Sandwich]]." },
+        { type: "bullet", text: "<b>[[25 March 1458]]</b> - Henry VI puts on the [[Loveday parade]], a disastrous attempt to reconcile the two factions. It sees Anjou and York, Somerset and Salisbury, and Exeter and Warwick walk hand-in-hand through London. However, it fails in its objectively and is extremely [[expensive]]." }
     ],
     "1458-1461": [
-        { type: "bullet", text: "<b>25 March 1458</b> - Henry VI puts on the Loveday parade, a disastrous attempt to reconcile the two factions. It sees Anjou and York, Somerset and Salisbury, and Exeter and Warwick walk hand-in-hand through London. However, it fails in its objectively and is extremely expensive." },
-        { type: "bullet", text: "<b>May 1458</b> - After returning to Calais, Warwick takes up piracy by raiding Spanish and Hanseatic ships without the permission of Parliament or the king. This makes him much richer and more popular, especially with the soldiers." },
-        { type: "bullet", text: "<b>November 1458</b> - Warwick, who was called to council to answer for his actions, is almost killed during a skirmish between his retainer and the royal household troops." },
-        { type: "bullet", text: "<b>23 September 1459</b> - Battle of Blore Heath - Yorkist victory. Salisbury defeated Audley and Dudley." },
-        { type: "bullet", text: "<b>9 October 1459</b> - Somerset is appointed Captain of Calais. He will attempt to take up his post multiple times, but is prevented by Warwick." },
-        { type: "bullet", text: "<b>12 October 1459</b> - Rout of Ludford - Lancastrian victory. The defection of Andrew Trollope and poor morale on facing a large royal force lead to the Yorkist force disintegrating." },
-        { type: "bullet", text: "<b>October 1459</b> - The Yorkist leaders flee; Rutland and York go to Ireland, while Warwick, Salisbury, and March go to Calais." },
-        { type: "bullet", text: "<b>20 November 1459</b> - In the Parliament of Devils, Anjou and her Lancastrian allies implement 27 Acts of Attainder, which include the \"corruption of blood\" clause, disinheriting the Yorkist heirs." },
-        { type: "bullet", text: "<b>January 1460</b> - Raid of Sandwich - Yorkist victory. John Dynham catches the Lancastrian garrison by surprise; Earl Rivers is still in his bed when the forces arrive. The raid establishes naval supremacy which enables the Yorkist invastion later in the year." },
-        { type: "bullet", text: "<b>April 1460</b> - Battle of Newnham Bridge - Yorkist victory. Warwick finally defeats Somerset and secures Calais for the Yorkists." },
-        { type: "bullet", text: "<b>June 1460</b> - The Yorkists in Calais cross to England." },
-        { type: "bullet", text: "<b>10 July 1460</b> - Battle of Northampton - Yorkist victory. Heavy rain disables the Lancastrian cannons and Buckingham is killed." },
-        { type: "bullet", text: "<b>September 1460</b> - York returns from Ireland, acting in the manner of a king. He touches the throne, announces his progress with trumpeters, and emblazons his arms with the royal arms." },
-        { type: "bullet", text: "<b>25 October 1460</b> - In the Act of Accord, a grand compromise is established whereby Henry VI would remain king for life but York would become his heir over Edward of Westminster." },
-        { type: "bullet", text: "<b>30 December 1460</b> - Battle of Wakefield - Lancastrian victory. York, Salisbury, and Rutland are killed. The former has his head put up on the walls of York wearing a paper crown." },
-        { type: "bullet", text: "<b>2 February 1461</b> - Battle of Mortimer's Cross - Yorkist victory. The parhelion is interpreted as a divine symbol. Owen Tudor is killed." },
-        { type: "bullet", text: "<b>17 February 1461</b> - Second Battle of St. Albans - Lancastrian victory. Warwick is outflanked by a night march." },
-        { type: "bullet", text: "<b>4 March 1461</b> - Proclamation of Edward IV; the Yorkists claim that Henry VI has voided his right to reign by breaking the Act of Accord." },
-        { type: "bullet", text: "<b>29 March 1461</b> - Battle of Towton - Yorkist victory. The battle features up to 50,000 troops or up to 3% of the population. A blizzard hindered the Lancastrian arrows while helping the Yorkist archers. Norfolk's arrival proved decisive for the Yorkists. Henry VI fled to Scotland." },
-        { type: "bullet", text: "<b>5 April 1461</b> - Edward IV arrived in York, where he took down the heads of the Yorkist leaders and replaced them with Lancastrians." },
-        { type: "bullet", text: "<b>28 June 1461</b> - Coronation of Edward IV in Westminster; his brothers are invested as Clarence and Gloucester." }
+        { type: "bullet", text: "<b>[[25 March 1458]]</b> - Henry VI puts on the [[Loveday parade]], a disastrous attempt to reconcile the two factions. It sees Anjou and York, Somerset and Salisbury, and Exeter and Warwick walk hand-in-hand through London. However, it fails in its objectively and is extremely [[expensive]]." },
+        { type: "bullet", text: "<b>[[May 1458]]</b> - After returning to [[Calais]], Warwick takes up [[piracy]] by raiding Spanish and Hanseatic ships without the permission of Parliament or the king. This makes him much richer and more popular, especially with the soldiers." },
+        { type: "bullet", text: "<b>[[November 1458]]</b> - Warwick, who was called to council to answer for his actions, is almost killed during a skirmish between his retainer and the royal household troops." },
+        { type: "bullet", text: "<b>[[23 September 1459]]</b> - Battle of [[Blore Heath]] - [[Yorkist]] victory. Salisbury defeated Audley and Dudley." },
+        { type: "bullet", text: "<b>[[9 October 1459]]</b> - [[Somerset]] is appointed Captain of Calais. He will attempt to take up his post multiple times, but is prevented by [[Warwick]]." },
+        { type: "bullet", text: "<b>[[12 October 1459]]</b> - Rout of [[Ludford]] - [[Lancastrian]] victory. The defection of [[Andrew Trollope]] and poor morale on facing a large royal force lead to the Yorkist force disintegrating." },
+        { type: "bullet", text: "<b>[[October 1459]]</b> - The Yorkist leaders flee; Rutland and York go to [[Ireland]], while Warwick, Salisbury, and March go to [[Calais]]." },
+        { type: "bullet", text: "<b>[[20 November 1459]]</b> - In the [[Parliament of Devils]], Anjou and her Lancastrian allies implement [[27]] Acts of Attainder, which include the \"[[corruption of blood]]\" clause, disinheriting the Yorkist heirs." },
+        { type: "bullet", text: "<b>[[January 1460]]</b> - Raid of [[Sandwich]] - [[Yorkist]] victory. [[John Dynham]] catches the Lancastrian garrison by surprise; [[Earl Rivers]] is still in his bed when the forces arrive. The raid establishes [[naval supremacy]] which enables the Yorkist invastion later in the year." },
+        { type: "bullet", text: "<b>[[April 1460]]</b> - Battle of [[Newnham Bridge]] - [[Yorkist]] victory. Warwick finally defeats [[Somerset]] and secures Calais for the Yorkists." },
+        { type: "bullet", text: "<b>[[June 1460]]</b> - The Yorkists in Calais cross to England." },
+        { type: "bullet", text: "<b>[[10 July 1460]]</b> - Battle of [[Northampton]] - [[Yorkist]] victory. Heavy rain disables the Lancastrian [[cannons]] and [[Buckingham]] is killed." },
+        { type: "bullet", text: "<b>[[September 1460]]</b> - York returns from Ireland, acting in the manner of a [[king]]. He touches the throne, announces his progress with trumpeters, and emblazons his arms with the [[royal arms]]." },
+        { type: "bullet", text: "<b>[[25 October 1460]]</b> - In the [[Act of Accord]], a grand compromise is established whereby Henry VI would remain king for life but [[York]] would become his heir over [[Edward of Westminster]]." },
+        { type: "bullet", text: "<b>[[30 December 1460]]</b> - Battle of [[Wakefield]] - [[Lancastrian]] victory. York, Salisbury, and Rutland are killed. The former has his head put up on the walls of York wearing a [[paper crown]]." },
+        { type: "bullet", text: "<b>[[2 February 1461]]</b> - Battle of [[Mortimer's Cross]] - [[Yorkist]] victory. The [[parhelion]] is interpreted as a divine symbol. [[Owen Tudor]] is killed." },
+        { type: "bullet", text: "<b>[[17 February 1461]]</b> - Second Battle of [[St. Albans]] - [[Lancastrian]] victory. Warwick is outflanked by a [[night march]]." },
+        { type: "bullet", text: "<b>[[4 March 1461]]</b> - Proclamation of [[Edward IV]]; the Yorkists claim that Henry VI has voided his right to reign by breaking the [[Act of Accord]]." },
+        { type: "bullet", text: "<b>[[29 March 1461]]</b> - Battle of [[Towton]] - [[Yorkist]] victory. The battle features up to [[50,000]] troops or up to [[3%]] of the population. A [[blizzard]] hindered the Lancastrian arrows while helping the Yorkist archers. [[Norfolk's]] arrival proved decisive for the Yorkists. Henry VI fled to [[Scotland]]." },
+        { type: "bullet", text: "<b>[[5 April 1461]]</b> - Edward IV arrived in York, where he took down the heads of the Yorkist leaders and replaced them with Lancastrians." },
+        { type: "bullet", text: "<b>[[28 June 1461]]</b> - Coronation of [[Edward IV]] in Westminster; his brothers are invested as [[Clarence]] and [[Gloucester]]." }
     ],
     "1461-1469": [
-        { type: "bullet", text: "<b>28 June 1461</b> - Coronation of Edward IV in Westminster; his brothers are invested as Clarence and Gloucester." },
-        { type: "bullet", text: "<b>1461</b> - 113 Attainders are issued against the enemies of Edward IV." },
-        { type: "bullet", text: "<b>24 June 1462</b> - In the Treaty of Chinon, Louis XI agrees to aid Anjou in retaking the throne for the Lancastrians in exchange for Calais." },
-        { type: "bullet", text: "<b>25 October 1462</b> - Pierre de Breze raids Bamburgh and Dunstanburgh." },
-        { type: "bullet", text: "<b>October 1463</b> - Edward IV adopted a diplomatic strategy whereby in the Treaty of Hesdin he secured guarantees from Louis XI not to support rival claimants and in a peace with Scotland he secured the expulsion of Henry Vi from Edinburgh." },
-        { type: "bullet", text: "<b>25 April 1464</b> - Battle of Hedgeley Moor - Yorkist victory. Montague defeated and executed Ralph Percy." },
-        { type: "bullet", text: "<b>May 1464</b> - Edward IV secretly marries Elizabeth Woodville, preventing the potential match to Bona of Savoy which Warwick had advocated." },
-        { type: "bullet", text: "<b>15 May 1464</b> - Battle of Hexham - Yorkist victory. Montague defeated and executed Somerset. Henry VI was forced to flee into the woods." },
-        { type: "bullet", text: "<b>September 1464</b> - Elizabeth Woodville is introduced as queen of England, humiliating Warwick." },
-        { type: "bullet", text: "<b>January 1465</b> - John Woodville, a 19 year old, married the three-time widow Katherine Neville in a 'diabolical marriage'." },
-        { type: "bullet", text: "<b>26 May 1465</b> - Elizabeth Woodville is coronated." },
-        { type: "bullet", text: "<b>July 1465</b> - Henry VI is captured and put in the Tower of London." },
-        { type: "bullet", text: "<b>11 February 1466</b> - Further Woodville marriages take place, including for example Katherine Woodville to Henry Stafford. This limits the marriage opportunities of Warwick's daughters." },
-        { type: "bullet", text: "<b>1466</b> - Edward IV makes a private pledge of friendship with the Duke of Burgundy." },
-        { type: "bullet", text: "<b>June 1467</b> - Edward IV declares to Parliament that \"I will live upon mine own\"." },
-        { type: "bullet", text: "<b>12 June 1467</b> - Jousting at Smithfield! Anthony Woodville faces Anthony, Bastard of Burgundy." },
-        { type: "bullet", text: "<b>1467</b> - George Neville is removed as chancellor after he did not show up for jousting." },
-        { type: "bullet", text: "<b>January 1468</b> - Warwick is summoned to council at Coventry in an attempt to mend relations with Edward IV." },
-        { type: "bullet", text: "<b>3 July 1468</b> - Margaret of York is married to Charles the Bold." },
-        { type: "bullet", text: "<b>April 1469</b> - The first Robin of Redesdale revolt." }
+        { type: "bullet", text: "<b>[[28 June 1461]]</b> - Coronation of [[Edward IV]] in Westminster; his brothers are invested as [[Clarence]] and [[Gloucester]]." },
+        { type: "bullet", text: "<b>[[1461]]</b> - [[113]] Attainders are issued against the enemies of Edward IV." },
+        { type: "bullet", text: "<b>[[24 June 1462]]</b> - In the Treaty of [[Chinon]], [[Louis XI]] agrees to aid Anjou in retaking the throne for the Lancastrians in exchange for [[Calais]]." },
+        { type: "bullet", text: "<b>[[25 October 1462]]</b> - [[Pierre de Breze]] raids [[Bamburgh]] and [[Dunstanburgh]]." },
+        { type: "bullet", text: "<b>[[October 1463]]</b> - Edward IV adopted a diplomatic strategy whereby in the Treaty of [[Hesdin]] he secured guarantees from [[Louis XI]] not to support rival claimants and in a peace with [[Scotland]] he secured the expulsion of Henry Vi from Edinburgh." },
+        { type: "bullet", text: "<b>[[25 April 1464]]</b> - Battle of [[Hedgeley Moor]] - [[Yorkist]] victory. Montague defeated and executed [[Ralph Percy]]." },
+        { type: "bullet", text: "<b>[[May 1464]]</b> - Edward IV secretly marries [[Elizabeth Woodville]], preventing the potential match to [[Bona of Savoy]] which Warwick had advocated." },
+        { type: "bullet", text: "<b>[[15 May 1464]]</b> - Battle of [[Hexham]] - [[Yorkist]] victory. Montague defeated and executed [[Somerset]]. Henry VI was forced to flee into the woods." },
+        { type: "bullet", text: "<b>[[September 1464]]</b> - [[Elizabeth Woodville]] is introduced as queen of England, humiliating [[Warwick]]." },
+        { type: "bullet", text: "<b>[[January 1465]]</b> - [[John Woodville]], a 19 year old, married the three-time widow [[Katherine Neville]] in a 'diabolical marriage'." },
+        { type: "bullet", text: "<b>[[26 May 1465]]</b> - Elizabeth Woodville is coronated." },
+        { type: "bullet", text: "<b>[[July 1465]]</b> - Henry VI is captured and put in the [[Tower of London]]." },
+        { type: "bullet", text: "<b>[[11 February 1466]]</b> - Further Woodville marriages take place, including for example Katherine Woodville to [[Henry Stafford]]. This limits the marriage opportunities of Warwick's daughters." },
+        { type: "bullet", text: "<b>[[1466]]</b> - Edward IV makes a private pledge of friendship with the [[Duke of Burgundy]]." },
+        { type: "bullet", text: "<b>[[June 1467]]</b> - Edward IV declares to Parliament that \"[[I will live upon mine own]]\"." },
+        { type: "bullet", text: "<b>[[12 June 1467]]</b> - Jousting at Smithfield! [[Anthony Woodville]] faces [[Anthony, Bastard of Burgundy]]." },
+        { type: "bullet", text: "<b>[[1467]]</b> - [[George Neville]] is removed as chancellor after he did not show up for jousting." },
+        { type: "bullet", text: "<b>[[January 1468]]</b> - Warwick is summoned to council at [[Coventry]] in an attempt to mend relations with Edward IV." },
+        { type: "bullet", text: "<b>[[3 July 1468]]</b> - [[Margaret of York]] is married to [[Charles the Bold]]." },
+        { type: "bullet", text: "<b>[[April 1469]]</b> - The first [[Robin of Redesdale]] revolt." }
     ],
     "1469-1471": [
-        { type: "bullet", text: "<b>April 1469</b> - The first Robin of Redesdale revolt." },
-        { type: "bullet", text: "<b>June 1469</b> - The second Robin of Redesdale revolt." },
-        { type: "bullet", text: "<b>11 July 1469</b> - Isabel Neville marries Clarence in Calais." },
-        { type: "bullet", text: "<b>12 July 1469</b> - Warwick published a pamphlet from Calais against the evil councillors surrounding Edward IV and airing his grievances." },
-        { type: "bullet", text: "<b>July 1469</b> - Warwick crosses to England. The gates of London are opened to him, and he begins to openly support the rebels against Edward IV." },
-        { type: "bullet", text: "<b>26 July 1469</b> - Battle of Edgecote - rebel victory. The Herbert-Devon dispute led to Devon withdrawing his archers. Edward IV is under Warwick's control." },
-        { type: "bullet", text: "<b>August 1469</b> - Warwick executed John Woodville and Earl Rivers." },
-        { type: "bullet", text: "<b>September 1469</b> - Edward IV was released from custody due to the nobles not being cooperative with his administration." },
-        { type: "bullet", text: "<b>October 1469</b> - Edward IV returned to London surrounded by loyal nobles like the Duke of Gloucester." },
-        { type: "bullet", text: "<b>12 March 1470</b> - Battle of Losecote Field - royal victory. 30,000 rebels under Robert Welles, Warwick's puppet, are defeated by Edward IV. Warwick and Clarence are declared traitors." },
-        { type: "bullet", text: "<b>20 March 1470</b> - An inheritance dispute in Gloucestershire leads to the Battle of Nibley Green, the final battle between private battles on English soil." },
-        { type: "bullet", text: "<b>22 July 1470</b> - In the Treaty of Angers, Louis XI allied with Warwick and Anjou. Anjou forced Warwick to kneel for 15 minutes upon their meeting. Clarence was sidelined. The marriage of Anne Neville and Edward of Westminster was organised." },
-        { type: "bullet", text: "<b>3 October 1470</b> - Henry VI was restored and freed from the tower - he was \"amazed\" at the turn of events." },
-        { type: "bullet", text: "<b>6 October 1470</b> - Warwick, Stanley, and Shrewsbury rode into London and greeted Henry VI as their rightful king. A pamphlet was issued announcing this." },
-        { type: "bullet", text: "<b>13 October 1470</b> - Henry VI is paraded in blue robes through London, but this backfired as he looked \"mute as a crowned calf\" according to one chronicler." },
-        { type: "bullet", text: "<b>3 December 1470</b> - Louis XI invaded Burgundy." },
-        { type: "bullet", text: "<b>13 December 1470</b> - Anne Neville married Edward of Westminster." },
-        { type: "bullet", text: "<b>December 1470</b> - Charles the Bold gave Edward IV 50,000 crowns to take back the throne." },
-        { type: "bullet", text: "<b>14 February 1471</b> - The Calais garrison was ordered to attack Burgundy." },
-        { type: "bullet", text: "<b>12 March 1471</b> - Edward IV unsuccessfully landed at Cromer." },
-        { type: "bullet", text: "<b>14 March 1471</b> - Edward IV landed at Ravenspurn. He had 1200 men and claimed to only wish to recover his Dukedom of York. Inexplicably, he went unattacked by Northumberland and Montague despite his small force and failure to secure any allies due to Oxford's proactive imprisonment of Yorkist allies in the region. Northumberland might have been motivated by Edward IV's restoration of his titles earlier in his reign. Montague's actions are more difficult to explain." },
-        { type: "bullet", text: "<b>3 April 1471</b> - Gloucester convinced Clarence to defect back to Edward IV. He brings 4000 men." },
-        { type: "bullet", text: "<b>11 April 1471</b> - The gates of London were opened to Edward IV; the merchants in the city thought they might obtain better trade deals under Yorkist rule." },
-        { type: "bullet", text: "<b>14 April 1471</b> - Battle of Barnet - Yorkist victory. First, Edward IV was able to evade Warwick's cannons by night marching closer to the enemy force so that they were inside the range of Lancastrian cannons. Then, the Earl of Oxford arms were mistaken for the Yorkist sun in splendour, leading to friendly fire on the Lancastrian side. Warwick was killed in the fighting." },
-        { type: "bullet", text: "<b>4 May 1471</b> - Battle of Tewkesbury - Yorkist victory. Edward of Westminster was killed." },
-        { type: "bullet", text: "<b>12 May 1471</b> - The Bastard of Fauconberg attacked London, burning 60 houses on London Bridge." },
-        { type: "bullet", text: "<b>22 May 1471</b> - Henry VI dies." },
-        { type: "bullet", text: "<b>September 1471</b> - Fauconberg is executed; his head is placed on London Bridge, facing towards Kent." }
+        { type: "bullet", text: "<b>[[April 1469]]</b> - The first [[Robin of Redesdale]] revolt." },
+        { type: "bullet", text: "<b>[[June 1469]]</b> - The second [[Robin of Redesdale]] revolt." },
+        { type: "bullet", text: "<b>[[11 July 1469]]</b> - [[Isabel Neville]] marries [[Clarence]] in Calais." },
+        { type: "bullet", text: "<b>[[12 July 1469]]</b> - Warwick published a [[pamphlet]] from Calais against the evil councillors surrounding Edward IV and airing his grievances." },
+        { type: "bullet", text: "<b>[[July 1469]]</b> - Warwick crosses to England. The gates of [[London]] are opened to him, and he begins to openly support the rebels against Edward IV." },
+        { type: "bullet", text: "<b>[[26 July 1469]]</b> - Battle of [[Edgecote]] - [[rebel]] victory. The [[Herbert-Devon]] dispute led to Devon withdrawing his archers. Edward IV is under Warwick's control." },
+        { type: "bullet", text: "<b>[[August 1469]]</b> - Warwick executed [[John Woodville]] and [[Earl Rivers]]." },
+        { type: "bullet", text: "<b>[[September 1469]]</b> - Edward IV was released from custody due to the nobles not being cooperative with his administration." },
+        { type: "bullet", text: "<b>[[October 1469]]</b> - Edward IV returned to London surrounded by loyal nobles like the [[Duke of Gloucester]]." },
+        { type: "bullet", text: "<b>[[12 March 1470]]</b> - Battle of [[Losecote Field]] - [[royal]] victory. 30,000 rebels under [[Robert Welles]], Warwick's puppet, are defeated by Edward IV. Warwick and Clarence are declared [[traitors]]." },
+        { type: "bullet", text: "<b>[[20 March 1470]]</b> - An inheritance dispute in Gloucestershire leads to the Battle of [[Nibley Green]], the final battle between private armies on English soil." },
+        { type: "bullet", text: "<b>[[22 July 1470]]</b> - In the Treaty of [[Angers]], Louis XI allied with Warwick and Anjou. Anjou forced Warwick to kneel for [[15 minutes]] upon their meeting. Clarence was sidelined. The marriage of [[Anne Neville]] and [[Edward of Westminster]] was organised." },
+        { type: "bullet", text: "<b>[[3 October 1470]]</b> - Henry VI was restored and freed from the tower - he was \"amazed\" at the turn of events." },
+        { type: "bullet", text: "<b>[[6 October 1470]]</b> - Warwick, Stanley, and Shrewsbury rode into London and greeted Henry VI as their rightful king. A [[pamphlet]] was issued announcing this." },
+        { type: "bullet", text: "<b>[[13 October 1470]]</b> - Henry VI is paraded in blue robes through London, but this backfired as he looked \"[[mute as a crowned calf]]\" according to one chronicler." },
+        { type: "bullet", text: "<b>[[3 December 1470]]</b> - Louis XI invaded [[Burgundy]]." },
+        { type: "bullet", text: "<b>[[13 December 1470]]</b> - [[Anne Neville]] married [[Edward of Westminster]]." },
+        { type: "bullet", text: "<b>[[December 1470]]</b> - Charles the Bold gave Edward IV [[50,000 crowns]] to take back the throne." },
+        { type: "bullet", text: "<b>[[14 February 1471]]</b> - The Calais garrison was ordered to attack [[Burgundy]]." },
+        { type: "bullet", text: "<b>[[12 March 1471]]</b> - Edward IV unsuccessfully landed at [[Cromer]]." },
+        { type: "bullet", text: "<b>[[14 March 1471]]</b> - Edward IV landed at [[Ravenspurn]]. He had [[1200]] men and claimed to only wish to recover his Dukedom of York. Inexplicably, he went unattacked by [[Northumberland]] and [[Montague]] despite his small force and failure to secure any allies due to [[Oxford's]] proactive imprisonment of Yorkist allies in the region." },
+        { type: "bullet", text: "<b>[[3 April 1471]]</b> - Gloucester convinced [[Clarence]] to defect back to Edward IV. He brings [[4000]] men." },
+        { type: "bullet", text: "<b>[[11 April 1471]]</b> - The gates of London were opened to Edward IV; the merchants in the city thought they might obtain better trade deals under Yorkist rule." },
+        { type: "bullet", text: "<b>[[14 April 1471]]</b> - Battle of [[Barnet]] - [[Yorkist]] victory. First, Edward IV was able to evade Warwick's cannons by [[night marching]] closer to the enemy force. Then, the [[Earl of Oxford]] arms were mistaken for the Yorkist sun in splendour, leading to friendly fire. [[Warwick]] was killed in the fighting." },
+        { type: "bullet", text: "<b>[[4 May 1471]]</b> - Battle of [[Tewkesbury]] - [[Yorkist]] victory. [[Edward of Westminster]] was killed." },
+        { type: "bullet", text: "<b>[[12 May 1471]]</b> - The [[Bastard of Fauconberg]] attacked London, burning 60 houses on London Bridge." },
+        { type: "bullet", text: "<b>[[22 May 1471]]</b> - Henry VI dies." },
+        { type: "bullet", text: "<b>[[September 1471]]</b> - Fauconberg is executed; his head is placed on [[London Bridge]], facing towards Kent." }
     ],
     "1471-1483": [
         { type: "heading", text: "John de Vere" },
-        { type: "bullet", text: "<b>1472</b> - John de Vere raided Calais with the support of George Neville, Archbishop of York." },
-        { type: "bullet", text: "<b>26 April 1472</b> - John de Vere was arrested for treason." },
-        { type: "bullet", text: "<b>September 1473</b> - John de Vere captured St. Michael's Mount and was able to hold it for several months due to incompetent Yorkist leadership." },
-        { type: "bullet", text: "<b>15 February 1474</b> - John de Vere was captured." },
+        { type: "bullet", text: "<b>[[1472]]</b> - [[John de Vere]] raided Calais with the support of [[George Neville]], Archbishop of York." },
+        { type: "bullet", text: "<b>[[26 April 1472]]</b> - John de Vere was arrested for treason." },
+        { type: "bullet", text: "<b>[[September 1473]]</b> - John de Vere captured [[St. Michael's Mount]] and was able to hold it for several months due to incompetent Yorkist leadership." },
+        { type: "bullet", text: "<b>[[15 February 1474]]</b> - John de Vere was captured." },
         { type: "heading", text: "Consolidation" },
-        { type: "bullet", text: "<b>June 1471</b> - Gloucester was given new titles such as Warden of the West March and Chief Steward of the Duchy of Lancaster." },
-        { type: "bullet", text: "<b>July 1471</b> - Henry and Jasper Tudor fled to Brittany." },
-        { type: "bullet", text: "<b>12 July 1471</b> - Gloucester married Anne Neville despite the opposition of Clarence and the lack of a Papal dispensation." },
-        { type: "bullet", text: "<b>1471</b> - Hastings was given the Lieutenancy of Calais despite Earl Rivers' desire for the job." },
-        { type: "bullet", text: "<b>1471-1472</b> - The Black Book reduced household expenditure from £16,000 to £11,000." },
-        { type: "bullet", text: "<b>February 1472</b> - Edward IV attempted to split the Warwick lands, but this failed to appease his brothers." },
-        { type: "bullet", text: "<b>October 1472</b> - Parliament raised £30,000 in taxation for the war in France. Benevolences, an unpopular innovation, raised another £22,000." },
-        { type: "bullet", text: "<b>May 1474</b> - Anne Beauchamp was declared legally dead by Parliament and her inheritance was divided between Isabel and Anne Neville (and their husbands). This blatant disregard for inheritance law scared the gentry." },
+        { type: "bullet", text: "<b>[[June 1471]]</b> - Gloucester was given new titles such as [[Warden of the West March]] and Chief Steward of the Duchy of Lancaster." },
+        { type: "bullet", text: "<b>[[July 1471]]</b> - Henry and Jasper Tudor fled to [[Brittany]]." },
+        { type: "bullet", text: "<b>[[12 July 1471]]</b> - Gloucester married [[Anne Neville]] despite the opposition of Clarence and the lack of a [[Papal dispensation]]." },
+        { type: "bullet", text: "<b>[[1471]]</b> - [[Hastings]] was given the Lieutenancy of Calais despite Earl Rivers' desire for the job." },
+        { type: "bullet", text: "<b>[[1471-1472]]</b> - The [[Black Book]] reduced household expenditure from £16,000 to [[£11,000]]." },
+        { type: "bullet", text: "<b>[[February 1472]]</b> - Edward IV attempted to split the [[Warwick]] lands, but this failed to appease his brothers." },
+        { type: "bullet", text: "<b>[[October 1472]]</b> - Parliament raised [[£30,000]] in taxation for the war in France. [[Benevolences]], an unpopular innovation, raised another [[£22,000]]." },
+        { type: "bullet", text: "<b>[[May 1474]]</b> - [[Anne Beauchamp]] was declared legally dead by Parliament and her inheritance was divided between Isabel and Anne Neville. This blatant disregard for inheritance law scared the gentry." },
         { type: "heading", text: "King’s Great Enterprise" },
-        { type: "bullet", text: "<b>11 September 1472</b> - A treaty was conlcuded with Brittany, including provisions for the invasion of France being made." },
-        { type: "bullet", text: "<b>1474</b> - A truce was concluded with the Hanseatic League." },
-        { type: "bullet", text: "<b>1474</b> - The Anglo-Scottish treaty made peace with Scotland and arranged for the marriage of Cecily of York to the Scottish heir." },
-        { type: "bullet", text: "<b>25 July 1474</b> - The Treaty of London arranged for Burgundy to support the invasion of France." },
-        { type: "bullet", text: "<b>4 July 1475</b> - Edward IV landed at Calais with 12,000 men, beginning the war with France." },
-        { type: "bullet", text: "<b>14 July 1475</b> - Charles the Bold rendezvoused with the English force, but brought no troops of his own." },
-        { type: "bullet", text: "<b>29 August 1475</b> - The Treaty of Picquigny finalised a massive financial victory for the English; its terms included 75,000 crowns to be paid intially, an annual sum of 50,000 crowns to be paid, a payment of 50,000 crowns for the ransom of Margaret of Anjou, and pensions for English nobles. However, an end to hostilities was unpopular, especially among nobles like Gloucester who saw the peace as cowardly." },
+        { type: "bullet", text: "<b>[[11 September 1472]]</b> - A treaty was conlcuded with [[Brittany]], including provisions for the invasion of France being made." },
+        { type: "bullet", text: "<b>[[1474]]</b> - A truce was concluded with the [[Hanseatic League]]." },
+        { type: "bullet", text: "<b>[[1474]]</b> - The Anglo-Scottish treaty made peace with Scotland and arranged for the marriage of [[Cecily of York]] to the Scottish heir." },
+        { type: "bullet", text: "<b>[[25 July 1474]]</b> - The Treaty of [[London]] arranged for Burgundy to support the invasion of France." },
+        { type: "bullet", text: "<b>[[4 July 1475]]</b> - Edward IV landed at Calais with [[12,000]] men, beginning the war with France." },
+        { type: "bullet", text: "<b>[[14 July 1475]]</b> - [[Charles the Bold]] rendezvoused with the English force, but brought [[no troops]] of his own." },
+        { type: "bullet", text: "<b>[[29 August 1475]]</b> - The Treaty of [[Picquigny]] finalised a massive financial victory for the English; its terms included [[75,000 crowns]] to be paid intially, an annual sum of [[50,000 crowns]] to be paid, a payment of 50,000 crowns for the ransom of Margaret of Anjou, and pensions for English nobles. However, an end to hostilities was [[unpopular]] with Gloucester." },
         { type: "heading", text: "Fall of Clarence" },
-        { type: "bullet", text: "<b>22 December 1476</b> - Isabel Neville died." },
-        { type: "bullet", text: "<b>April 1477</b> - Clarence arrested Ankarette Twynyho, Thursby, and Tocoats on charges of poisoning his wife. All except Tocoats were executed." },
-        { type: "bullet", text: "<b>May 1477</b> - John Stacy, an astronomer who supported Clarence, was arrested on charges of treason. He implicated Thomas Burdett, who Clarence chose to vigorously defend in blatant opposition to the king's prosecution." },
-        { type: "bullet", text: "<b>June 1477</b> - Clarence was arrested." },
-        { type: "bullet", text: "<b>January 1478</b> - Clarence was attainted." },
-        { type: "bullet", text: "<b>18 February 1478</b> - Clarence was executed." },
+        { type: "bullet", text: "<b>[[22 December 1476]]</b> - [[Isabel Neville]] died." },
+        { type: "bullet", text: "<b>[[April 1477]]</b> - Clarence arrested [[Ankarette Twynyho]], Thursby, and Tocoats on charges of poisoning his wife. All except Tocoats were executed." },
+        { type: "bullet", text: "<b>[[May 1477]]</b> - [[John Stacy]], an astronomer who supported Clarence, was arrested on charges of treason. He implicated [[Thomas Burdett]], who Clarence chose to vigorously defend in blatant opposition to the king's prosecution." },
+        { type: "bullet", text: "<b>[[June 1477]]</b> - Clarence was arrested." },
+        { type: "bullet", text: "<b>[[January 1478]]</b> - Clarence was [[attainted]]." },
+        { type: "bullet", text: "<b>[[18 February 1478]]</b> - Clarence was executed." },
         { type: "heading", text: "Later Reign" },
-        { type: "bullet", text: "<b>January 1478</b> - Richard of Shrewsbury married Anne Mowbray." },
-        { type: "bullet", text: "<b>1478</b> - A breach of the truce occured on the Anglo-Scottish border; Edward IV demanded reparations and threatened war if these were not paid." },
-        { type: "bullet", text: "<b>May 1480</b> - The Earl of Angus burned Bamburgh; notably, he targeted the town rather than just the castle." },
-        { type: "bullet", text: "<b>August 1480</b> - Gloucester was appointed Lieutenant-General of the Realm." },
-        { type: "bullet", text: "<b>June 1481</b> - Lord Howard raided the Firth of Forth." },
-        { type: "bullet", text: "<b>November 1481</b> - Edward IV returned to London rather than continue the prosecution of the Scottish campaign personally." },
-        { type: "bullet", text: "<b>1482</b> - Alexander, Duke of Albany arrived in England. He was the disaffected brother of James IV and thus a potential replacement to the king." },
-        { type: "bullet", text: "<b>1482</b> - Gloucester invaded Scotland. He reached Edinburgh, where the nobles deposed and imprisoned James IV." },
-        { type: "bullet", text: "<b>March 1482</b> - Mary of Burgundy died, threatening the English alliance with Burgundy." },
-        { type: "bullet", text: "<b>August 1482</b> - Gloucester captured Berwick on his way out of Scotland." },
-        { type: "bullet", text: "<b>23 December 1482</b> - In the Treaty of Arras, England is sidelined from European policy by France and Maximilian of Burgundy; France stops paying the annual tribute agreed in Picquigny." },
-        { type: "bullet", text: "<b>January 1483</b> - Gloucester was given palatinate powers in the north of England." },
-        { type: "bullet", text: "<b>9 April 1483</b> - Edward IV unexpectedly died." }
+        { type: "bullet", text: "<b>[[January 1478]]</b> - Richard of Shrewsbury married [[Anne Mowbray]]." },
+        { type: "bullet", text: "<b>[[1478]]</b> - A breach of the truce occured on the Anglo-Scottish border; Edward IV demanded reparations and threatened war if these were not paid." },
+        { type: "bullet", text: "<b>[[May 1480]]</b> - The Earl of Angus burned [[Bamburgh]]; notably, he targeted the town rather than just the castle." },
+        { type: "bullet", text: "<b>[[August 1480]]</b> - Gloucester was appointed [[Lieutenant-General]] of the Realm." },
+        { type: "bullet", text: "<b>[[June 1481]]</b> - [[Lord Howard]] raided the Firth of Forth." },
+        { type: "bullet", text: "<b>[[November 1481]]</b> - Edward IV returned to London rather than continue the prosecution of the Scottish campaign personally." },
+        { type: "bullet", text: "<b>[[1482]]</b> - [[Alexander, Duke of Albany]] arrived in England. He was the disaffected brother of James IV and thus a potential replacement to the king." },
+        { type: "bullet", text: "<b>[[1482]]</b> - Gloucester invaded Scotland. He reached [[Edinburgh]], where the nobles deposed and imprisoned James IV." },
+        { type: "bullet", text: "<b>[[March 1482]]</b> - [[Mary of Burgundy]] died, threatening the English alliance with Burgundy." },
+        { type: "bullet", text: "<b>[[August 1482]]</b> - Gloucester captured [[Berwick]] on his way out of Scotland." },
+        { type: "bullet", text: "<b>[[23 December 1482]]</b> - In the Treaty of [[Arras]], England is sidelined from European policy by France and Maximilian of Burgundy; France stops paying the annual tribute agreed in Picquigny." },
+        { type: "bullet", text: "<b>[[January 1483]]</b> - Gloucester was given [[palatinate powers]] in the north of England." },
+        { type: "bullet", text: "<b>[[9 April 1483]]</b> - Edward IV unexpectedly died." }
     ],
     "1483-1485": [
-        { type: "bullet", text: "<b>9 April 1483</b> - Edward IV unexpectedly died." },
-        { type: "bullet", text: "<b>14 April 1483</b> - News of Edward IV's death reached Ludlow, where his son was under the care of Earl Rivers." },
-        { type: "bullet", text: "<b>24 April 1483</b> - A royal party set off from Ludlow to London." },
-        { type: "bullet", text: "<b>29-30 April 1483</b> - Gloucester and Buckingham joined and died with the royal party at Stony Stratford." },
-        { type: "bullet", text: "<b>1 May 1483</b> - Gloucester suddently arrested Rivers, Grey, Hawte, and Vaughan." },
-        { type: "bullet", text: "<b>May 1483</b> - Elizabeth Woodville fled into sanctuary with her children, Lionel of Salisbury, and the Great Seal." },
-        { type: "bullet", text: "<b>4 May 1483</b> - Edward V entered London with Gloucester and Buckingham." },
-        { type: "bullet", text: "<b>10 May 1483</b> - Gloucester was named protector." },
-        { type: "bullet", text: "<b>13 June 1483</b> - Richard of Shrewsbury was released from sanctuary after Thomas Bourchier, Archbishop of Canterbury sweared to protect the boy with his life." },
-        { type: "bullet", text: "<b>16 June 1483</b> - Hastings was suddenly betrayed and executed at a council meeting; just three hours after Gloucester brought charges of treason on him, he was executed on timber intended for repairs of the building, which was interpreted as being symbolic of the repair of the country." },
-        { type: "bullet", text: "<b>22 June 1483</b> - Ralph Shaw preached a sermon claiming that Edward IV had already married Eleanor Talbot and thus her marriage to, and children by, Elizabeth Woodville were illegitimate. This would make Richard the rightful king." },
-        { type: "bullet", text: "<b>25 June 1483</b> - Gloucester executed Grey and Rivers. He was alos petitioned by the Lords and Commons to take up the kingship on this date." },
-        { type: "bullet", text: "<b>26 June 1483</b> - Richard III was proclaimed as king." },
-        { type: "bullet", text: "<b>6 July 1483</b> - Richard III was coronated; this was very well attended due to the presence of nobles already in London for the coronation of Edward V." },
-        { type: "bullet", text: "<b>Summer 1483</b> - The princes in the tower were seen less and less and eventually disappeared completely." },
-        { type: "bullet", text: "<b>October 1483</b> - The Buckingham Rebellion broke out in the south of England; it included much of Edward IV's household, who had been sidelined by Richard III in favour of his own men and who either wanted to return the princes in the tower to the throne or who suspected that they were dead and were angry at this. The rebellion was unsuccessful due to Buckingham's failure to join the rebels as a result of the \"Great Water\" - the flooding of the River Severn - and the swift intervention of Norfolk against the rebels." },
-        { type: "bullet", text: "<b>October 1483</b> - Henry Tudor attempted to cross to England, but after finding the rebellion largely unsuccessful he returned to Brittany." },
-        { type: "bullet", text: "<b>2 November 1483</b> - Buckingham was captured and executed in Salisbury." },
-        { type: "bullet", text: "<b>25 December 1483</b> - Henry Tudor promised to marry Elizabeth of York in Rennes Cathedral." },
-        { type: "bullet", text: "<b>23 January 1484</b> - In Richard III's first Parliament, the Titulus Regius was passed in which Edward IV's supposed marriage to Eleanor Talbot was confirmed and thus the illegitimacy of his children. Also, the act praised Richard III as a man of \"great wit and princely courage\". Finally, 97 Acts of Attainder were passed against his enemies." },
-        { type: "bullet", text: "<b>March 1484</b> - The Woodvilles returned from sanctuary after Richard III promised to protect them." },
-        { type: "bullet", text: "<b>9 April 1484</b> - Edward of Middleham died, plunging Richard III and Anne Neville into deep grief." },
-        { type: "bullet", text: "<b>July 1484</b> - The Council of the North was formally established under the leadership of John de la Pole, Earl of Lincoln." },
-        { type: "bullet", text: "<b>21 September 1484</b> - Richard III agreed a three-year truce with Scotland in the Treaty of Nottingham." },
-        { type: "bullet", text: "<b>7 Decemebr 1484</b> - Richard III issued a proclamation against Henry Tudor and his supporters." },
-        { type: "bullet", text: "<b>December 1484</b> - William Collingbourne was executed for treason in an example of continued opposition to Richard III." },
-        { type: "bullet", text: "<b>16 March 1485</b> - Anne Neville died. A solar eclipse on the same day was interpreted as a bad omen, and it was suspected Richard III poisoned her so that he could marry Elizabeth of York." },
-        { type: "bullet", text: "<b>30 March 1485</b> - Richard III publicly denied his intention to marry his niece, Elizabeth of York." },
-        { type: "bullet", text: "<b>1485</b> - The English economy is depleted to the point of Richard III selling and pawning royal jewels to raise funds." },
-        { type: "bullet", text: "<b>1 August 1485</b> - Henry Tudor set sail from Harfleur with his English exiles and 1800 French mercenaries under Philibert de Chandee." },
-        { type: "bullet", text: "<b>7 August 1485</b> - Henry Tudor landed at Mill Bay, Pembrokeshire. He capitalised on his Welsh ancestry and promises like the Lieutenancy of Wales to Rhys ap Thomas to gain local support. He has a secret meeting with the Stanleys, and a tentative agreement of support is probably made." },
-        { type: "bullet", text: "<b>21 August 1485</b> - The date to which Henry VII's reign was predated to." },
-        { type: "bullet", text: "<b>22 August 1485</b> - Battle of Bosworth - Tudor victory. The inaction of Northumberland and the final intervention of William Stanley proved decisive. Richard III was killed leading a cavalry charge against Henry Tudor. Henry VII rules by right of conquest." }
+        { type: "bullet", text: "<b>[[9 April 1483]]</b> - Edward IV unexpectedly died." },
+        { type: "bullet", text: "<b>[[14 April 1483]]</b> - News of Edward IV's death reached [[Ludlow]], where his son was under the care of [[Earl Rivers]]." },
+        { type: "bullet", text: "<b>[[24 April 1483]]</b> - A royal party set off from Ludlow to London." },
+        { type: "bullet", text: "<b>[[29-30 April 1483]]</b> - Gloucester and Buckingham joined and died with the royal party at [[Stony Stratford]]." },
+        { type: "bullet", text: "<b>[[1 May 1483]]</b> - Gloucester suddently arrested Rivers, Grey, Hawte, and Vaughan." },
+        { type: "bullet", text: "<b>[[May 1483]]</b> - Elizabeth Woodville fled into [[sanctuary]] with her children, Lionel of Salisbury, and the Great Seal." },
+        { type: "bullet", text: "<b>[[4 May 1483]]</b> - Edward V entered London with Gloucester and Buckingham." },
+        { type: "bullet", text: "<b>[[10 May 1483]]</b> - Gloucester was named [[protector]]." },
+        { type: "bullet", text: "<b>[[13 June 1483]]</b> - Richard of Shrewsbury was released from sanctuary after Thomas Bourchier, Archbishop of Canterbury sweared to protect the boy with his life." },
+        { type: "bullet", text: "<b>[[16 June 1483]]</b> - [[Hastings]] was suddenly betrayed and executed at a council meeting; just three hours after Gloucester brought charges of treason on him, he was executed on timber intended for repairs of the building." },
+        { type: "bullet", text: "<b>[[22 June 1483]]</b> - [[Ralph Shaw]] preached a sermon claiming that Edward IV had already married [[Eleanor Talbot]] and thus her marriage to Elizabeth Woodville was illegitimate." },
+        { type: "bullet", text: "<b>[[25 June 1483]]</b> - Gloucester executed Grey and Rivers. He was alos petitioned by the Lords and Commons to take up the kingship on this date." },
+        { type: "bullet", text: "<b>[[26 June 1483]]</b> - [[Richard III]] was proclaimed as king." },
+        { type: "bullet", text: "<b>[[6 July 1483]]</b> - Richard III was coronated; this was very well attended due to the presence of nobles already in London for the coronation of Edward V." },
+        { type: "bullet", text: "<b>[[Summer 1483]]</b> - The [[princes in the tower]] were seen less and less and eventually disappeared completely." },
+        { type: "bullet", text: "<b>[[October 1483]]</b> - The [[Buckingham Rebellion]] broke out in the south of England; it included much of Edward IV's household. The rebellion was unsuccessful due to Buckingham's failure to join the rebels as a result of the \"Great Water\" - the flooding of the [[River Severn]] - and the swift intervention of [[Norfolk]] against the rebels." },
+        { type: "bullet", text: "<b>[[October 1483]]</b> - [[Henry Tudor]] attempted to cross to England, but after finding the rebellion largely unsuccessful he returned to Brittany." },
+        { type: "bullet", text: "<b>[[2 November 1483]]</b> - Buckingham was captured and executed in Salisbury." },
+        { type: "bullet", text: "<b>[[25 December 1483]]</b> - Henry Tudor promised to marry [[Elizabeth of York]] in Rennes Cathedral." },
+        { type: "bullet", text: "<b>[[23 January 1484]]</b> - In Richard III's first Parliament, the [[Titulus Regius]] was passed in which Edward IV's supposed marriage to Eleanor Talbot was confirmed. Finally, [[97]] Acts of Attainder were passed against his enemies." },
+        { type: "bullet", text: "<b>[[March 1484]]</b> - The Woodvilles returned from sanctuary after Richard III promised to protect them." },
+        { type: "bullet", text: "<b>[[9 April 1484]]</b> - [[Edward of Middleham]] died, plunging Richard III and Anne Neville into deep grief." },
+        { type: "bullet", text: "<b>[[July 1484]]</b> - The [[Council of the North]] was formally established under the leadership of [[John de la Pole]], Earl of Lincoln." },
+        { type: "bullet", text: "<b>[[21 September 1484]]</b> - Richard III agreed a three-year truce with Scotland in the Treaty of [[Nottingham]]." },
+        { type: "bullet", text: "<b>[[7 Decemebr 1484]]</b> - Richard III issued a proclamation against Henry Tudor and his supporters." },
+        { type: "bullet", text: "<b>[[December 1484]]</b> - [[William Collingbourne]] was executed for treason in an example of continued opposition to Richard III." },
+        { type: "bullet", text: "<b>[[16 March 1485]]</b> - [[Anne Neville]] died. A [[solar eclipse]] on the same day was interpreted as a bad omen, and it was suspected Richard III poisoned her." },
+        { type: "bullet", text: "<b>[[30 March 1485]]</b> - Richard III publicly denied his intention to marry his niece, Elizabeth of York." },
+        { type: "bullet", text: "<b>[[1485]]</b> - The English economy is depleted to the point of Richard III selling and pawning [[royal jewels]] to raise funds." },
+        { type: "bullet", text: "<b>[[1 August 1485]]</b> - Henry Tudor set sail from Harfleur with his English exiles and [[1800]] French mercenaries under [[Philibert de Chandee]]." },
+        { type: "bullet", text: "<b>[[7 August 1485]]</b> - Henry Tudor landed at [[Mill Bay]], Pembrokeshire. He capitalised on his Welsh ancestry and promises like the Lieutenancy of Wales to [[Rhys ap Thomas]] to gain local support. He has a secret meeting with the [[Stanleys]]." },
+        { type: "bullet", text: "<b>[[21 August 1485]]</b> - The date to which Henry VII's reign was predated to." },
+        { type: "bullet", text: "<b>[[22 August 1485]]</b> - Battle of [[Bosworth]] - Tudor victory. The inaction of [[Northumberland]] and the final intervention of [[William Stanley]] proved decisive. Richard III was killed leading a cavalry charge." }
     ],
     "1485-1499": [
         { type: "heading", text: "CONSOLIDATION" },
-        { type: "bullet", text: "<b>22 August 1485</b> - Battle of Bosworth - Tudor victory. The inaction of Northumberland and the final intervention of William Stanley proved decisive. Richard III was killed leading a cavalry charge against Henry Tudor. Henry VII rules by right of conquest." },
-        { type: "bullet", text: "<b>October 1485</b> - A general pardon is issued to those who fought for Richard III and did not go against Henry VII." },
-        { type: "bullet", text: "<b>30 October 1485</b> - Henry VII was coronated." },
-        { type: "bullet", text: "<b>7 November 1485</b> - Henry VII's first Parliament met; the Titulus Regius is revoked and some new titles are invested like Jasper Tudor as Duke of Bedford." },
-        { type: "bullet", text: "<b>18 January 1486</b> - Henry VII married Elizabeth of York." },
-        { type: "bullet", text: "<b>September 1486</b> - Arthur was born." },
-        { type: "bullet", text: "<b>25 November 1487</b> - Elizabeth of York was coronated." },
-        { type: "bullet", text: "<b>28 June 1491</b> - Henry was born." },
+        { type: "bullet", text: "<b>[[22 August 1485]]</b> - Battle of [[Bosworth]] - Tudor victory. Henry VII rules by right of [[conquest]]." },
+        { type: "bullet", text: "<b>[[October 1485]]</b> - A [[general pardon]] is issued to those who fought for Richard III and did not go against Henry VII." },
+        { type: "bullet", text: "<b>[[30 October 1485]]</b> - Henry VII was coronated." },
+        { type: "bullet", text: "<b>[[7 November 1485]]</b> - Henry VII's first Parliament met; the [[Titulus Regius]] is revoked and some new titles are invested like Jasper Tudor as Duke of Bedford." },
+        { type: "bullet", text: "<b>[[18 January 1486]]</b> - Henry VII married [[Elizabeth of York]]." },
+        { type: "bullet", text: "<b>[[September 1486]]</b> - [[Arthur]] was born." },
+        { type: "bullet", text: "<b>[[25 November 1487]]</b> - Elizabeth of York was coronated." },
+        { type: "bullet", text: "<b>[[28 June 1491]]</b> - [[Henry]] was born." },
         { type: "heading", text: "LOVELL AND STAFFORD, YORKSHIRE, CORNWALL" },
-        { type: "bullet", text: "<b>March-April 1486</b> - Lovell and the Staffords attempted to raise troops against Henry VIi in Yorkshire." },
-        { type: "bullet", text: "<b>April 1486</b> - Henry VII reaches York on his royal progress; the rebellion dissipated without a battle." },
-        { type: "bullet", text: "<b>11 May 1486</b> - Humphrey Stafford was executed after attempting to claim sanctuary while Lovell escaped to Burgundy and Thomas Stafford was pardoned." },
-        { type: "bullet", text: "<b>Late 1486</b> - Lambert Simnel emerged in Oxford, tutored by Richard Simons. They travelled to Ireland, claiming to be the Earl of Warwick." },
-        { type: "bullet", text: "<b>February 1487</b> - Henry VII summoned council, which resolved to parade the real Warwick through London and exile Elizabeth Woodville to a nunnery while seizing her lands and titles." },
-        { type: "bullet", text: "<b>5 May 1487</b> - Lincoln arrived in Ireland, bringing 2000 German mercenaries under Martin Schwartz to join the rebels, funded by Margaret of Burgundy." },
-        { type: "bullet", text: "<b>24 May 1487</b> - Simnel was coronated as Edward VI in Christchurch Cathedral, Dublin. He had the support of Irish nobles like Gerald FitzGerald, Earl of Kildare." },
-        { type: "bullet", text: "<b>4 June 1487</b> - The rebels landed at Piel Island in Lancashire but failed to raise much additional support." },
-        { type: "bullet", text: "<b>16 June 1487</b> - Battle of Stoke - Tudor victory. The Irish rebels were underequipped and inexperienced; the Tudor archers made quick work of them. Thomas FitzGerald, Lincoln, and Schwartz were killed. Lovell disappeared. Simnel was given a job in the royal kitchens." },
-        { type: "bullet", text: "<b>20 April 1489</b> - The Yorkshire rebellion breaks out over harsh taxation to fund English involvement in the Breton crisis. However, this region already had to defend the Scottish border and thus mobs were assembled, initially less than 700 men under Robert Chamber, to protest this taxation." },
-        { type: "bullet", text: "<b>28 April 1489</b> - Northumberland was murdered by the rebel mob at Cock Lodge." },
-        { type: "bullet", text: "<b>17 May 1489</b> - The rebels captured York with additional support given to them by John Egremont, a minor gentry." },
-        { type: "bullet", text: "<b>May 1489</b> - The rebels were defeated by the Earl of Surrey. The impact on taxation was unclear." },
-        { type: "bullet", text: "<b>January-February 1497</b> - Taxation is levied to fund war with Scotland. It was supposed to not be applied to the poorest subjects; however, corruption in Cornwall led to this not being implemented properly. Discontent began." },
-        { type: "bullet", text: "<b>May 1497</b> - 6000 rebels under Michael Joseph, a blacksmith, marched to Blackheath in order to present their grievances against councillors like Reginald Bray and John Morton regarding this taxation. They were joined by Lord Audley." },
-        { type: "bullet", text: "<b>17 June 1497</b> - Battle of Deptford Bridge - royal victory. A force of 8000 men under Lord Daubenay defeated the rebels. Henry VII spread word of the battle to take place on 19 June, but he took the rebels off guard by attacking on 17 June. The leaders ere executed and the taxers were aggressively collected for another 10 years." },
+        { type: "bullet", text: "<b>[[March-April 1486]]</b> - [[Lovell]] and the [[Staffords]] attempted to raise troops against Henry VII in Yorkshire." },
+        { type: "bullet", text: "<b>[[April 1486]]</b> - Henry VII reaches [[York]] on his royal progress; the rebellion dissipated without a battle." },
+        { type: "bullet", text: "<b>[[11 May 1486]]</b> - [[Humphrey Stafford]] was executed after attempting to claim sanctuary while Lovell escaped to Burgundy and Thomas Stafford was pardoned." },
+        { type: "bullet", text: "<b>[[Late 1486]]</b> - [[Lambert Simnel]] emerged in Oxford, tutored by [[Richard Simons]]. They travelled to Ireland, claiming to be the [[Earl of Warwick]]." },
+        { type: "bullet", text: "<b>[[February 1487]]</b> - Henry VII summoned council, which resolved to parade the [[real Warwick]] through London and exile [[Elizabeth Woodville]] to a nunnery." },
+        { type: "bullet", text: "<b>[[5 May 1487]]</b> - [[Lincoln]] arrived in Ireland, bringing [[2000]] German mercenaries under [[Martin Schwartz]] to join the rebels, funded by [[Margaret of Burgundy]]." },
+        { type: "bullet", text: "<b>[[24 May 1487]]</b> - Simnel was coronated as [[Edward VI]] in Christchurch Cathedral, Dublin. He had the support of Irish nobles like [[Gerald FitzGerald]], Earl of Kildare." },
+        { type: "bullet", text: "<b>[[4 June 1487]]</b> - The rebels landed at [[Piel Island]] in Lancashire but failed to raise much additional support." },
+        { type: "bullet", text: "<b>[[16 June 1487]]</b> - Battle of [[Stoke]] - Tudor victory. The Irish rebels were underequipped and inexperienced. Thomas FitzGerald, Lincoln, and Schwartz were killed. Lovell disappeared. Simnel was given a job in the [[royal kitchens]]." },
+        { type: "bullet", text: "<b>[[20 April 1489]]</b> - The [[Yorkshire]] rebellion breaks out over harsh [[taxation]] to fund English involvement in the Breton crisis. Initially less than 700 men under [[Robert Chamber]]." },
+        { type: "bullet", text: "<b>[[28 April 1489]]</b> - [[Northumberland]] was murdered by the rebel mob at Cock Lodge." },
+        { type: "bullet", text: "<b>[[17 May 1489]]</b> - The rebels captured York with additional support given to them by [[John Egremont]], a minor gentry." },
+        { type: "bullet", text: "<b>[[May 1489]]</b> - The rebels were defeated by the [[Earl of Surrey]]." },
+        { type: "bullet", text: "<b>[[January-February 1497]]</b> - Taxation is levied to fund war with Scotland. It was supposed to not be applied to the poorest subjects; however, [[corruption]] in Cornwall led to this not being implemented properly." },
+        { type: "bullet", text: "<b>[[May 1497]]</b> - [[6000]] rebels under [[Michael Joseph]], a blacksmith, marched to [[Blackheath]] in order to present their grievances against councillors like Reginald Bray. They were joined by [[Lord Audley]]." },
+        { type: "bullet", text: "<b>[[17 June 1497]]</b> - Battle of [[Deptford Bridge]] - royal victory. A force of 8000 men under [[Lord Daubenay]] defeated the rebels. Henry VII took the rebels off guard by attacking two days early. The leaders ere executed." },
         { type: "heading", text: "FOREIGN POLICY not related to Warbeck" },
-        { type: "bullet", text: "<b>July 1488</b> - France invaded Brittany." },
-        { type: "bullet", text: "<b>28 July 1488</b> - France defeated Brittany in the Battle of St. Aubin-du-Cormier." },
-        { type: "bullet", text: "<b>February 1489</b> - In the Treaty of Redon, England agreed to send 6000 men to help defend Brittany." },
-        { type: "bullet", text: "<b>26 March 1489</b> - In the Treaty of Medina del Cmapo, England agreed mutual defence as well as trade relations and a future marriage alliance with Catherine of Aragon with Spain." },
-        { type: "bullet", text: "<b>11 September 1490</b> - In the Treaty of Woking, England agreed an alliance with Maximilian of Burgundy against French expansionism." },
+        { type: "bullet", text: "<b>[[July 1488]]</b> - France invaded [[Brittany]]." },
+        { type: "bullet", text: "<b>[[28 July 1488]]</b> - France defeated Brittany in the Battle of [[St. Aubin-du-Cormier]]." },
+        { type: "bullet", text: "<b>[[February 1489]]</b> - In the Treaty of [[Redon]], England agreed to send [[6000]] men to help defend Brittany." },
+        { type: "bullet", text: "<b>[[26 March 1489]]</b> - In the Treaty of [[Medina del Campo]], England agreed mutual defence as well as trade relations and a future marriage alliance with [[Catherine of Aragon]] with Spain." },
+        { type: "bullet", text: "<b>[[11 September 1490]]</b> - In the Treaty of [[Woking]], England agreed an alliance with [[Maximilian of Burgundy]] against French expansionism." },
         { type: "heading", text: "WARBECK" },
-        { type: "bullet", text: "<b>April-May 1487</b> - Warbeck spent time at the Portuguese court, where he made connections with the Bramptons." },
-        { type: "bullet", text: "<b>November 1491</b> - Warbeck arrived in Cork, where he was proclaimed as the Earl of Warwick and gained the support of the Earl of Desmond, John Taylor, and John Atwater." },
-        { type: "bullet", text: "<b>December 1491</b> - Henry VII quickly sent a force to Ireland which forced Warbeck to flee." },
-        { type: "bullet", text: "<b>March 1492</b> - Charles VIII provided Warbeck with a fleet to take him to Harfleur, where he was received as a prince." },
-        { type: "bullet", text: "<b>2 October 1492</b> - Henry VII invaded France, partially motivated by Charles VIII's supporting of Warbeck." },
-        { type: "bullet", text: "<b>3 November 1492</b> - The Treaty of Etaples ended Henry VII's invasion; Charles VIII agreed to pay £159,000 in annual installments and not to support any more imposters." },
-        { type: "bullet", text: "<b>12 December 1492</b> - Warbeck was taken in by Margaret of Burgundy and Maximilian, who had been sidelined in the Treaty of Etaples." },
-        { type: "bullet", text: "<b>1493</b> - Henry VII sent a force to Ireland to assess support for Warbeck and stayed in Kenilworth Castle with a standing force." },
-        { type: "bullet", text: "<b>July 1493</b> - Ambassadors were sent to Margaret of Burgundy who personally insulted her and accused her of plotting. Trade embargos were imposed." },
-        { type: "bullet", text: "<b>December 1493</b> - Maximilian became Holy Roman Emperor; Warbeck attended his father's funeral." },
-        { type: "bullet", text: "<b>November 1494</b> - Prince Henry was created Duke of York, the title which Warbeck claimed." },
-        { type: "bullet", text: "<b>December 1494</b> - Poynings' Law was introduced in Ireland, requiring the English king to approve any bill before it was debated in the Irish Parliament." },
-        { type: "bullet", text: "<b>January-February 1495</b> - English plotters were put on trial for supporting Warbeck." },
-        { type: "bullet", text: "<b>16 February 1495</b> - William Stanley, the Chamberlain, confessed and was executed for treason." },
-        { type: "bullet", text: "<b>3 July 1495</b> - Warbeck landed at Kent with 1300 men; however, the Kentish killed 150 rebels and forced Warbeck to flee." },
-        { type: "bullet", text: "<b>July-August 1495</b> - Warbeck sieged Waterford with the Earl of Desmond; Henry VII dispatched Poynings against Warbeck, who was successful." },
-        { type: "bullet", text: "<b>Late 1495</b> - Warbeck was received as a prince by James IV." },
-        { type: "bullet", text: "<b>January 1496</b> - Warbeck was allowed to marry Katherine Gordon and granted Falkland Palace to use as a base." },
-        { type: "bullet", text: "<b>February 1496</b> - The Intercursus Magnus ended the trade embargos with Burgundy." },
-        { type: "bullet", text: "<b>September 1496</b> - Warbeck agreed to invade England and surrender Berwick to James IV in exchange for 50,000 marks and an army. Lord Bothwell informed Henry VII of this plan." },
-        { type: "bullet", text: "<b>21 September 1496</b> - The invasion took place, but failed due to the poor preparation of the Scottish troops and the north under Surrey not joining Warbeck. He is defeated by Lord Neville." },
-        { type: "bullet", text: "<b>6 July 1497</b> - James IV refused to take in Warbeck, as he wished to establish a truce with Henry VII whereby he could marry Margaret of York." },
-        { type: "bullet", text: "<b>7 September 1497</b> - Warbeck landed in Cornwall, where he was well received and managed to capture St. Michael's Mount." },
-        { type: "bullet", text: "<b>17 September 1497</b> - Warbeck led 8000 rebels. However, he failed to capture Exeter thanks to Devon's defence, and he was deserted by his men." },
-        { type: "bullet", text: "<b>October 1497</b> - Warbeck was captured and dragged from sanctuary following new laws established after Lovell and Stafford's rebellion. He was paraded through London but treated well." },
-        { type: "bullet", text: "<b>June 1498</b> - Warbeck attempted to escape from custody but was quickly captured." },
-        { type: "bullet", text: "<b>12 February 1499</b> - Ralph Wulford was executed after a friar began preaching that he was the Earl of Warwick in Kent." },
-        { type: "bullet", text: "<b>3 August 1499</b> - A plot to flee Warbeck and Warwick was discovered." },
-        { type: "bullet", text: "<b>23 November 1499</b> - Warbeck was executed." },
-        { type: "bullet", text: "<b>28 November 1499</b> - Warwick was executed." }
+        { type: "bullet", text: "<b>[[April-May 1487]]</b> - [[Warbeck]] spent time at the Portuguese court, where he made connections with the Bramptons." },
+        { type: "bullet", text: "<b>[[November 1491]]</b> - Warbeck arrived in [[Cork]], where he was proclaimed as the [[Earl of Warwick]] (then Richard of York) and gained the support of the [[Earl of Desmond]], John Taylor, and John Atwater." },
+        { type: "bullet", text: "<b>[[December 1491]]</b> - Henry VII quickly sent a force to Ireland which forced Warbeck to flee." },
+        { type: "bullet", text: "<b>[[March 1492]]</b> - [[Charles VIII]] provided Warbeck with a fleet to take him to Harfleur." },
+        { type: "bullet", text: "<b>[[2 October 1492]]</b> - Henry VII invaded France, partially motivated by Charles VIII's supporting of Warbeck." },
+        { type: "bullet", text: "<b>[[3 November 1492]]</b> - The Treaty of [[Etaples]] ended Henry VII's invasion; Charles VIII agreed to pay [[£159,000]] and not to support any more imposters." },
+        { type: "bullet", text: "<b>[[12 December 1492]]</b> - Warbeck was taken in by [[Margaret of Burgundy]] and Maximilian." },
+        { type: "bullet", text: "<b>[[1493]]</b> - Henry VII sent a force to Ireland to assess support for Warbeck and stayed in [[Kenilworth Castle]]." },
+        { type: "bullet", text: "<b>[[July 1493]]</b> - Ambassadors were sent to Margaret of Burgundy who personally insulted her and accused her of plotting. [[Trade embargos]] were imposed." },
+        { type: "bullet", text: "<b>[[December 1493]]</b> - Maximilian became Holy Roman Emperor; Warbeck attended his father's funeral." },
+        { type: "bullet", text: "<b>[[November 1494]]</b> - Prince Henry was created [[Duke of York]], the title which Warbeck claimed." },
+        { type: "bullet", text: "<b>[[December 1494]]</b> - [[Poynings' Law]] was introduced in Ireland, requiring the English king to approve any bill before it was debated in the Irish Parliament." },
+        { type: "bullet", text: "<b>[[January-February 1495]]</b> - English plotters were put on trial for supporting Warbeck." },
+        { type: "bullet", text: "<b>[[16 February 1495]]</b> - [[William Stanley]], the Chamberlain, confessed and was executed for treason." },
+        { type: "bullet", text: "<b>[[3 July 1495]]</b> - Warbeck landed at Kent with 1300 men; however, the Kentish killed 150 rebels and forced Warbeck to flee." },
+        { type: "bullet", text: "<b>[[July-August 1495]]</b> - Warbeck sieged [[Waterford]] with the Earl of Desmond; Henry VII dispatched Poynings against Warbeck, who was successful." },
+        { type: "bullet", text: "<b>[[Late 1495]]</b> - Warbeck was received as a prince by [[James IV]]." },
+        { type: "bullet", text: "<b>[[January 1496]]</b> - Warbeck was allowed to marry [[Katherine Gordon]] and granted Falkland Palace to use as a base." },
+        { type: "bullet", text: "<b>[[February 1496]]</b> - The [[Intercursus Magnus]] ended the trade embargos with Burgundy." },
+        { type: "bullet", text: "<b>[[September 1496]]</b> - Warbeck agreed to invade England and surrender [[Berwick]] to James IV in exchange for 50,000 marks and an army. [[Lord Bothwell]] informed Henry VII of this plan." },
+        { type: "bullet", text: "<b>[[21 September 1496]]</b> - The invasion took place, but failed due to the poor preparation of the Scottish troops and the north under [[Surrey]] not joining Warbeck. He is defeated by Lord Neville." },
+        { type: "bullet", text: "<b>[[6 July 1497]]</b> - James IV refused to take in Warbeck, as he wished to establish a truce with Henry VII whereby he could marry [[Margaret of York]]." },
+        { type: "bullet", text: "<b>[[7 September 1497]]</b> - Warbeck landed in Cornwall, where he was well received and managed to capture [[St. Michael's Mount]]." },
+        { type: "bullet", text: "<b>[[17 September 1497]]</b> - Warbeck led 8000 rebels. However, he failed to capture Exeter thanks to [[Devon's]] defence, and he was deserted by his men." },
+        { type: "bullet", text: "<b>[[October 1497]]</b> - Warbeck was captured and dragged from [[sanctuary]] following new laws established after Lovell and Stafford's rebellion." },
+        { type: "bullet", text: "<b>[[June 1498]]</b> - Warbeck attempted to [[escape]] from custody but was quickly captured." },
+        { type: "bullet", text: "<b>[[12 February 1499]]</b> - [[Ralph Wulford]] was executed after a friar began preaching that he was the Earl of Warwick in Kent." },
+        { type: "bullet", text: "<b>[[3 August 1499]]</b> - A plot to flee Warbeck and Warwick was discovered." },
+        { type: "bullet", text: "<b>[[23 November 1499]]</b> - Warbeck was executed." },
+        { type: "bullet", text: "<b>[[28 November 1499]]</b> - Warwick was executed." }
     ]
 };
 
-// --- PRACTICE MODE LOGIC ---
-let isSpainPracticeMode = false;
+// --- UNIFIED NOTES MODE LOGIC ---
+let currentNotesMode = { spain: 'study', wotr: 'study' };
 
-// 1. Hook up the buttons
-document.getElementById('spain-btn-study').onclick = () => {
-    isSpainPracticeMode = false;
-    document.getElementById('spain-btn-study').className = 'active-mode';
-    document.getElementById('spain-btn-study').style.fontWeight = 'bold';
-    document.getElementById('spain-btn-practice').className = 'subtle-btn';
-    document.getElementById('spain-btn-practice').style.fontWeight = 'normal';
-    document.getElementById('spain-btn-check-answers').style.display = 'none';
-    
-    // Refresh the currently selected category to re-render the text
-    const currentCategory = document.getElementById('spain-notes-title').textContent;
-    if (currentCategory && currentCategory !== "Select a Category") {
-        loadBullets(currentCategory, 'spain'); 
+['spain', 'wotr'].forEach(prefix => {
+    const btnStudy = document.getElementById(`${prefix}-btn-study`);
+    const btnPractice = document.getElementById(`${prefix}-btn-practice`);
+    const btnRecite = document.getElementById(`${prefix}-btn-recite`);
+    const btnCheck = document.getElementById(`${prefix}-btn-check-answers`);
+
+    // Helper to switch modes cleanly
+    function updateModeUI(activeBtn, mode) {
+        [btnStudy, btnPractice, btnRecite].forEach(b => {
+            if(b) {
+                b.className = 'subtle-btn';
+                b.style.fontWeight = 'normal';
+            }
+        });
+        if(activeBtn) {
+            activeBtn.className = 'active-mode';
+            activeBtn.style.fontWeight = 'bold';
+        }
+        
+        currentNotesMode[prefix] = mode;
+        
+        // Handle UI toggles
+        if (mode === 'study') {
+            if(btnCheck) btnCheck.style.display = 'none';
+            document.getElementById(`${prefix}-recite-container`).style.display = 'none';
+            document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
+        } else if (mode === 'practice') {
+            if(btnCheck) btnCheck.style.display = 'inline-block';
+            document.getElementById(`${prefix}-recite-container`).style.display = 'none';
+            document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
+        } else if (mode === 'recite') {
+            if(btnCheck) btnCheck.style.display = 'inline-block';
+            document.getElementById(`${prefix}-bullet-list`).style.display = 'none';
+            document.getElementById(`${prefix}-recite-container`).style.display = 'block';
+            document.getElementById(`${prefix}-recite-box`).value = ''; // clear previous attempt
+            document.getElementById(`${prefix}-recite-box`).disabled = false;
+        }
+        
+        // Refresh the text
+        const currentCategory = document.getElementById(`${prefix}-notes-title`).textContent;
+        if (currentCategory && currentCategory !== "Select a Category" && currentCategory !== "Select a Topic") {
+            loadBullets(currentCategory, prefix); 
+        }
     }
-};
 
-document.getElementById('spain-btn-practice').onclick = () => {
-    isSpainPracticeMode = true;
-    document.getElementById('spain-btn-practice').className = 'active-mode';
-    document.getElementById('spain-btn-practice').style.fontWeight = 'bold';
-    document.getElementById('spain-btn-study').className = 'subtle-btn';
-    document.getElementById('spain-btn-study').style.fontWeight = 'normal';
-    document.getElementById('spain-btn-check-answers').style.display = 'inline-block';
+    // Attach Listeners
+    if(btnStudy) btnStudy.onclick = () => updateModeUI(btnStudy, 'study');
+    if(btnPractice) btnPractice.onclick = () => updateModeUI(btnPractice, 'practice');
+    if(btnRecite) btnRecite.onclick = () => updateModeUI(btnRecite, 'recite');
+
+    // The Unified Grading Engine
+    if(btnCheck) btnCheck.onclick = () => {
+        if (currentNotesMode[prefix] === 'practice') {
+            // 1. Grade the fill-in-the-blanks
+            const blanks = document.querySelectorAll(`#${prefix}-bullet-list .practice-blank`);
+            if (blanks.length === 0) return alert("Select a topic to practice first!");
+            
+            blanks.forEach(input => {
+                if (input.disabled) return; // skip already graded items
+                const correctAnswer = input.getAttribute('data-answer');
+                const userAnswer = input.value.trim().toLowerCase();
+                const expectedAnswer = correctAnswer.trim().toLowerCase();
+                
+                input.disabled = true; // lock input
+                
+                if (userAnswer === expectedAnswer) {
+                    input.classList.add('correct');
+                } else {
+                    input.classList.add('incorrect');
+                    const correctionSpan = document.createElement('span');
+                    correctionSpan.className = 'correction-text highlight-term';
+                    correctionSpan.textContent = ` (${correctAnswer})`;
+                    input.parentNode.insertBefore(correctionSpan, input.nextSibling);
+                }
+            });
+        } else if (currentNotesMode[prefix] === 'recite') {
+            // 2. Grade the Brain Dump (Reveal answers below)
+            document.getElementById(`${prefix}-recite-box`).disabled = true; // Lock their text
+            currentNotesMode[prefix] = 'recite_review'; // Temp mode to reveal original text
+            document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
+            
+            const currentCategory = document.getElementById(`${prefix}-notes-title`).textContent;
+            loadBullets(currentCategory, prefix); 
+            
+            btnCheck.style.display = 'none'; // hide check button once checked
+        }
+    };
+});
+
+// The Text Parser (With Randomizer)
+function formatNotesText(rawText, prefix) {
+    const mode = currentNotesMode[prefix];
     
-    // Refresh the currently selected category to re-render the text
-    const currentCategory = document.getElementById('spain-notes-title').textContent;
-    if (currentCategory && currentCategory !== "Select a Category") {
-        loadBullets(currentCategory, 'spain'); 
-    }
-};
-
-// 2. The Text Parser
-function formatSpainText(rawText) {
-    if (!isSpainPracticeMode) {
-        // Study Mode: Convert [[term]] to beautiful highlighted text
+    // In Study or Recite Review mode, simply show all highlights
+    if (mode === 'study' || mode === 'recite' || mode === 'recite_review') {
         return rawText.replace(/\[\[(.*?)\]\]/g, '<span class="highlight-term">$1</span>');
     } else {
-        // Practice Mode: Convert [[term]] to interactive text boxes
+        // In Practice Mode, 60% chance it becomes a blank, 40% chance it is revealed text
         return rawText.replace(/\[\[(.*?)\]\]/g, (match, p1) => {
-            // Dynamically set input width based on the answer length so it looks neat
-            const width = Math.max(p1.length * 9, 40); 
-            return `<input type="text" class="practice-blank" data-answer="${p1}" style="width: ${width}px;" autocomplete="off">`;
+            if (Math.random() < 0.60) {
+                const width = Math.max(p1.length * 9, 40); 
+                return `<input type="text" class="practice-blank" data-answer="${p1}" style="width: ${width}px;" autocomplete="off">`;
+            } else {
+                return `<span class="highlight-term">${p1}</span>`;
+            }
         });
     }
 }
-
-// 3. The Grading Logic
-document.getElementById('spain-btn-check-answers').onclick = () => {
-    const blanks = document.querySelectorAll('.practice-blank');
-    if (blanks.length === 0) return alert("Select a notes category to practice first!");
-
-    blanks.forEach(input => {
-        const correctAnswer = input.getAttribute('data-answer');
-        const userAnswer = input.value.trim().toLowerCase();
-        const expectedAnswer = correctAnswer.trim().toLowerCase();
-
-        // Lock the input so they can't change it after marking
-        input.disabled = true;
-
-        if (userAnswer === expectedAnswer) {
-            input.classList.add('correct');
-        } else {
-            input.classList.add('incorrect');
-            
-            // Only append the correction once if they click it multiple times
-            if (!input.nextElementSibling || !input.nextElementSibling.classList.contains('correction-text')) {
-                const correctionSpan = document.createElement('span');
-                correctionSpan.className = 'correction-text highlight-term';
-                correctionSpan.textContent = ` (${correctAnswer})`;
-                
-                // Insert the correct answer right after the wrong input box
-                input.parentNode.insertBefore(correctionSpan, input.nextSibling);
-            }
-        }
-    });
-};
 
 function getBulletsForCategory(category) {
     if (spainNotesData[category]) return spainNotesData[category];
@@ -769,8 +801,8 @@ function loadBullets(category, prefix) {
     getBulletsForCategory(category).forEach((item, index) => {
         const li = document.createElement('li');
         
-        // NEW: Check if it is Spain, and if so, run it through our text parser!
-        li.innerHTML = prefix === 'spain' ? formatSpainText(item.text) : item.text;
+        // Pass text through our new universal parser!
+        li.innerHTML = formatNotesText(item.text, prefix);
         
         if (item.type === 'heading') {
             li.style.fontWeight = 'bold';
@@ -780,12 +812,11 @@ function loadBullets(category, prefix) {
         } else {
             li.style.marginBottom = "8px";
             
-            // NEW: Only make the bullet clickable if we are NOT in Spain Practice Mode
-            if (!(prefix === 'spain' && isSpainPracticeMode)) {
+            // Only allow clicking (to open notes panel) if we are purely studying or reviewing a recite
+            if (currentNotesMode[prefix] === 'study' || currentNotesMode[prefix] === 'recite_review') {
                 li.style.cursor = "pointer"; 
                 li.onclick = () => loadNoteData(category, index, prefix);
             } else {
-                // Change back to standard text cursor so they know it isn't a button
                 li.style.cursor = "text"; 
             }
         }

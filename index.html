@@ -31,14 +31,20 @@
                 
                 <div class="content-area" style="display: flex; flex-direction: column; position: relative;">
                     <h2 id="spain-notes-title" class="notes-title">Select a Topic</h2>
+                    
                     <ul id="spain-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
+                    
+                    <div id="spain-recite-container" style="display: none; flex-grow: 1; width: 100%;">
+                        <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Try to recall the information about this topic:</p>
+                        <textarea id="spain-recite-box" class="recite-textarea" placeholder="Start typing..."></textarea>
+                    </div>
                     
                     <div class="notes-mode-controls" style="
                         display: flex; 
                         flex-direction: row; 
                         justify-content: center; 
                         align-items: center; 
-                        gap: 15px;
+                        gap: 10px; /* slightly smaller gap to fit 4 buttons */
                         margin-top: auto; 
                         padding: 10px 15px; 
                         background: #f8f9fa; 
@@ -50,8 +56,9 @@
                         box-sizing: border-box;
                         box-shadow: 0 -4px 10px rgba(0,0,0,0.05);">
                         
-                        <button id="spain-btn-study" class="active-mode" style="flex: 0 0 auto; height: 38px; font-weight: bold; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">📖 Study Mode</button>
-                        <button id="spain-btn-practice" class="subtle-btn" style="flex: 0 0 auto; height: 38px; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">✍️ Practice Mode</button>
+                        <button id="spain-btn-study" class="active-mode" style="flex: 0 0 auto; height: 38px; font-weight: bold; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">📖 Study</button>
+                        <button id="spain-btn-practice" class="subtle-btn" style="flex: 0 0 auto; height: 38px; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">✍️ Practice</button>
+                        <button id="spain-btn-recite" class="subtle-btn" style="flex: 0 0 auto; height: 38px; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">🧠 Recite</button>
                         <button id="spain-btn-check-answers" class="action-btn" style="display: none; flex: 0 0 auto; height: 38px; background: #28a745; color: white; font-weight: bold; padding: 0 16px; margin: 0; border: none; border-radius: 4px; cursor: pointer;">✅ Check Answers</button>
                     </div>
                 </div>
@@ -132,9 +139,38 @@
         <section id="wotr-timelines" class="tab-content">
             <div class="split-view">
                 <div class="sidebar" id="wotr-categories"></div>
-                <div class="content-area">
-                    <h2 id="wotr-notes-title" class="notes-title">Select a Timeline</h2>
-                    <ul id="wotr-bullet-list"><li>Select a timeline on the left to view bullets.</li></ul>
+                <div class="content-area" style="display: flex; flex-direction: column; position: relative;">
+                    <h2 id="wotr-notes-title" class="notes-title">Select a Topic</h2>
+                    
+                    <ul id="wotr-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
+                    
+                    <div id="wotr-recite-container" style="display: none; flex-grow: 1; width: 100%;">
+                        <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Try to recall the information about this topic:</p>
+                        <textarea id="wotr-recite-box" class="recite-textarea" placeholder="Start typing..."></textarea>
+                    </div>
+                    
+                    <div class="notes-mode-controls" style="
+                        display: flex; 
+                        flex-direction: row; 
+                        justify-content: center; 
+                        align-items: center; 
+                        gap: 10px; /* slightly smaller gap to fit 4 buttons */
+                        margin-top: auto; 
+                        padding: 10px 15px; 
+                        background: #f8f9fa; 
+                        border-top: 2px solid #ddd; 
+                        position: sticky; 
+                        bottom: 0; 
+                        z-index: 10;
+                        width: 100%;
+                        box-sizing: border-box;
+                        box-shadow: 0 -4px 10px rgba(0,0,0,0.05);">
+                        
+                        <button id="wotr-btn-study" class="active-mode" style="flex: 0 0 auto; height: 38px; font-weight: bold; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">📖 Study</button>
+                        <button id="wotr-btn-practice" class="subtle-btn" style="flex: 0 0 auto; height: 38px; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">✍️ Practice</button>
+                        <button id="wotr-btn-recite" class="subtle-btn" style="flex: 0 0 auto; height: 38px; padding: 0 16px; margin: 0; border-radius: 4px; cursor: pointer;">🧠 Recite</button>
+                        <button id="wotr-btn-check-answers" class="action-btn" style="display: none; flex: 0 0 auto; height: 38px; background: #28a745; color: white; font-weight: bold; padding: 0 16px; margin: 0; border: none; border-radius: 4px; cursor: pointer;">✅ Check Answers</button>
+                    </div>
                 </div>
                 <div class="notes-panel" id="wotr-notes-panel" style="display:none;">
                     <h3>Further Notes</h3>
