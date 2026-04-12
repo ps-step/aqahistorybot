@@ -342,9 +342,9 @@ const spainNotesData = {
     "Philip II - Dutch Revolt": [
         { type: "heading", text: "Phase 1: 1555-1567" },
         { type: "bullet", text: "[[1555-1559]]: Spent majority of time in Netherlands. Therefore, knew the difficulties." },
-        { type: "bullet", text: "[[1556]]: States-General refused Philip’s taxes eg. [[1% on real-estate]]." },
+        { type: "bullet", text: "[[1556]]: States-General refused Philip’s taxes eg. [[1% on real estate]]." },
         { type: "bullet", text: "[[1557]]: Refused subsidies again." },
-        { type: "bullet", text: "[[1559]]: Assembly voted for ‘[[nine years aid]]’ of 3.6m ducats." },
+        { type: "bullet", text: "[[1559]]: Assembly voted for ‘[[nine years aid]]’ of [[3.6m ducats]]." },
         { type: "bullet", text: "[[1559]]: Philip II permanently departs Netherlands for Spain. [[Margaret of Parma]] as regent but real power wielded by inner circle led by [[Granvelle]], alienating Dutch nobles like [[Orange]] and [[Egmont]]." },
         { type: "bullet", text: "[[1559–1561]]: [[14 new bishoprics]] and Crown given power to appoint bishops. Enrages the nobility (who lose patronage) and terrifies populace (who view it as first step to Inquisition)." },
         { type: "bullet", text: "[[1561-1564]]: Concessions made, eg. stopped church reform, dismissed [[Granvelle]] after ultimatum from Orange and Egmont." },
