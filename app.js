@@ -421,6 +421,7 @@ const wotrNotesData = {
         { type: "bullet", text: "<b>[[1456]]</b> - Anjou moves the court to [[Coventry]], a more pro-Lancastrian area." },
         { type: "bullet", text: "<b>[[1456]]</b> - [[Walter Devereux]], a Yorkist ally, seizes castles in Wales, for example at [[Aberystwyth]], for the Yorkists." },
         { type: "bullet", text: "<b>[[1457]]</b> - [[Pierre de Breze]], a Frenchman with ties to Anjou, raids [[Sandwich]]." },
+        { type: "bullet", text: "<b>[[December 1457]]</b> - Anjou introduced [[conscription]] which York criticised as a '[[French invention]]'." },
         { type: "bullet", text: "<b>[[25 March 1458]]</b> - Henry VI puts on the [[Loveday parade]], a disastrous attempt to reconcile the two factions. It sees Anjou and York, Somerset and Salisbury, and Exeter and Warwick walk hand-in-hand through London. However, it fails in its objectively and is extremely [[expensive]]." }
     ],
     "1458-1461": [
@@ -474,7 +475,7 @@ const wotrNotesData = {
         { type: "bullet", text: "<b>[[11 July 1469]]</b> - [[Isabel Neville]] marries [[Clarence]] in Calais." },
         { type: "bullet", text: "<b>[[12 July 1469]]</b> - Warwick published a [[pamphlet]] from Calais against the evil councillors surrounding Edward IV and airing his grievances." },
         { type: "bullet", text: "<b>[[July 1469]]</b> - Warwick crosses to England. The gates of [[London]] are opened to him, and he begins to openly support the rebels against Edward IV." },
-        { type: "bullet", text: "<b>[[26 July 1469]]</b> - Battle of [[Edgecote]] - [[rebel]] victory. The [[Herbert-Devon]] dispute led to Devon withdrawing his archers. Edward IV is under Warwick's control." },
+        { type: "bullet", text: "<b>[[24 July 1469]]</b> - Battle of [[Edgecote]] - [[rebel]] victory. The [[Herbert-Devon]] dispute led to Devon withdrawing his archers. Edward IV is under Warwick's control." },
         { type: "bullet", text: "<b>[[August 1469]]</b> - Warwick executed [[John Woodville]] and [[Earl Rivers]]." },
         { type: "bullet", text: "<b>[[September 1469]]</b> - Edward IV was released from custody due to the nobles not being cooperative with his administration." },
         { type: "bullet", text: "<b>[[October 1469]]</b> - Edward IV returned to London surrounded by loyal nobles like the [[Duke of Gloucester]]." },
