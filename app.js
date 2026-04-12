@@ -358,7 +358,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[September 1567]]: Alba establishes the [[Council of Troubles]]; ignores standard legal privileges, executes over [[1000]] people and confiscates massive amounts of property." },
         { type: "bullet", text: "[[May 1568]]: A rebel army led by [[Orange's brother]] defeats Spanish force, though little strategic gain." },
         { type: "bullet", text: "[[June 1568]]: Alba beheads the Counts of [[Egmont and Hoorn]] in Brussels. Turns moderate Catholics against the Spanish regime." },
-        { type: "bullet", text: "[[March 1569]]: Alba proposed [[Tenth Penny]] sales tax. Refused by States-General, instead given 4m florins over two years." },
+        { type: "bullet", text: "[[March 1569]]: Alba proposed [[Tenth Penny]] sales tax. Refused by States-General, instead given [[4m florins]] over two years." },
         { type: "bullet", text: "[[1571]]: Alba implemented the Tenth Penny anyway. Brought Netherlands to brink of revolt." },
         { type: "bullet", text: "[[April 1572]]: Capture of [[Brielle]] by the [[Sea Beggars]]. Towns across Holland and Zeeland declare for the rebellion and recognize Orange as their leader." },
         { type: "bullet", text: "[[1572]]: [[Medinaceli]] reported to Philip that Alba was the reason for revolt." },
