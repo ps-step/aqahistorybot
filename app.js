@@ -373,7 +373,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[1577]]: [[Parma]] appointed as military leader. States-General fled north." },
         { type: "bullet", text: "[[October 1578]]: Parma succeeds as governor." },
         { type: "bullet", text: "[[January 1579]]: Revolt splits. [[Union of Arras]]: The southern, Catholic provinces reconcile with Spain, fearing Calvinist radicalism. [[Union of Utrecht]]: Northern provinces form a military alliance to continue fight." },
-        { type: "bullet", text: "[[March 1580]]: Philip II declares William or Orange an outlaw." },
+        { type: "bullet", text: "[[March 1580]]: Philip II declares William of Orange an outlaw." },
         { type: "bullet", text: "[[July 1581]]: [[Act of Abjuration]]. The northern provinces declare independence, stating that Philip II has violated his contract with his subjects and is no longer their sovereign." },
         { type: "heading", text: "Phase 4: 1584-1594" },
         { type: "bullet", text: "[[July 1584]]: Assassination of [[William of Orange]]." },
