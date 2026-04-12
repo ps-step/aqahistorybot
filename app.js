@@ -366,7 +366,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[October 1574]]: Dutch rebels flood the countryside, allowing Sea Beggars to sail up to city walls and deliver food." },
         { type: "heading", text: "Phase 3: 1576-1581" },
         { type: "bullet", text: "[[March 1576]]: [[Requesens]] dies unexpectedly, leaving a power vacuum." },
-        { type: "bullet", text: "[[September 157]]6: [[Don John]] appointed as governor." },
+        { type: "bullet", text: "[[September 1576]]: [[Don John]] appointed as governor." },
         { type: "bullet", text: "[[3 November 1576]]: The [[Spanish Fury]]. Army mutinies and sacks Antwerp, slaughtering around 7,000 citizens." },
         { type: "bullet", text: "[[8 November 1576]]: [[Pacification of Ghent]]. All seventeen Provinces sign a treaty uniting them against Spanish." },
         { type: "bullet", text: "[[February 1577]]: [[Perpetual Edict]]. Don John accepted Pacification of Ghent. Spanish troops begin to leave but Orange refuses to cooperate, so Don John brings troops back." },
