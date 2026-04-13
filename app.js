@@ -789,30 +789,91 @@ function setupNotesSidebar(categories, containerId, prefix) {
 setupNotesSidebar(spainCats, 'spain-categories', 'spain');
 setupNotesSidebar(wotrCats, 'wotr-categories', 'wotr');
 
+// Global store for highlights so we don't fetch redundantly
+let currentHighlights = { spain: {}, wotr: {} };
+
 // Load notes into the viewer (distinguishing between headings and clickable bullets)
-function loadBullets(category, prefix) {
+async function loadBullets(category, prefix) {
     document.getElementById(`${prefix}-notes-title`).textContent = category;
     const list = document.getElementById(`${prefix}-bullet-list`);
-    list.innerHTML = '';
+    list.innerHTML = '<li style="list-style:none;">Loading...</li>';
     
     // Hide the notes panel when a new category is selected
     document.getElementById(`${prefix}-notes-panel`).style.display = 'none';
+
+    // NEW: Fetch saved highlights from Firebase before rendering
+    if (currentUser) {
+        try {
+            const snap = await getDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`));
+            if (snap.exists()) {
+                currentHighlights[prefix][category] = snap.data().indices || [];
+            } else {
+                currentHighlights[prefix][category] = [];
+            }
+        } catch (e) {
+            console.error("Error loading highlights:", e);
+            currentHighlights[prefix][category] = [];
+        }
+    } else {
+        currentHighlights[prefix][category] = []; // Empty if not signed in
+    }
+
+    list.innerHTML = ''; // Clear loading message
     
     getBulletsForCategory(category).forEach((item, index) => {
         const li = document.createElement('li');
         
-        // Pass text through our new universal parser!
-        li.innerHTML = formatNotesText(item.text, prefix);
+        // Wrap content in a span so the float button aligns properly
+        const contentSpan = document.createElement('span');
+        contentSpan.innerHTML = formatNotesText(item.text, prefix);
         
         if (item.type === 'heading') {
             li.style.fontWeight = 'bold';
             li.style.marginTop = '15px';
             li.style.listStyleType = 'none';
             li.style.marginLeft = '-20px'; 
+            li.appendChild(contentSpan);
         } else {
             li.style.marginBottom = "8px";
+            li.style.padding = "5px";
+            li.style.position = "relative";
+            li.appendChild(contentSpan);
             
-            // Only allow clicking (to open notes panel) if we are purely studying or reviewing a recite
+            // NEW: Highlight Toggle Button
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'highlight-toggle-btn';
+            toggleBtn.innerHTML = '🖍️';
+            toggleBtn.title = "Highlight this point";
+            
+            // Apply existing highlight on load
+            if (currentHighlights[prefix][category].includes(index)) {
+                li.classList.add('user-highlighted-bullet');
+                toggleBtn.style.opacity = '1';
+            }
+
+            toggleBtn.onclick = async (e) => {
+                e.stopPropagation(); // Stop the click from opening the side panel
+                if (!currentUser) return alert("Please sign in to save highlights!");
+                
+                const hList = currentHighlights[prefix][category];
+                
+                // Toggle logic
+                if (hList.includes(index)) {
+                    hList.splice(hList.indexOf(index), 1);
+                    li.classList.remove('user-highlighted-bullet');
+                    toggleBtn.style.opacity = '0.3';
+                } else {
+                    hList.push(index);
+                    li.classList.add('user-highlighted-bullet');
+                    toggleBtn.style.opacity = '1';
+                }
+                
+                // Auto-save silently to Firebase
+                await setDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`), { indices: hList });
+            };
+            li.appendChild(toggleBtn);
+            
+            // Interaction logic (opening side panel)
             if (currentNotesMode[prefix] === 'study' || currentNotesMode[prefix] === 'recite_review') {
                 li.style.cursor = "pointer"; 
                 li.onclick = () => loadNoteData(category, index, prefix);

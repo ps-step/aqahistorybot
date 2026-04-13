@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HistoryBot</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <script type="module" src="app.js" defer></script>
 </head>
@@ -16,6 +17,7 @@
             <button class="tab-btn" data-target="wotr-timelines">WOTR Timelines</button>
             <button class="tab-btn" data-target="wotr-essays">WOTR Essays & Sources</button>
             <button class="tab-btn" data-target="grade-boundaries">Grade Boundaries</button>
+            <button class="nav-btn" onclick="document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active')); document.getElementById('info-tab').classList.add('active');">Information</button>
         </nav>
         <div class="auth-section">
             <button id="login-btn">Sign in with Google</button>
@@ -25,19 +27,39 @@
     
 
     <main>
+        <section id="info-tab" class="tab-content" style="padding: 40px; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            <h2>Website Features & Guide</h2>
+            <hr style="margin-bottom: 20px;">
+            
+            <h3 style="color: #007bff;">📖 Study Mode</h3>
+            <p>Read through your notes and timelines. Key dates, figures, and terms are highlighted in yellow to draw your attention. Click the 🖍️ icon next to any bullet point to permanently highlight it in blue for later review.</p>
+            
+            <h3 style="color: #007bff;">✍️ Practice Mode</h3>
+            <p>Test your active recall. The app will randomly convert 40% of the key terms into blank text boxes. Fill them in and hit "Check Answers" to instantly grade yourself. Corrections will be provided for any wrong answers.</p>
+            
+            <h3 style="color: #007bff;">🧠 Recite Mode</h3>
+            <p>The ultimate memory test. The notes vanish, leaving you with a blank canvas to brain-dump everything you can remember about a topic. Hit "Check Answers" to lock your response and reveal the original notes directly underneath so you can cross-reference your knowledge.</p>
+            
+            <h3 style="color: #007bff;">📝 Essay Planning Engine</h3>
+            <p>Select a past paper question to bring up the dynamic planner. You can drag and drop specific bullet points directly from your notes into the "Agree" or "Disagree" boxes to visually map out your essays. Everything auto-saves to your account as you type.</p>
+
+            <h3 style="color: #007bff;">📄 Past Papers & Mark Schemes</h3>
+            <p>View historical questions, read the provided sources/extracts natively in the browser, or open the official PDF mark schemes directly alongside your essay planner.</p>
+        </section>
+
         <section id="spain-notes" class="tab-content active">
             <div class="split-view">
                 <div class="sidebar" id="spain-categories"></div>
                 
                 <div class="content-area" style="display: flex; flex-direction: column; position: relative;">
                     <h2 id="spain-notes-title" class="notes-title">Select a Topic</h2>
-                    
-                    <ul id="spain-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
-                    
+                               
                     <div id="spain-recite-container" style="display: none; flex-grow: 1; width: 100%;">
                         <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Try to recall the information about this topic:</p>
                         <textarea id="spain-recite-box" class="recite-textarea" placeholder="Start typing..."></textarea>
                     </div>
+
+                    <ul id="spain-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
                     
                     <div class="notes-mode-controls" style="
                         display: flex; 
@@ -142,12 +164,12 @@
                 <div class="content-area" style="display: flex; flex-direction: column; position: relative;">
                     <h2 id="wotr-notes-title" class="notes-title">Select a Topic</h2>
                     
-                    <ul id="wotr-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
-                    
                     <div id="wotr-recite-container" style="display: none; flex-grow: 1; width: 100%;">
                         <p style="margin-bottom: 10px; font-weight: bold; color: #555;">Try to recall the information about this topic:</p>
                         <textarea id="wotr-recite-box" class="recite-textarea" placeholder="Start typing..."></textarea>
                     </div>
+
+                    <ul id="wotr-bullet-list" style="flex-grow: 1; margin-bottom: 20px;"><li>Select a topic on the left to view bullets.</li></ul>
                     
                     <div class="notes-mode-controls" style="
                         display: flex; 
