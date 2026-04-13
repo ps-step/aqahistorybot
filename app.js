@@ -845,6 +845,9 @@ async function loadBullets(category, prefix) {
             toggleBtn.innerHTML = '🖍️';
             toggleBtn.title = "Highlight this point";
             
+            // NEW: Remove from tab order so Practice Mode flows smoothly!
+            toggleBtn.tabIndex = -1; 
+            
             // Apply existing highlight on load
             if (currentHighlights[prefix][category].includes(index)) {
                 li.classList.add('user-highlighted-bullet');
