@@ -166,7 +166,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[Consulta]] standardised conciliar system with council debata leading to consulta, approved or rejected by the king." },
         { type: "bullet", text: "[[Mercurino Gattinara]] grand chancellor until [[1530]]. No new grand chancellor appointed, split between [[los Cobos]] (finance) and [[Granvelle]] (foreign policy)." },
         { type: "bullet", text: "Cortes met [[15]] times. [[1538]] Cortes of Toledo nobles refused [[sisa]] (food tax). Thereafter, only town deputies summoned." },
-        { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the [[military oders]]." },
+        { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the [[military orders]]." },
         { type: "bullet", text: "[[1543]]: State archive established at [[Simancas]]." },
         { type: "bullet", text: "[[1543]]: Philip as regent, aged [[16]]. Guided by junta including Cardinal [[Tavera]], de los Cobos. Lasted for [[14yrs]] during Charles' absence." },
         { type: "bullet", text: "[[Itinerant]] court continued." },
