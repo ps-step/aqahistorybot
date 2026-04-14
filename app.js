@@ -615,7 +615,7 @@ const wotrNotesData = {
         { type: "bullet", text: "<b>[[9 April 1484]]</b> - [[Edward of Middleham]] died, plunging Richard III and Anne Neville into deep grief." },
         { type: "bullet", text: "<b>[[July 1484]]</b> - The [[Council of the North]] was formally established under the leadership of [[John de la Pole]], Earl of Lincoln." },
         { type: "bullet", text: "<b>[[21 September 1484]]</b> - Richard III agreed a three-year truce with Scotland in the Treaty of [[Nottingham]]." },
-        { type: "bullet", text: "<b>[[7 Decemebr 1484]]</b> - Richard III issued a proclamation against Henry Tudor and his supporters." },
+        { type: "bullet", text: "<b>[[7 Decemeber 1484]]</b> - Richard III issued a proclamation against Henry Tudor and his supporters." },
         { type: "bullet", text: "<b>[[December 1484]]</b> - [[William Collingbourne]] was executed for treason in an example of continued opposition to Richard III." },
         { type: "bullet", text: "<b>[[16 March 1485]]</b> - [[Anne Neville]] died. A [[solar eclipse]] on the same day was interpreted as a bad omen, and it was suspected Richard III poisoned her." },
         { type: "bullet", text: "<b>[[30 March 1485]]</b> - Richard III publicly denied his intention to marry his niece, Elizabeth of York." },
