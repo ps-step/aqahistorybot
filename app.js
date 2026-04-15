@@ -186,7 +186,7 @@ const spainNotesData = {
         { type: "bullet", text: "Returned in [[1522]] with [[4000]] mercenaries. Issued [[general pardon]] except for rebel leaders." },
         { type: "bullet", text: "All cortes deputies required to have [[poderes]] (full powers)." }
     ],
-    "Charles V: Government, Authority, and Administation": [
+    "Charles V: Government, Authority, and Administration": [
         { type: "heading", text: "Conciliar System" },
         { type: "bullet", text: "Conciliar system exanded. [[1522]] war, [[1523]] finance, [[1524]] indies, [[1526]] state. [[Los Cobos]] secretary of finance for [[30yrs]]." },
         { type: "bullet", text: "[[Consulta]] standardised conciliar system with council debata leading to consulta, approved or rejected by the king." },
