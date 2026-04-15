@@ -205,7 +205,7 @@ const spainNotesData = {
         { type: "bullet", text: "<b>France:</b> [[Francis I]] captured at [[1525 Battle of Pavia]]. [[1529 Peace of Cambrai]] and [[1544 Peace of Crepy]] confirmed Spanish dominance in Italy." },
         { type: "bullet", text: "<b>Portugal:</b> [[1529 Treaty of Zaragoza]] sold [[Moluccas]] claim to Portugal for [[350k ducats]]." },
         { type: "bullet", text: "<b>HRE:</b> [[1532 Peace of Nuremberg]] was a temporary truce with Lutherans so Charles could focus on Ottoman threat. [[1547 Battle of Muhlberg]] defeated Schmalkaldic League but forced into embarrasing [[1555 Peace of Augsburg]]." },
-        { type: "bullet", text: "<b>Ottomans:</b> [[1529]] Siege of Vienna was victory over [[100k]] Ottomans. Charles led [[1535 Tunis expedition]] with [[60k]] men. But [[1541 Algiers]] was a catastophic failure with [[150]] ships lost." },
+        { type: "bullet", text: "<b>Ottomans:</b> [[1529]] Siege of Vienna was victory over [[100k]] Ottomans. Charles led [[1535 Tunis expedition]] with [[60k]] men after [[Barbarossa]] captured in [[1564]]. But [[1541 Algiers]] was a catastophic failure with [[150]] ships lost." },
         { type: "bullet", text: "<b>England:</b> [[1522 Treaty of Windsor]] continued English alliance, [[1554]] Philip x [[Mary Tudor]]." }
     ],
     "Charles V: Economics": [
