@@ -131,6 +131,7 @@ const spainNotesData = {
         { type: "bullet", text: "Changed curriculum of [[Salamanca]] University in [[1482]] to include [[limpieza de sangre]]." },
         { type: "bullet", text: "Church control: [[1486 Patronato Real]] gave monarchs the right to appoint [[bishops]] in Granada." },
         { type: "bullet", text: "In [[1492 Antonio de Nebrija]] published the first Castilian grammar, and said \"language is the instrument of [[empire]]\". Tool for conversion of subjugated peoples." },
+        { type: "bullet", text: "In [[1472]] the first printing press was set up in [[Segovia]]." },
         { type: "bullet", text: "[[Cisneros]] (archbishop of Toledo) was highly influential. Made cardinal in [[1507]], financed Uni of [[Alcala]] in [[1508]], and capture of [[Oran]] in [[1509]]." }
     ],
     "Ferdinand and Isabella: Foreign Policy": [
