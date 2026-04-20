@@ -210,6 +210,7 @@ const spainNotesData = {
         { type: "bullet", text: "<b>Portugal:</b> [[1529 Treaty of Zaragoza]] sold [[Moluccas]] claim to Portugal for [[350k ducats]]." },
         { type: "bullet", text: "<b>HRE:</b> [[1532 Peace of Nuremberg]] was a temporary truce with Lutherans so Charles could focus on Ottoman threat. [[1547 Battle of Muhlberg]] defeated Schmalkaldic League but forced into embarrasing [[1555 Peace of Augsburg]]." },
         { type: "bullet", text: "<b>Ottomans:</b> [[1529]] Siege of Vienna was victory over [[100k]] Ottomans. Charles led [[1535 Tunis expedition]] with [[60k]] men after [[Barbarossa]] had captured in [[1534]]. But [[1541 Algiers]] was a catastophic failure with [[150]] ships lost." },
+        { type: "bullet", text: "[[1538]]: [[Barbarossa]] decisively defeats Charles V's fleet (led by Andrea Doria) at the [[Battle of Preveza]], securing Ottoman naval dominance in the eastern Mediterranean." },
         { type: "bullet", text: "<b>England:</b> [[1522 Treaty of Windsor]] continued English alliance, [[1554]] Philip x [[Mary Tudor]]." }
     ],
     "Charles V: Economics": [
@@ -382,6 +383,7 @@ const spainNotesData = {
         { type: "heading", text: "Portugal" },
         { type: "bullet", text: "King Sebastian died 1578 at [[Alcazarquivir]], [[Henry]] had short reign - then, the [[Duke of Alba]] invaded in [[1580]]." },
         { type: "bullet", text: "[[1581 Cortes of Tomar]]: Philip proclaimed King; swore to respect fueros, use native officials, and keep separate trade monopolies." },
+        { type: "bullet", text: "Resided in Lisbon from 1580 to 1583. Had to bribe nobles for support and largely did not see the money from Portuguese taxation which went to native nobles instead." },
         { type: "heading", text: "England" },
         { type: "bullet", text: "English Alliance: [[1554]] marriage to [[Mary Tudor]] intended to encircle France." },
         { type: "bullet", text: "1568 confiscation of [[Genoese]] treasure ships. 1567 arrival of Alba in the Netherlands seriously affected relations." },
