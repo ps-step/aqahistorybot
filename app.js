@@ -391,7 +391,7 @@ const spainNotesData = {
         { type: "bullet", text: "The [[1583 Throckmorton Plot]] was uncovered by [[Francis Walsingham]], leading to Throckmorton's execution in May [[1584]]. This was followed by the [[Babington Plot]] in [[1586]]." },
         { type: "bullet", text: "[[1587]] Attack on [[Cadiz]]: Drake looted, burned, or sank approx. [[30]] Spanish ships. Drake also destroyed ships carrying food for Armada and captured the treasure ship [[San Felipe]]." },
         { type: "bullet", text: "[[1588]] Spanish Armada: [[130]] ships commanded by [[Medina Sidonia]]; failure cost [[15,000]] men. Cost about [[10 million ducats]], with Castile contributing around [[70%]]." },
-        { type: "bullet", text: "Further Armadas in [[1596]], [[1597]], [[1598]]."}
+        { type: "bullet", text: "Further Armadas in [[1596]] and [[1597]]]."}
     ],
     "Philip II: Dutch Revolt": [
         { type: "heading", text: "Phase 1: 1555-1567" },
