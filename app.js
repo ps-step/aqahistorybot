@@ -316,7 +316,7 @@ const spainNotesData = {
         { type: "heading", text: "Church Reform" },
         { type: "bullet", text: "[[Regalism]] asserted he was 'lord over the Church'; not bound by papal mandates." },
         { type: "bullet", text: "No papal decree published in Spain without approval from [[Council of Castile]]." },
-        { type: "bullet", text: "Accepted [[1564 Council of Trent]] but insisted Crown oversee implementation." },
+        { type: "bullet", text: "Accepted [[1545-63 Council of Trent]] but insisted Crown oversee implementation." },
         { type: "bullet", text: "[[St Teresa of Avila]] founded [[Discalced Carmelites]] - recognised by Pope in the [[1580s]]." },
         { type: "bullet", text: "Philip distrusted the [[Jesuits]] (loyal to Rome); attempted to 'nationalise' the order (Inquisiton)." }
     ],
