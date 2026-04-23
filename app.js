@@ -370,7 +370,7 @@ const spainNotesData = {
         { type: "bullet", text: "Intervened in Wars of Religion; diverted [[Parma]] from Netherlands to aid [[Catholic League]] against Henry of Navarre. In [[1590]], Henry IV defeated Catholic League at the Battle of [[Ivry]]." },
         { type: "bullet", text: "[[1590]] to [[1594]]: [[75%]] of Low Countries' military treasury spent on French expeditions and Catholic League." },
         { type: "bullet", text: "[[1593]]: [[Henry IV]] converted to [[Catholicism]], regained control of [[Paris]] in [[1594]]." },
-        { type: "bullet", text: "[[1595-1597]]: Spain temporarily gained [[Calais]] and [[Amiens]] but lost [[Toulouse]] and [[Marseilles]] (overstretched)." },
+        { type: "bullet", text: "[[1595-1597]]: Spain temporarily gained [[Calais]] and [[Amiens]] but lost [[Toulouse]] and [[Marseille]] (overstretched)." },
         { type: "bullet", text: "Philip's attempt to install [[Infanta Isabella]] ([[1589-93]]) failed due to French adherence to [[Salic Law]] and nationalistic backlash." },
         { type: "bullet", text: "[[1598]] Treaty of [[Vervins]]: War ended by restating [[1559]] terms; Spain returned most conquests. Failure." },
         { type: "heading", text: "The Ottoman Empire & Mediterranean" },
