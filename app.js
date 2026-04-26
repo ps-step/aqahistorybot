@@ -22,6 +22,15 @@ const firebaseConfig = {
 
 };
 
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        currentUser = user;
+        // Refresh badges for both subjects
+        updateAllSidebarBadges('spain');
+        updateAllSidebarBadges('wotr');
+    }
+});
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
@@ -452,7 +461,7 @@ const wotrNotesData = {
         { type: "bullet", text: "<b>[[1450]]</b> - The English economy is virtually [[bankrupt]], with [[£372,000]] in debt, [[£38k]] of this being owed to [[Richard of York]]." },
         { type: "bullet", text: "<b>[[May 1450]]</b> - [[Cade's rebellion]] breaks out over taxation and the king's perceived favour of \"evil councillors\" like [[Suffolk]]." },
         { type: "bullet", text: "<b>[[2 May 1450]]</b> - [[Suffolk]] is executed on the [[Nicholas of the Tower]]." },
-        { type: "bullet", text: "<b>[[1 June 1450]]</b> - Cade's forces take [[London]], and [[Lord Saye and Sele]] (the treasurer) is executed." },
+        { type: "bullet", text: "<b>[[4 July 1450]]</b> - Cade's forces take [[London]], and [[Lord Saye and Sele]] (the treasurer) is executed." },
         { type: "bullet", text: "<b>[[12 July 1450]]</b> - Cade's rebellion is defeated; [[3000]] rebels are issued a [[general pardon]]." },
         { type: "bullet", text: "<b>[[September 1450]]</b> - [[York]] returns from Ireland with the intent to clear his name of involvement in Cade's rebellion. He defies orders by bringing a force of [[3000-4000]] retainers." },
         { type: "bullet", text: "<b>[[1451]]</b> - Loss of [[Gascony]]." },
@@ -820,7 +829,32 @@ function formatNotesText(rawText, prefix) {
     }
 }
 
-function getBulletsForCategory(category) {
+function getBulletsForCategory(category, prefix) {
+    // NEW: Handle the Review Highlights virtual category
+    if (category === "Review Highlights") {
+        let allHighlights = [];
+        const sourceData = prefix === 'spain' ? spainNotesData : wotrNotesData;
+        const highlightsForSubject = currentHighlights[prefix];
+
+        // Loop through every category and pick out only highlighted indices
+        for (const catName in highlightsForSubject) {
+            const indices = highlightsForSubject[catName];
+            if (indices && indices.length > 0 && sourceData[catName]) {
+                // Add a small header so we know which topic this note came from
+                allHighlights.push({ type: 'heading', text: catName });
+                
+                indices.forEach(idx => {
+                    if (sourceData[catName][idx]) {
+                        allHighlights.push(sourceData[catName][idx]);
+                    }
+                });
+            }
+        }
+        
+        return allHighlights.length > 0 ? allHighlights : [{ type: 'bullet', text: "No highlights saved yet! Click the 🖍️ icon in Study Mode to add some." }];
+    }
+
+    // Regular categories
     if (spainNotesData[category]) return spainNotesData[category];
     if (wotrNotesData[category]) return wotrNotesData[category];
     return [{ type: 'bullet', text: `Key point 1 for ${category}` }];
@@ -840,12 +874,55 @@ function formatCategoryText(cat) {
 
 function setupNotesSidebar(categories, containerId, prefix) {
     const container = document.getElementById(containerId);
+    container.innerHTML = ''; // Clear existing
+
+    // 1. Add the "Review Highlights" option at the top of the list
+    const reviewBtn = document.createElement('button');
+    reviewBtn.className = 'category-btn';
+    reviewBtn.style.borderLeft = "4px solid #0ea5e9";
+    reviewBtn.innerHTML = "⭐ <b>Review Highlights</b>";
+    reviewBtn.onclick = () => loadBullets("⭐ Review Highlights", prefix);
+    container.appendChild(reviewBtn);
+
+    // 2. Add regular categories
     categories.forEach(cat => {
         const btn = document.createElement('button');
-        btn.className = 'category-btn'; 
+        btn.className = 'category-btn';
+        
+        // Add the badge span
+        const badge = document.createElement('span');
+        badge.className = 'highlight-count-badge';
+        badge.id = `badge-${prefix}-${cat.replace(/\s+/g, '-')}`;
+        
         btn.innerHTML = formatCategoryText(cat);
+        btn.appendChild(badge);
         btn.onclick = () => loadBullets(cat, prefix);
         container.appendChild(btn);
+    });
+}
+
+// Function to refresh the numbers in the sidebar
+async function updateAllSidebarBadges(prefix) {
+    if (!currentUser) return;
+    
+    // We fetch the highlights for all categories in this subject
+    const q = query(collection(db, "users", currentUser.uid, "highlights"));
+    const querySnapshot = await getDocs(q);
+    
+    querySnapshot.forEach((doc) => {
+        const [p, ...catParts] = doc.id.split('_');
+        const category = catParts.join('_');
+        
+        if (p === prefix) {
+            const indices = doc.data().indices || [];
+            const badge = document.getElementById(`badge-${prefix}-${category.replace(/\s+/g, '-')}`);
+            if (badge) {
+                badge.textContent = indices.length;
+                badge.setAttribute('data-count', indices.length);
+            }
+            // Update local cache as well
+            currentHighlights[prefix][category] = indices;
+        }
     });
 }
 setupNotesSidebar(spainCats, 'spain-categories', 'spain');
@@ -882,7 +959,7 @@ async function loadBullets(category, prefix) {
 
     list.innerHTML = ''; // Clear loading message
     
-    getBulletsForCategory(category).forEach((item, index) => {
+    getBulletsForCategory(category, prefix).forEach((item, index) => {
         const li = document.createElement('li');
         
         // Wrap content in a span so the float button aligns properly
