@@ -22,19 +22,26 @@ const firebaseConfig = {
 
 };
 
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+let currentUser = null; 
+
+// NEW: The Auth Listener goes right here!
 onAuthStateChanged(auth, (user) => {
     if (user) {
         currentUser = user;
-        // Refresh badges for both subjects
+        console.log("User signed in:", user.uid);
+        
+        // Fetch and draw the highlight numbers as soon as they log in
         updateAllSidebarBadges('spain');
         updateAllSidebarBadges('wotr');
+    } else {
+        currentUser = null;
+        console.log("No user signed in.");
     }
 });
-
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app);
-let currentUser = null;
 
 // --- AUTHENTICATION ---
 const loginBtn = document.getElementById('login-btn');
