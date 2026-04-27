@@ -851,12 +851,14 @@ function getBulletsForCategory(category, prefix) {
                 allHighlights.push({ type: 'heading', text: catName });
                 
                 // Add the actual bullet points, but secretly remember their real category and index!
+                // Add the actual bullet points, but secretly remember their real category and index!
                 indices.forEach(idx => {
-                    if (sourceData[catName][idx]) {
+                    // NEW: Strict filter to NEVER pull headings into the review list, even if indices shift!
+                    if (sourceData[catName][idx] && sourceData[catName][idx].type !== 'heading') {
                         allHighlights.push({ 
                             type: 'bullet', 
                             text: sourceData[catName][idx].text,
-                            originalCategory: catName, // REMEMBERS WHERE IT CAME FROM
+                            originalCategory: catName,
                             originalIndex: idx         // REMEMBERS ITS TRUE INDEX
                         });
                     }
@@ -953,20 +955,37 @@ async function loadBullets(category, prefix) {
     // Hide the notes panel when a new category is selected
     document.getElementById(`${prefix}-notes-panel`).style.display = 'none';
 
-    // NEW: Do NOT fetch from Firebase if we are in the Review tab (we already loaded them!)
-    if (currentUser && category !== "⭐ Review Highlights") {
-        try {
-            const snap = await getDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`));
-            if (snap.exists()) {
-                currentHighlights[prefix][category] = snap.data().indices || [];
-            } else {
+    if (currentUser) {
+        if (category === "⭐ Review Highlights") {
+            // NEW: Instantly fetch ALL highlights for this subject so the Review tab is never empty
+            try {
+                const q = query(collection(db, "users", currentUser.uid, "highlights"));
+                const querySnapshot = await getDocs(q);
+                querySnapshot.forEach((doc) => {
+                    const [p, ...catParts] = doc.id.split('_');
+                    const catName = catParts.join('_');
+                    if (p === prefix) {
+                        currentHighlights[prefix][catName] = doc.data().indices || [];
+                    }
+                });
+            } catch (e) {
+                console.error("Error loading all highlights:", e);
+            }
+        } else {
+            // Standard fetch for a single category
+            try {
+                const snap = await getDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`));
+                if (snap.exists()) {
+                    currentHighlights[prefix][category] = snap.data().indices || [];
+                } else {
+                    currentHighlights[prefix][category] = [];
+                }
+            } catch (e) {
+                console.error("Error loading highlights:", e);
                 currentHighlights[prefix][category] = [];
             }
-        } catch (e) {
-            console.error("Error loading highlights:", e);
-            currentHighlights[prefix][category] = [];
         }
-    } else if (!currentUser) {
+    } else {
         currentHighlights[prefix][category] = []; 
     }
 
