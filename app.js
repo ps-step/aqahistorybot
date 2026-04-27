@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
-import { getFirestore, doc, setDoc, getDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+import { getFirestore, doc, getDoc, setDoc, collection, query, getDocs } from "https://www.gstatic.com/firebasejs/10.x.x/firebase-firestore.js";
 
 const firebaseConfig = {
 
@@ -920,26 +920,33 @@ function setupNotesSidebar(categories, containerId, prefix) {
 async function updateAllSidebarBadges(prefix) {
     if (!currentUser) return;
     
-    // We fetch the highlights for all categories in this subject
-    const q = query(collection(db, "users", currentUser.uid, "highlights"));
-    const querySnapshot = await getDocs(q);
-    
-    querySnapshot.forEach((doc) => {
-        const [p, ...catParts] = doc.id.split('_');
-        const category = catParts.join('_');
+    try {
+        // We fetch the highlights for all categories in this subject
+        const q = query(collection(db, "users", currentUser.uid, "highlights"));
+        const querySnapshot = await getDocs(q);
         
-        if (p === prefix) {
-            const indices = doc.data().indices || [];
-            const badge = document.getElementById(`badge-${prefix}-${category.replace(/\s+/g, '-')}`);
-            if (badge) {
-                badge.textContent = indices.length;
-                badge.setAttribute('data-count', indices.length);
+        querySnapshot.forEach((document) => {
+            // Safe string splitting to find the exact category
+            const id = document.id;
+            const prefixMatch = id.substring(0, id.indexOf('_'));
+            const catName = id.substring(id.indexOf('_') + 1);
+            
+            if (prefixMatch === prefix) {
+                const indices = document.data().indices || [];
+                const badge = document.getElementById(`badge-${prefix}-${catName.replace(/\s+/g, '-')}`);
+                if (badge) {
+                    badge.textContent = indices.length;
+                    badge.setAttribute('data-count', indices.length);
+                }
+                // Update local cache so Review tab has instant access
+                currentHighlights[prefix][catName] = indices;
             }
-            // Update local cache as well
-            currentHighlights[prefix][category] = indices;
-        }
-    });
+        });
+    } catch (e) {
+        console.error("Error updating badges:", e);
+    }
 }
+
 setupNotesSidebar(spainCats, 'spain-categories', 'spain');
 setupNotesSidebar(wotrCats, 'wotr-categories', 'wotr');
 
@@ -957,15 +964,17 @@ async function loadBullets(category, prefix) {
 
     if (currentUser) {
         if (category === "⭐ Review Highlights") {
-            // NEW: Instantly fetch ALL highlights for this subject so the Review tab is never empty
+            // Instantly fetch ALL highlights so the Review tab is never empty
             try {
                 const q = query(collection(db, "users", currentUser.uid, "highlights"));
                 const querySnapshot = await getDocs(q);
-                querySnapshot.forEach((doc) => {
-                    const [p, ...catParts] = doc.id.split('_');
-                    const catName = catParts.join('_');
-                    if (p === prefix) {
-                        currentHighlights[prefix][catName] = doc.data().indices || [];
+                querySnapshot.forEach((document) => {
+                    const id = document.id;
+                    const prefixMatch = id.substring(0, id.indexOf('_'));
+                    const catName = id.substring(id.indexOf('_') + 1);
+                    
+                    if (prefixMatch === prefix) {
+                        currentHighlights[prefix][catName] = document.data().indices || [];
                     }
                 });
             } catch (e) {
