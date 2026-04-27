@@ -838,7 +838,7 @@ function formatNotesText(rawText, prefix) {
 
 function getBulletsForCategory(category, prefix) {
     // NEW: Handle the Review Highlights virtual category
-    if (category === "Review Highlights") {
+    if (category === "⭐ Review Highlights") {
         let allHighlights = [];
         const sourceData = prefix === 'spain' ? spainNotesData : wotrNotesData;
         const highlightsForSubject = currentHighlights[prefix];
@@ -850,9 +850,15 @@ function getBulletsForCategory(category, prefix) {
                 // Add a small header so we know which topic this note came from
                 allHighlights.push({ type: 'heading', text: catName });
                 
+                // Add the actual bullet points, but secretly remember their real category and index!
                 indices.forEach(idx => {
                     if (sourceData[catName][idx]) {
-                        allHighlights.push(sourceData[catName][idx]);
+                        allHighlights.push({ 
+                            type: 'bullet', 
+                            text: sourceData[catName][idx].text,
+                            originalCategory: catName, // REMEMBERS WHERE IT CAME FROM
+                            originalIndex: idx         // REMEMBERS ITS TRUE INDEX
+                        });
                     }
                 });
             }
@@ -947,8 +953,8 @@ async function loadBullets(category, prefix) {
     // Hide the notes panel when a new category is selected
     document.getElementById(`${prefix}-notes-panel`).style.display = 'none';
 
-    // NEW: Fetch saved highlights from Firebase before rendering
-    if (currentUser) {
+    // NEW: Do NOT fetch from Firebase if we are in the Review tab (we already loaded them!)
+    if (currentUser && category !== "⭐ Review Highlights") {
         try {
             const snap = await getDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`));
             if (snap.exists()) {
@@ -960,8 +966,8 @@ async function loadBullets(category, prefix) {
             console.error("Error loading highlights:", e);
             currentHighlights[prefix][category] = [];
         }
-    } else {
-        currentHighlights[prefix][category] = []; // Empty if not signed in
+    } else if (!currentUser) {
+        currentHighlights[prefix][category] = []; 
     }
 
     list.innerHTML = ''; // Clear loading message
@@ -985,17 +991,19 @@ async function loadBullets(category, prefix) {
             li.style.position = "relative";
             li.appendChild(contentSpan);
             
-            // NEW: Highlight Toggle Button
+            // Highlight Toggle Button
             const toggleBtn = document.createElement('button');
             toggleBtn.className = 'highlight-toggle-btn';
             toggleBtn.innerHTML = '🖍️';
             toggleBtn.title = "Highlight this point";
-            
-            // NEW: Remove from tab order so Practice Mode flows smoothly!
             toggleBtn.tabIndex = -1; 
             
+            // DETERMINE TRUE CATEGORY AND INDEX (Crucial for the Review tab!)
+            const actualCategory = item.originalCategory || category;
+            const actualIndex = item.originalIndex !== undefined ? item.originalIndex : index;
+
             // Apply existing highlight on load
-            if (currentHighlights[prefix][category].includes(index)) {
+            if (currentHighlights[prefix][actualCategory] && currentHighlights[prefix][actualCategory].includes(actualIndex)) {
                 li.classList.add('user-highlighted-bullet');
                 toggleBtn.style.opacity = '1';
             }
@@ -1004,28 +1012,36 @@ async function loadBullets(category, prefix) {
                 e.stopPropagation(); // Stop the click from opening the side panel
                 if (!currentUser) return alert("Please sign in to save highlights!");
                 
-                const hList = currentHighlights[prefix][category];
+                // Make sure the array exists locally
+                if (!currentHighlights[prefix][actualCategory]) {
+                    currentHighlights[prefix][actualCategory] = [];
+                }
+                const hList = currentHighlights[prefix][actualCategory];
                 
                 // Toggle logic
-                if (hList.includes(index)) {
-                    hList.splice(hList.indexOf(index), 1);
+                if (hList.includes(actualIndex)) {
+                    hList.splice(hList.indexOf(actualIndex), 1);
                     li.classList.remove('user-highlighted-bullet');
                     toggleBtn.style.opacity = '0.3';
                 } else {
-                    hList.push(index);
+                    hList.push(actualIndex);
                     li.classList.add('user-highlighted-bullet');
                     toggleBtn.style.opacity = '1';
                 }
                 
-                // Auto-save silently to Firebase
-                await setDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${category}`), { indices: hList });
+                // Auto-save silently to Firebase using the TRUE category
+                await setDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${actualCategory}`), { indices: hList });
+                
+                // NEW: Instantly refresh sidebar numbers!
+                updateAllSidebarBadges(prefix);
             };
             li.appendChild(toggleBtn);
             
             // Interaction logic (opening side panel)
             if (currentNotesMode[prefix] === 'study' || currentNotesMode[prefix] === 'recite_review') {
                 li.style.cursor = "pointer"; 
-                li.onclick = () => loadNoteData(category, index, prefix);
+                // Uses the actual category/index so personal notes work in the Review tab too!
+                li.onclick = () => loadNoteData(actualCategory, actualIndex, prefix);
             } else {
                 li.style.cursor = "text"; 
             }
