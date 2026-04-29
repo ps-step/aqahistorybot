@@ -730,12 +730,13 @@ let currentNotesMode = { spain: 'study', wotr: 'study' };
 ['spain', 'wotr'].forEach(prefix => {
     const btnStudy = document.getElementById(`${prefix}-btn-study`);
     const btnPractice = document.getElementById(`${prefix}-btn-practice`);
+    const btnGapFill = document.getElementById(`${prefix}-btn-gap-fill`);
     const btnRecite = document.getElementById(`${prefix}-btn-recite`);
     const btnCheck = document.getElementById(`${prefix}-btn-check-answers`);
 
     // Helper to switch modes cleanly
     function updateModeUI(activeBtn, mode) {
-        [btnStudy, btnPractice, btnRecite].forEach(b => {
+        [btnStudy, btnPractice, btnGapFill, btnRecite].forEach(b => {
             if(b) {
                 b.className = 'subtle-btn';
                 b.style.fontWeight = 'normal';
@@ -757,6 +758,10 @@ let currentNotesMode = { spain: 'study', wotr: 'study' };
             if(btnCheck) btnCheck.style.display = 'inline-block';
             document.getElementById(`${prefix}-recite-container`).style.display = 'none';
             document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
+        } else if (mode === 'gap_fill') {
+            if(btnCheck) btnCheck.style.display = 'inline-block'; // NEW: Show Check Answers!
+            document.getElementById(`${prefix}-recite-container`).style.display = 'none';
+            document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
         } else if (mode === 'recite') {
             if(btnCheck) btnCheck.style.display = 'inline-block';
             document.getElementById(`${prefix}-bullet-list`).style.display = 'none';
@@ -775,22 +780,23 @@ let currentNotesMode = { spain: 'study', wotr: 'study' };
     // Attach Listeners
     if(btnStudy) btnStudy.onclick = () => updateModeUI(btnStudy, 'study');
     if(btnPractice) btnPractice.onclick = () => updateModeUI(btnPractice, 'practice');
+    if(btnGapFill) btnGapFill.onclick = () => updateModeUI(btnGapFill, 'gap_fill'); 
     if(btnRecite) btnRecite.onclick = () => updateModeUI(btnRecite, 'recite');
 
-    // The Unified Grading Engine
-    if(btnCheck) btnCheck.onclick = () => {
+    // The Unified Grading Engine (Made async so we can await re-renders!)
+    if(btnCheck) btnCheck.onclick = async () => {
         if (currentNotesMode[prefix] === 'practice') {
-            // 1. Grade the fill-in-the-blanks
+            // Grade the fill-in-the-blanks
             const blanks = document.querySelectorAll(`#${prefix}-bullet-list .practice-blank`);
             if (blanks.length === 0) return alert("Select a topic to practice first!");
             
             blanks.forEach(input => {
-                if (input.disabled) return; // skip already graded items
+                if (input.disabled) return; 
                 const correctAnswer = input.getAttribute('data-answer');
                 const userAnswer = input.value.trim().toLowerCase();
                 const expectedAnswer = correctAnswer.trim().toLowerCase();
                 
-                input.disabled = true; // lock input
+                input.disabled = true; 
                 
                 if (userAnswer === expectedAnswer) {
                     input.classList.add('correct');
@@ -802,31 +808,61 @@ let currentNotesMode = { spain: 'study', wotr: 'study' };
                     input.parentNode.insertBefore(correctionSpan, input.nextSibling);
                 }
             });
+        } else if (currentNotesMode[prefix] === 'gap_fill') {
+            // NEW: Grade the Gap Fill
+            const textareas = document.querySelectorAll(`#${prefix}-bullet-list .gap-fill-box`);
+            if (textareas.length === 0) return alert("Select a topic to practice first!");
+            
+            // 1. Save what the user typed before we re-render the DOM
+            const userAnswers = Array.from(textareas).map(ta => ta.value);
+            
+            // 2. Switch mode and trigger a re-render
+            currentNotesMode[prefix] = 'gap_fill_review';
+            const currentCategory = document.getElementById(`${prefix}-notes-title`).textContent;
+            await loadBullets(currentCategory, prefix); 
+            
+            // 3. Inject their typed answers back into the newly rendered (and disabled) textareas
+            const newTextareas = document.querySelectorAll(`#${prefix}-bullet-list .gap-fill-box`);
+            newTextareas.forEach((ta, i) => {
+                ta.value = userAnswers[i] || '';
+            });
+            
+            btnCheck.style.display = 'none';
+
         } else if (currentNotesMode[prefix] === 'recite') {
-            // 2. Grade the Brain Dump (Reveal answers below)
-            document.getElementById(`${prefix}-recite-box`).disabled = true; // Lock their text
-            currentNotesMode[prefix] = 'recite_review'; // Temp mode to reveal original text
+            // Grade the Brain Dump
+            document.getElementById(`${prefix}-recite-box`).disabled = true; 
+            currentNotesMode[prefix] = 'recite_review'; 
             document.getElementById(`${prefix}-bullet-list`).style.display = 'block';
             
             const currentCategory = document.getElementById(`${prefix}-notes-title`).textContent;
-            loadBullets(currentCategory, prefix); 
+            await loadBullets(currentCategory, prefix); 
             
-            btnCheck.style.display = 'none'; // hide check button once checked
+            btnCheck.style.display = 'none'; 
         }
     };
 });
 
-// The Text Parser (With Randomizer)
-function formatNotesText(rawText, prefix) {
+// The Text Parser 
+function formatNotesText(rawText, prefix, itemType) {
     const mode = currentNotesMode[prefix];
     
-    // In Study or Recite Review mode, simply show all highlights
-    if (mode === 'study' || mode === 'recite' || mode === 'recite_review') {
+    if (mode === 'gap_fill' && itemType !== 'heading') {
+        return `<textarea class="gap-fill-box" rows="1"></textarea>`;
+    } else if (mode === 'gap_fill_review' && itemType !== 'heading') {
+        // NEW: Shows their disabled text box, plus the correct answer nicely formatted below it
+        const formattedCorrect = rawText.replace(/\[\[(.*?)\]\]/g, '<span class="highlight-term">$1</span>');
+        return `
+            <textarea class="gap-fill-box" rows="1" disabled></textarea>
+            <div style="margin-top: 8px; padding: 8px; background-color: #e9ecef; border-left: 4px solid #28a745; border-radius: 4px; font-size: 14.5px; color: #333;">
+                ${formattedCorrect}
+            </div>`;
+    } else if (mode === 'study' || mode === 'recite' || mode === 'recite_review' || itemType === 'heading') {
         return rawText.replace(/\[\[(.*?)\]\]/g, '<span class="highlight-term">$1</span>');
     } else {
-        // In Practice Mode, 60% chance it becomes a blank, 40% chance it is revealed text
+        // Practice Mode
         return rawText.replace(/\[\[(.*?)\]\]/g, (match, p1) => {
-            if (Math.random() < 1) {
+            if (Math.random() < 0.40) {
                 const width = Math.max(p1.length * 9, 40); 
                 return `<input type="text" class="practice-blank" data-answer="${p1}" style="width: ${width}px;" autocomplete="off">`;
             } else {
@@ -1005,7 +1041,7 @@ async function loadBullets(category, prefix) {
         
         // Wrap content in a span so the float button aligns properly
         const contentSpan = document.createElement('span');
-        contentSpan.innerHTML = formatNotesText(item.text, prefix);
+        contentSpan.innerHTML = formatNotesText(item.text, prefix, item.type);
         
         if (item.type === 'heading') {
             li.style.fontWeight = 'bold';
@@ -1016,7 +1052,14 @@ async function loadBullets(category, prefix) {
         } else {
             li.style.marginBottom = "8px";
             li.style.padding = "5px";
+            li.style.paddingRight = "35px"; // NEW: Make room so text doesn't hide behind the absolute button
             li.style.position = "relative";
+            
+            // NEW: Hide bullet dots during input modes for a flush, clean alignment
+            if (currentNotesMode[prefix] === 'gap_fill' || currentNotesMode[prefix] === 'gap_fill_review') {
+                li.style.listStyleType = "none";
+            }
+
             li.appendChild(contentSpan);
             
             // Highlight Toggle Button
@@ -1025,6 +1068,11 @@ async function loadBullets(category, prefix) {
             toggleBtn.innerHTML = '🖍️';
             toggleBtn.title = "Highlight this point";
             toggleBtn.tabIndex = -1; 
+            
+            // NEW: Hide the highlight button in Gap Fill & Practice modes so it doesn't clutter/break layout
+            if (currentNotesMode[prefix] === 'gap_fill' || currentNotesMode[prefix] === 'practice') {
+                toggleBtn.style.display = 'none';
+            }
             
             // DETERMINE TRUE CATEGORY AND INDEX (Crucial for the Review tab!)
             const actualCategory = item.originalCategory || category;
@@ -1037,16 +1085,15 @@ async function loadBullets(category, prefix) {
             }
 
             toggleBtn.onclick = async (e) => {
-                e.stopPropagation(); // Stop the click from opening the side panel
+               // ... (keep your existing toggle logic untouched here) ...
+                e.stopPropagation(); 
                 if (!currentUser) return alert("Please sign in to save highlights!");
                 
-                // Make sure the array exists locally
                 if (!currentHighlights[prefix][actualCategory]) {
                     currentHighlights[prefix][actualCategory] = [];
                 }
                 const hList = currentHighlights[prefix][actualCategory];
                 
-                // Toggle logic
                 if (hList.includes(actualIndex)) {
                     hList.splice(hList.indexOf(actualIndex), 1);
                     li.classList.remove('user-highlighted-bullet');
@@ -1057,18 +1104,15 @@ async function loadBullets(category, prefix) {
                     toggleBtn.style.opacity = '1';
                 }
                 
-                // Auto-save silently to Firebase using the TRUE category
                 await setDoc(doc(db, "users", currentUser.uid, "highlights", `${prefix}_${actualCategory}`), { indices: hList });
-                
-                // NEW: Instantly refresh sidebar numbers!
                 updateAllSidebarBadges(prefix);
             };
             li.appendChild(toggleBtn);
             
             // Interaction logic (opening side panel)
-            if (currentNotesMode[prefix] === 'study' || currentNotesMode[prefix] === 'recite_review') {
+            // NEW: Added gap_fill_review so you can click to open side panel after checking answers!
+            if (currentNotesMode[prefix] === 'study' || currentNotesMode[prefix] === 'recite_review' || currentNotesMode[prefix] === 'gap_fill_review') {
                 li.style.cursor = "pointer"; 
-                // Uses the actual category/index so personal notes work in the Review tab too!
                 li.onclick = () => loadNoteData(actualCategory, actualIndex, prefix);
             } else {
                 li.style.cursor = "text"; 
