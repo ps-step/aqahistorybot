@@ -213,7 +213,6 @@ const spainNotesData = {
         { type: "bullet", text: "Cortes met [[15]] times. [[1538]] Cortes of Toledo nobles refused [[sisa]] (food tax). Thereafter, only town deputies summoned." },
         { type: "heading", text: "Authority" },
         { type: "bullet", text: "[[1523]]: Pope granted permanent mastership of the [[military orders]]." },
-        { type: "bullet", text: "[[1534-36]]: Reorganisation of the army into tercios." },
         { type: "heading", text: "Administration" },
         { type: "bullet", text: "[[1543]]: State archive established at [[Simancas]]." },
         { type: "bullet", text: "[[1543]]: Philip as regent, aged [[16]]. Guided by junta including Cardinal [[Tavera]], de los Cobos. Lasted for [[14yrs]] during Charles' absence." },
@@ -227,7 +226,8 @@ const spainNotesData = {
         { type: "bullet", text: "<b>HRE:</b> [[1532 Peace of Nuremberg]] was a temporary truce with Lutherans so Charles could focus on Ottoman threat. [[1547 Battle of Muhlberg]] defeated Schmalkaldic League but forced into embarrasing [[1555 Peace of Augsburg]]." },
         { type: "bullet", text: "<b>Ottomans:</b> [[1529]] Siege of Vienna was victory over [[100k]] Ottomans. Charles led [[1535 Tunis expedition]] with [[60k]] men after [[Barbarossa]] had captured in [[1534]]. But [[1541 Algiers]] was a catastophic failure with [[150]] ships lost." },
         { type: "bullet", text: "[[1538]]: [[Barbarossa]] decisively defeats Charles V's fleet (led by Andrea Doria) at the [[Battle of Preveza]], securing Ottoman naval dominance in the eastern Mediterranean." },
-        { type: "bullet", text: "<b>England:</b> [[1522 Treaty of Windsor]] continued English alliance, [[1554]] Philip x [[Mary Tudor]]." }
+        { type: "bullet", text: "<b>England:</b> [[1522 Treaty of Windsor]] continued English alliance, [[1554]] Philip x [[Mary Tudor]]." },
+        { type: "bullet", text: "[[1534-36]]: Reorganisation of the army into tercios." }
     ],
     "Charles V: Economics": [
         { type: "heading", text: "Revenue" },
