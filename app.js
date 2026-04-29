@@ -455,7 +455,7 @@ const spainNotesData = {
         { type: "bullet", text: "[[1588]]: Mutinies in Parma’s army and resistance from [[Maurice of Nassau]]." },
         { type: "bullet", text: "[[1590]]: Parma sent to [[France]]." },
         { type: "bullet", text: "[[1591]]: Parma returned against orders, but sent to France and died in 1592." },
-        { type: "bullet", text: "[[1592-1594]]: [[Mansfelt]] and [[Fuentes]] shared power but hated each other and mismanaged the situation." },
+        { type: "bullet", text: "[[1592-1594]]: [[Mansfeld]] and [[Fuentes]] shared power but hated each other and mismanaged the situation." },
         { type: "bullet", text: "[[1598]]: Philip set up [[Isabella]] and her husband (eventually [[Albert of Austria]]) to rule in his name but essentially independently." }
     ]
 };
