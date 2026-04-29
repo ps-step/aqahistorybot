@@ -104,7 +104,7 @@ const spainNotesData = {
         { type: "heading", text: "Nobility" },
         { type: "bullet", text: "Alliances with grandees such as [[Mendozas]], [[Velascos]]. New titles established like [[1475]] Duchy of [[Infantado]], [[1492]] Duchy of [[Frias]]." },
         { type: "bullet", text: "[[Adulterine]] castles were turned into [[Isabelline]] palaces." },
-        { type: "bullet", text: "Marquis of Villena forced to forfeit [[Escalona]]." },
+        { type: "bullet", text: "Marquis of Villena forced to forfeit profitable towns - had the largest estate in Spain." },
         { type: "bullet", text: "[[Mayorazgos]] were promoted by the [[1505]] Cortes of [[Toro]]. Prevented the [[sale]] and [[division]] of estates." },
         { type: "bullet", text: "[[3%]] of the population owned [[97%]] of the land." },
         { type: "bullet", text: "Grandees: [[15]] families owned [[50%]] of the land. Socially dominant, but excluded from the [[Royal Council]]." },
