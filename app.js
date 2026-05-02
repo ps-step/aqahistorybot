@@ -862,7 +862,7 @@ function formatNotesText(rawText, prefix, itemType) {
     } else {
         // Practice Mode
         return rawText.replace(/\[\[(.*?)\]\]/g, (match, p1) => {
-            if (Math.random() < 0.40) {
+            if (Math.random() < 1.00) {
                 const width = Math.max(p1.length * 9, 40); 
                 return `<input type="text" class="practice-blank" data-answer="${p1}" style="width: ${width}px;" autocomplete="off">`;
             } else {
