@@ -1069,8 +1069,8 @@ async function loadBullets(category, prefix) {
             toggleBtn.title = "Highlight this point";
             toggleBtn.tabIndex = -1; 
             
-            // NEW: Hide the highlight button in Gap Fill & Practice modes so it doesn't clutter/break layout
-            if (currentNotesMode[prefix] === 'gap_fill' || currentNotesMode[prefix] === 'practice') {
+            // Hide the highlight button ONLY in Gap Fill mode
+            if (currentNotesMode[prefix] === 'gap_fill') {
                 toggleBtn.style.display = 'none';
             }
             
